@@ -1,0 +1,2100 @@
+bplist00Ò_WebMainResource_WebSubresourcesÕ	
+_WebResourceMIMEType_WebResourceTextEncodingName^WebResourceURL_WebResourceFrameName_WebResourceDataYtext/htmlUUTF-8_&http://math.mit.edu/~gs/linearalgebra/POC%<!DOCTYPE html><html><head>
+        <title>Introduction to Linear Algebra, 5th Edition</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Gilbert Strang, applied mathematics, linear algbra">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+        <script type="text/javascript" src="/scripts/lightbox/jquery.colorbox.js"></script>
+        <link type="text/css" href="/scripts/lightbox/colorbox.css" rel="stylesheet" media="screen">
+        <script type="text/javascript">
+                 $(document).ready(function(){
+                   $("a[rel='lightbox']").colorbox();});
+        </script>
+        <style>
+            body {
+                font-family: Georgia, Times, serif;
+                width: 90%;
+                margin: auto;
+            }
+
+            a:link, a:visited {
+                color: #0052cc;
+            }
+
+            a:hover {
+                color: #6600cc;
+            }
+
+            body > div {
+                border-bottom: 1px solid #AAA;
+            }
+
+            #colorbox {
+                border: none;
+            }
+
+            h2 {
+                margin-bottom: 0;
+            }
+            .contact {
+                font-size: 24px;
+                font-weight:bold;
+                margin-top: 0;
+            }
+
+            .contact a {
+                padding-right: 15px;
+            }
+
+            .order {
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            .order a:last-child() {
+                padding-right: 15px;
+            }
+
+            .related {
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .toc ul {
+                font-family: helvetica, arial, sans-serif;
+                /*color: #00b0e6;*/
+                font-weight:bold;
+                list-style: none;
+                margin: 10px 0;
+            }
+
+            .toc ul li {
+                margin: 15px 0;
+            }
+
+            .toc ul li ul li {
+                margin: 3px 0;
+            }
+
+            .toc ul ul {
+                color: #333;
+                font-family: Georgia, Times, serif;
+                font-weight: normal;
+                margin: 0;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div>
+            <a name="top"></a>
+            <h1>Introduction to Linear Algebra, Fifth Edition (2016)</h1>
+            <a href="linearalgebra5_Front.jpg" rel="lightbox" class="cboxElement"><img src="linearalgebra5_Front_thumb.png" alt="Linear Algebra Book Front Cover"></a>
+            <a href="linearalgebra5_Back.jpg" rel="lightbox" class="cboxElement"><img src="linearalgebra5_Back_thumb.png" alt="Linear Algebra Book Back Cover"></a>
+            <h2>Publication May 2016</h2>
+            <p class="contact">
+                <a href="http://math.mit.edu/~gs">Gilbert Strang</a> linearalgebrabook@gmail.com
+            </p>
+            <p class="order">
+                <a href="http://www.wellesleycambridge.com/">Wellesley-Cambridge Press</a> and
+                <a href="http://siam.org/books/">SIAM</a> (for ordering information)<br>
+                <a href="weborder.php" style="padding-top: 5px;display:block;"> Book Order Form</a>
+            </p>
+
+            <p><a href="book-review-2017.html" target="_blank">Review of the 5th edition by Professor Farenick for the International Linear Algebra Society</a></p>
+
+            <p class="related">
+                Related websites:
+                <a href="http://math.mit.edu/18.06">web.mit.edu/18.06</a> ,
+                <a href="https://ocw.mit.edu/courses/mathematics/18-06-linear-algebra-spring-2010/">ocw.mit.edu</a> ,
+                <a href="http://math.mit.edu/~gs">math.mit.edu/~gs</a>
+            </p>
+            <p>ISBN: 978-09802327-7-6</p>
+
+            <p><a href="#toc">[Table of Contents]</a></p>
+            <p><a href="#practice">Practice Exam Questions</a></p>
+        </div>
+
+        <div>
+            <p>I hope this website will become a valuable resource for everyone
+            learning and doing linear algebra. Here are key links:</p>
+            <ul>
+                <li><a href="linearalgebra5_TOC.pdf">Table of Contents</a></li>
+                <li><a href="linearalgebra5_Preface.pdf">Preface</a></li>
+                <li>Section 1.3 of the book: <a href="linearalgebra5_1-3.pdf">Matrices</a></li>
+                <li>Section 2.5 of the book: <a href="linearalgebra5_2-5.pdf">Inverse Matrices</a></li>
+                <li>Section 3.5 of the book: <a href="linearalgebra5_3-5.pdf">Dimensions of the Four Subspaces</a></li>
+                <li>Section 6.1 of the book: <a href="linearalgebra5_6-1.pdf">Introduction to Eigenvalues</a></li>
+                <li>Section 7.1 of the book: <a href="linearalgebra5_7-1.pdf">Image Processing by Linear Algebra</a></li>
+                <li>Section 12.1 of the book: <a href="linearalgebra5_12-1.pdf">Mean, Variance, and Probability</a></li>
+                <li><a href="linearalgebra5_Matrix.pdf">Matrix Factorizations</a></li>
+                <li><a href="linearalgebra5_Index.pdf">Index</a></li>
+                <li><a href="linearalgebra5_6Great.pdf">6 Great Theorems</a></li>
+                <li>18.06 OpenCourseWare site with video lectures <a href="http://ocw.mit.edu/OcwWeb/Mathematics/18-06Spring-2005/CourseHome/index.htm">18.06 on OCW</a></li>
+                <li>The publisher's site for the textbook <a href="http://www.wellesleycambridge.com/">www.wellesleycambridge.com</a></li>
+                <li>Solution Manual for the Textbook  (updated August 2017)
+                    <ul>
+                        <li><a href="ila_sol5_ch01.pdf">Chapter 1</a></li>
+                        <li><a href="ila_sol5_ch02.pdf">Chapter 2</a></li>
+                        <li><a href="ila_sol5_ch03.pdf">Chapter 3</a></li>
+                        <li><a href="ila_sol5_ch04.pdf">Chapter 4</a></li>
+                        <li><a href="ila_sol5_ch05.pdf">Chapter 5</a></li>
+                        <li><a href="ila_sol5_ch06.pdf">Chapter 6</a></li>
+                        <li><a href="ila_sol5_ch07.pdf">Chapter 7</a></li>
+                        <li><a href="ila_sol5_ch08.pdf">Chapter 8</a></li>
+                        <li><a href="ila_sol5_ch09.pdf">Chapter 9</a></li>
+                        <li><a href="ila_sol5_ch10.pdf">Chapter 10</a></li>
+                        <li><a href="ila_sol5_ch11.pdf">Chapter 11</a></li>
+                        <li><a href="ila_sol5_ch12.pdf">Chapter 12</a></li>
+                    </ul>
+                </li>
+                <li><a href="weborder.php">Book Order Form</a>
+
+            </li></ul>
+
+            <p>
+            ** Each section in the Table of Contents links to problem sets, solutions,<br>
+            ** other websites, and all material related to the topic of that section.<br>
+            ** Readers are invited to propose possible links (write to linearalgebrabook@gmail.com)<br>
+            </p>
+        </div>
+
+        <div class="toc">
+            <a name="toc"></a>
+            <h2>Table of Contents for Introduction to Linear Algebra (5th edition 2016)</h2>
+
+            <ul>
+
+                <li>1 Introduction to Vectors
+                    <ul>
+                        <li>1.1 Vectors and Linear Combinations</li>
+                        <li>1.2 Lengths and Dot Products</li>
+                        <li><a href="linearalgebra5_1-3.pdf">1.3 Matrices</a></li>
+                    </ul>
+                </li>
+
+                <li>2 Solving Linear Equations
+                    <ul>
+                        <li>2.1 Vectors and Linear Equations</li>
+                        <li>2.2 The Idea of Elimination</li>
+                        <li>2.3 Elimination Using Matrices</li>
+                        <li>2.4 Rules for Matrix Operations</li>
+                        <li><a href="linearalgebra5_2-5.pdf">2.5 Inverse Matrices</a></li>
+                        <li>2.6 Elimination = Factorization: <i>A</i> = <i>LU</i></li>
+                        <li>2.7 Transposes and Permutations</li>
+                    </ul>
+                </li>
+
+                <li>3 Vector Spaces and Subspaces
+                    <ul>
+                        <li>3.1 Spaces of Vectors</li>
+                        <li>3.2 The Nullspace of <i>A</i>: Solving <i>Ax</i> = 0 and <i>Rx</i> = 0</li>
+                        <li>3.3 The Complete Solution to <i>Ax</i> = <i>b</i></li>
+                        <li>3.4 Independence, Basis and Dimension</li>
+                        <li><a href="linearalgebra5_3-5.pdf">3.5 Dimensions of the Four Subspaces</a></li>
+                    </ul>
+                </li>
+
+                <li>4 Orthogonality
+                    <ul>
+                        <li>4.1 Orthogonality of the Four Subspaces</li>
+                        <li>4.2 Projections</li>
+                        <li>4.3 Least Squares Approximations</li>
+                        <li>4.4 Orthonormal Bases and Gram-Schmidt</li>
+                    </ul>
+                </li>
+
+                <li>5 Determinants
+                    <ul>
+                        <li>5.1 The Properties of Determinants</li>
+                        <li>5.2 Permutations and Cofactors</li>
+                        <li>5.3 Cramerâ€™s Rule, Inverses, and Volumes</li>
+                    </ul>
+                </li>
+
+                <li>6 Eigenvalues and Eigenvectors
+                    <ul>
+                        <li><a href="linearalgebra5_6-1.pdf">6.1 Introduction to Eigenvalues</a></li>
+                        <li>6.2 Diagonalizing a Matrix</li>
+                        <li>6.3 Systems of Differential Equations</li>
+                        <li>6.4 Symmetric Matrices</li>
+                        <li>6.5 Positive Definite Matrices</li>
+                    </ul>
+                </li>
+
+                <li>7 The Singular Value Decomposition (SVD)
+                    <ul>
+                        <li><a href="linearalgebra5_7-1.pdf">7.1 Image Processing by Linear Algebra</a></li>
+                        <li>7.2 Bases and Matrices in the SVD</li>
+                        <li>7.3 Principal Component Analysis (PCA by the SVD)</li>
+                        <li>7.4 The Geometry of the SVD</li>
+                    </ul>
+                </li>
+
+                <li>8 Linear Transformations
+                    <ul>
+                        <li>8.1 The Idea of a Linear Transformation</li>
+                        <li>8.2 The Matrix of a Linear Transformation</li>
+                        <li>8.3 The Search for a Good Basis</li>
+                    </ul>
+                </li>
+
+                <li>9 Complex Vectors and Matrices
+                    <ul>
+                        <li>9.1 Complex Numbers</li>
+                        <li>9.2 Hermitian and Unitary Matrices</li>
+                        <li>9.3 The Fast Fourier Transform</li>
+                    </ul>
+                </li>
+
+                <li>10 Applications
+                    <ul>
+                        <li>10.1 Graphs and Networks</li>
+                        <li>10.2 Matrices in Engineering</li>
+                        <li>10.3 Markov Matrices, Population, and Economics</li>
+                        <li>10.4 Linear Programming</li>
+                        <li>10.5 Fourier Series: Linear Algebra for Functions</li>
+                        <li>10.6 Computer Graphics</li>
+                        <li>10.7 Linear Algebra for Cryptography</li>
+                    </ul>
+                </li>
+
+                <li>11 Numerical Linear Algebra
+                    <ul>
+                        <li>11.1 Gaussian Elimination in Practice</li>
+                        <li>11.2 Norms and Condition Numbers</li>
+                        <li>11.3 Iterative Methods and Preconditioners</li>
+                    </ul>
+                </li>
+
+                <li>12 Linear Algebra in Probability &amp; Statistics
+                    <ul>
+                        <li><a href="linearalgebra5_12-1.pdf">12.1 Mean, Variance, and Probability</a></li>
+                        <li>12.2 Covariance Matrices and Joint Probabilities</li>
+                        <li>12.3 Multivariate Gaussian andWeighted Least Squares</li>
+                    </ul>
+                </li>
+                <li><a href="linearalgebra5_Matrix.pdf">Matrix Factorizations</a></li>
+                <li><a href="linearalgebra5_Index.pdf">Index</a></li>
+                <li><a href="linearalgebra5_6Great.pdf">Six Great Theorems / Linear Algebra in a Nutshell</a></li>
+            </ul>
+            <p><a href="#top">[top]</a></p>
+        </div>
+
+        <div>
+            <p>Each section of the book has a Problem Set.</p>
+        </div>
+
+        <div id="practice">
+            <h2>Practice Exam Questions</h2>
+            <ul>
+                <li><a href="exam1_1.pdf">Exam 1 (1997-2009)</a></li>
+                <li><a href="exam1_2.pdf">Exam 1 (2010-2015)</a></li>
+                <li><a href="exam2_1.pdf">Exam 2 (1997-2009)</a></li>
+                <li><a href="exam2_2.pdf">Exam 2 (2010-2015)</a></li>
+                <li><a href="exam3_1.pdf">Exam 3 (1997-2009)</a></li>
+                <li><a href="exam3_2.pdf">Exam 3 (2010-2015)</a></li>
+                <li><a href="finalexam_1.pdf">Final (1998-2009)</a></li>
+                <li><a href="finalexam_2.pdf">Final (2010-2015)</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Linear Algebra Problems in Lemma</h2>
+            <p>My friend Pavel Grinfeld at Drexel has sent me a collection of interesting problems -- mostly elementary but each one with a small twist. These are part of his larger teaching site called LEM.MA  and he built the page <a href="http://lem.ma/LAProb" target="_blank">http://lem.ma/LAProb</a>/especially for this website linked to the 5th edition.</p>
+
+        </div>
+        <div>
+            <h2>The H.264 Video Standard (promised in Section 7.1 of the book)</h2>
+            <p>This video standard describes a system for encoding and decoding (a "Codec") that engineers have defined for applications like High Definition TV.  It is not expected that you will know the meaning of every word -- your book author does not know either. The point is to see an important example of a "standard" that is created by an industry after years of development--- so all companies will know what coding system their products must be consistent with.  </p>
+            <p>The words "motion compensation" refer to a way to estimate each video image from the previous one.  The simplest would be to guess that successive video images are the same. Then we would only need the changes between frames -- hopefully small. But if the camera is following the action, the whole scene will shift slightly and need correction. A better idea is to see which way the scene is moving and build that change into the next scene. This is MOTION COMPENSATION.  In fact the motion is allowed to be different on different parts of the screen.  </p>
+            <p>It is ideas like this -- easy to talk about but taking years of effort to perfect -- that make video technology and other technologies possible and successful.  Engineers do their job. I hope these links give an idea of the detail needed.</p>
+
+            <ul>
+                <li><a href="http://www.h264info.com/h264.html">http://www.h264info.com/h264.html</a></li>
+                <li><a href="http://en.wikipedia.org/wiki/H.264/MPEG-4_AVC">http://en.wikipedia.org/wiki/H.264/MPEG-4_AVC</a></li>
+                <li><a href="http://www.axis.com/files/whitepaper/wp_h264_31669_en_0803_lo.pdf">http://www.axis.com/files/whitepaper/wp_h264_31669_en_0803_lo.pdf</a></li>
+            <ul>
+        </ul></ul></div>
+
+        <p>This page has been accessed at least <a href="http://stuff.mit.edu/doc/counter-howto.html">
+            <img src="http://stuff.mit.edu/cgi/counter/ila4webpage" alt="several"></a>
+            times since January 2009.
+        </p>
+    
+
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button type="button" id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div></body></html>¦ %)Õ_WebResourceResponse_text/javascriptUutf-8O	¦bplist00Ô~X$versionX$objectsY$archiverT$top † ¯)#)*0123WXYZ[\]^_`abcdefghijklmnopqrstxyU$nullİ	
+ !"___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€'€€	€€(€€ €Ó$% '(WNS.base[NS.relative€ €€_@https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.jsÒ+,-.Z$classnameX$classesUNSURL¢-/XNSObject#AÁan‰·  ÈÓ456FVWNS.keysZNS.objects¯789:;<=>?@ABCDE€	€
+€€€€€€€€€€€€€¯GHIJKLHNOPQRSTU€€€€€€€€€€ €!€"€#€$€%€&\Content-Type_Access-Control-Allow-OriginSAge_Content-Encoding_X-XSS-ProtectionWExpires_Timing-Allow-Origin]Cache-ControlTDate^Content-LengthX__hhaa___X-Content-Type-Options]Accept-RangesTVary]Last-Modified_text/javascript; charset=UTF-8Q*W2102345TgzipQ0_Sun, 31 May 2020 21:32:42 GMT_8public, max-age=31536000, stale-while-revalidate=2592000_Sat, 01 Jun 2019 21:32:42 GMTU19926_P
+
+YnBsaXN0MDDeAQIDBAUGBwgJCgsMDQ4PERMVFxkbHB4gIiQmKFxDb250ZW50LVR5cGVfEBtBY2Nlc3MtQ29udHJvbC1BbGxvdy1PcmlnaW5TQWdlXxAQQ29udGVudC1FbmNvZGluZ18QEFgtWFNTLVByb3RlY3Rpb25XRXhwaXJlc18QE1RpbWluZy1BbGxvdy1PcmlnaW5dQ2FjaGUtQ29udHJvbFREYXRlXkNvbnRlbnQtTGVuZ3RoXxAWWC1Db250ZW50LVR5cGUtT3B0aW9uc11BY2NlcHQtUmFuZ2VzVFZhcnldTGFzdC1Nb2RpZmllZKEQXxAedGV4dC9qYXZhc2NyaXB0OyBjaGFyc2V0PVVURi04oRJRKqEUVzIxMDIzNDWhFlRnemlwoRhRMKEaXxAdU3VuLCAzMSBNYXkgMjAyMCAyMTozMjo0MiBHTVShEqEdXxA4cHVibGljLCBtYXgtYWdlPTMxNTM2MDAwLCBzdGFsZS13aGlsZS1yZXZhbGlkYXRlPTI1OTIwMDChH18QHVNhdCwgMDEgSnVuIDIwMTkgMjE6MzI6NDIgR01UoSFVMTk5MjahI1dub3NuaWZmoSVVYnl0ZXOhJ18QD0FjY2VwdC1FbmNvZGluZ6EpXxAdVHVlLCAyMCBEZWMgMjAxNiAxODoxNzowMyBHTVQACAAlADIAUABUAGcAegCCAJgApgCrALoA0wDhAOYA9AD2ARcBGQEbAR0BJQEnASwBLgEwATIBUgFUAVYBkQGTAbMBtQG7Ab0BxQHHAc0BzwHhAeMAAAAAAAACAQAAAAAAAAAqAAAAAAAAAAAAAAAAAAACAw==WnosniffUbytes_Accept-Encoding_Tue, 20 Dec 2016 18:17:03 GMTÒ+,uv_NSMutableDictionary£uw/\NSDictionary_text/javascriptÒ+,z{_NSHTTPURLResponse£|}/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑ€_WebResourceResponse€    # - 2 7 c i „ ¦ È Ë í ğ;>Ac…ˆŠŒ’”–˜™›Ÿ¡¨°¼¾ÀÂ
+$'09;=DLWikmoqsuwy{}ƒ…‡™›Ÿ¡£¥§©«­¯±³µ·¹Æäèû,:?NWp~ƒ‘²´¼ÁÃã>D˜ ¦¸Øİó÷/3GUgj€             ‚              ‚_@https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.jsOß¦/*
+ * jQuery JavaScript Library v1.3.2
+ * http://jquery.com/
+ *
+ * Copyright (c) 2009 John Resig
+ * Dual licensed under the MIT and GPL licenses.
+ * http://docs.jquery.com/License
+ *
+ * Date: 2009-02-19 17:34:21 -0500 (Thu, 19 Feb 2009)
+ * Revision: 6246
+ */
+(function(){var l=this,g,y=l.jQuery,p=l.$,o=l.jQuery=l.$=function(E,F){return new o.fn.init(E,F)},D=/^[^<]*(<(.|\s)+>)[^>]*$|^#([\w-]+)$/,f=/^.[^:#\[\.,]*$/;o.fn=o.prototype={init:function(E,H){E=E||document;if(E.nodeType){this[0]=E;this.length=1;this.context=E;return this}if(typeof E==="string"){var G=D.exec(E);if(G&&(G[1]||!H)){if(G[1]){E=o.clean([G[1]],H)}else{var I=document.getElementById(G[3]);if(I&&I.id!=G[3]){return o().find(E)}var F=o(I||[]);F.context=document;F.selector=E;return F}}else{return o(H).find(E)}}else{if(o.isFunction(E)){return o(document).ready(E)}}if(E.selector&&E.context){this.selector=E.selector;this.context=E.context}return this.setArray(o.isArray(E)?E:o.makeArray(E))},selector:"",jquery:"1.3.2",size:function(){return this.length},get:function(E){return E===g?Array.prototype.slice.call(this):this[E]},pushStack:function(F,H,E){var G=o(F);G.prevObject=this;G.context=this.context;if(H==="find"){G.selector=this.selector+(this.selector?" ":"")+E}else{if(H){G.selector=this.selector+"."+H+"("+E+")"}}return G},setArray:function(E){this.length=0;Array.prototype.push.apply(this,E);return this},each:function(F,E){return o.each(this,F,E)},index:function(E){return o.inArray(E&&E.jquery?E[0]:E,this)},attr:function(F,H,G){var E=F;if(typeof F==="string"){if(H===g){return this[0]&&o[G||"attr"](this[0],F)}else{E={};E[F]=H}}return this.each(function(I){for(F in E){o.attr(G?this.style:this,F,o.prop(this,E[F],G,I,F))}})},css:function(E,F){if((E=="width"||E=="height")&&parseFloat(F)<0){F=g}return this.attr(E,F,"curCSS")},text:function(F){if(typeof F!=="object"&&F!=null){return this.empty().append((this[0]&&this[0].ownerDocument||document).createTextNode(F))}var E="";o.each(F||this,function(){o.each(this.childNodes,function(){if(this.nodeType!=8){E+=this.nodeType!=1?this.nodeValue:o.fn.text([this])}})});return E},wrapAll:function(E){if(this[0]){var F=o(E,this[0].ownerDocument).clone();if(this[0].parentNode){F.insertBefore(this[0])}F.map(function(){var G=this;while(G.firstChild){G=G.firstChild}return G}).append(this)}return this},wrapInner:function(E){return this.each(function(){o(this).contents().wrapAll(E)})},wrap:function(E){return this.each(function(){o(this).wrapAll(E)})},append:function(){return this.domManip(arguments,true,function(E){if(this.nodeType==1){this.appendChild(E)}})},prepend:function(){return this.domManip(arguments,true,function(E){if(this.nodeType==1){this.insertBefore(E,this.firstChild)}})},before:function(){return this.domManip(arguments,false,function(E){this.parentNode.insertBefore(E,this)})},after:function(){return this.domManip(arguments,false,function(E){this.parentNode.insertBefore(E,this.nextSibling)})},end:function(){return this.prevObject||o([])},push:[].push,sort:[].sort,splice:[].splice,find:function(E){if(this.length===1){var F=this.pushStack([],"find",E);F.length=0;o.find(E,this[0],F);return F}else{return this.pushStack(o.unique(o.map(this,function(G){return o.find(E,G)})),"find",E)}},clone:function(G){var E=this.map(function(){if(!o.support.noCloneEvent&&!o.isXMLDoc(this)){var I=this.outerHTML;if(!I){var J=this.ownerDocument.createElement("div");J.appendChild(this.cloneNode(true));I=J.innerHTML}return o.clean([I.replace(/ jQuery\d+="(?:\d+|null)"/g,"").replace(/^\s*/,"")])[0]}else{return this.cloneNode(true)}});if(G===true){var H=this.find("*").andSelf(),F=0;E.find("*").andSelf().each(function(){if(this.nodeName!==H[F].nodeName){return}var I=o.data(H[F],"events");for(var K in I){for(var J in I[K]){o.event.add(this,K,I[K][J],I[K][J].data)}}F++})}return E},filter:function(E){return this.pushStack(o.isFunction(E)&&o.grep(this,function(G,F){return E.call(G,F)})||o.multiFilter(E,o.grep(this,function(F){return F.nodeType===1})),"filter",E)},closest:function(E){var G=o.expr.match.POS.test(E)?o(E):null,F=0;return this.map(function(){var H=this;while(H&&H.ownerDocument){if(G?G.index(H)>-1:o(H).is(E)){o.data(H,"closest",F);return H}H=H.parentNode;F++}})},not:function(E){if(typeof E==="string"){if(f.test(E)){return this.pushStack(o.multiFilter(E,this,true),"not",E)}else{E=o.multiFilter(E,this)}}var F=E.length&&E[E.length-1]!==g&&!E.nodeType;return this.filter(function(){return F?o.inArray(this,E)<0:this!=E})},add:function(E){return this.pushStack(o.unique(o.merge(this.get(),typeof E==="string"?o(E):o.makeArray(E))))},is:function(E){return !!E&&o.multiFilter(E,this).length>0},hasClass:function(E){return !!E&&this.is("."+E)},val:function(K){if(K===g){var E=this[0];if(E){if(o.nodeName(E,"option")){return(E.attributes.value||{}).specified?E.value:E.text}if(o.nodeName(E,"select")){var I=E.selectedIndex,L=[],M=E.options,H=E.type=="select-one";if(I<0){return null}for(var F=H?I:0,J=H?I+1:M.length;F<J;F++){var G=M[F];if(G.selected){K=o(G).val();if(H){return K}L.push(K)}}return L}return(E.value||"").replace(/\r/g,"")}return g}if(typeof K==="number"){K+=""}return this.each(function(){if(this.nodeType!=1){return}if(o.isArray(K)&&/radio|checkbox/.test(this.type)){this.checked=(o.inArray(this.value,K)>=0||o.inArray(this.name,K)>=0)}else{if(o.nodeName(this,"select")){var N=o.makeArray(K);o("option",this).each(function(){this.selected=(o.inArray(this.value,N)>=0||o.inArray(this.text,N)>=0)});if(!N.length){this.selectedIndex=-1}}else{this.value=K}}})},html:function(E){return E===g?(this[0]?this[0].innerHTML.replace(/ jQuery\d+="(?:\d+|null)"/g,""):null):this.empty().append(E)},replaceWith:function(E){return this.after(E).remove()},eq:function(E){return this.slice(E,+E+1)},slice:function(){return this.pushStack(Array.prototype.slice.apply(this,arguments),"slice",Array.prototype.slice.call(arguments).join(","))},map:function(E){return this.pushStack(o.map(this,function(G,F){return E.call(G,F,G)}))},andSelf:function(){return this.add(this.prevObject)},domManip:function(J,M,L){if(this[0]){var I=(this[0].ownerDocument||this[0]).createDocumentFragment(),F=o.clean(J,(this[0].ownerDocument||this[0]),I),H=I.firstChild;if(H){for(var G=0,E=this.length;G<E;G++){L.call(K(this[G],H),this.length>1||G>0?I.cloneNode(true):I)}}if(F){o.each(F,z)}}return this;function K(N,O){return M&&o.nodeName(N,"table")&&o.nodeName(O,"tr")?(N.getElementsByTagName("tbody")[0]||N.appendChild(N.ownerDocument.createElement("tbody"))):N}}};o.fn.init.prototype=o.fn;function z(E,F){if(F.src){o.ajax({url:F.src,async:false,dataType:"script"})}else{o.globalEval(F.text||F.textContent||F.innerHTML||"")}if(F.parentNode){F.parentNode.removeChild(F)}}function e(){return +new Date}o.extend=o.fn.extend=function(){var J=arguments[0]||{},H=1,I=arguments.length,E=false,G;if(typeof J==="boolean"){E=J;J=arguments[1]||{};H=2}if(typeof J!=="object"&&!o.isFunction(J)){J={}}if(I==H){J=this;--H}for(;H<I;H++){if((G=arguments[H])!=null){for(var F in G){var K=J[F],L=G[F];if(J===L){continue}if(E&&L&&typeof L==="object"&&!L.nodeType){J[F]=o.extend(E,K||(L.length!=null?[]:{}),L)}else{if(L!==g){J[F]=L}}}}}return J};var b=/z-?index|font-?weight|opacity|zoom|line-?height/i,q=document.defaultView||{},s=Object.prototype.toString;o.extend({noConflict:function(E){l.$=p;if(E){l.jQuery=y}return o},isFunction:function(E){return s.call(E)==="[object Function]"},isArray:function(E){return s.call(E)==="[object Array]"},isXMLDoc:function(E){return E.nodeType===9&&E.documentElement.nodeName!=="HTML"||!!E.ownerDocument&&o.isXMLDoc(E.ownerDocument)},globalEval:function(G){if(G&&/\S/.test(G)){var F=document.getElementsByTagName("head")[0]||document.documentElement,E=document.createElement("script");E.type="text/javascript";if(o.support.scriptEval){E.appendChild(document.createTextNode(G))}else{E.text=G}F.insertBefore(E,F.firstChild);F.removeChild(E)}},nodeName:function(F,E){return F.nodeName&&F.nodeName.toUpperCase()==E.toUpperCase()},each:function(G,K,F){var E,H=0,I=G.length;if(F){if(I===g){for(E in G){if(K.apply(G[E],F)===false){break}}}else{for(;H<I;){if(K.apply(G[H++],F)===false){break}}}}else{if(I===g){for(E in G){if(K.call(G[E],E,G[E])===false){break}}}else{for(var J=G[0];H<I&&K.call(J,H,J)!==false;J=G[++H]){}}}return G},prop:function(H,I,G,F,E){if(o.isFunction(I)){I=I.call(H,F)}return typeof I==="number"&&G=="curCSS"&&!b.test(E)?I+"px":I},className:{add:function(E,F){o.each((F||"").split(/\s+/),function(G,H){if(E.nodeType==1&&!o.className.has(E.className,H)){E.className+=(E.className?" ":"")+H}})},remove:function(E,F){if(E.nodeType==1){E.className=F!==g?o.grep(E.className.split(/\s+/),function(G){return !o.className.has(F,G)}).join(" "):""}},has:function(F,E){return F&&o.inArray(E,(F.className||F).toString().split(/\s+/))>-1}},swap:function(H,G,I){var E={};for(var F in G){E[F]=H.style[F];H.style[F]=G[F]}I.call(H);for(var F in G){H.style[F]=E[F]}},css:function(H,F,J,E){if(F=="width"||F=="height"){var L,G={position:"absolute",visibility:"hidden",display:"block"},K=F=="width"?["Left","Right"]:["Top","Bottom"];function I(){L=F=="width"?H.offsetWidth:H.offsetHeight;if(E==="border"){return}o.each(K,function(){if(!E){L-=parseFloat(o.curCSS(H,"padding"+this,true))||0}if(E==="margin"){L+=parseFloat(o.curCSS(H,"margin"+this,true))||0}else{L-=parseFloat(o.curCSS(H,"border"+this+"Width",true))||0}})}if(H.offsetWidth!==0){I()}else{o.swap(H,G,I)}return Math.max(0,Math.round(L))}return o.curCSS(H,F,J)},curCSS:function(I,F,G){var L,E=I.style;if(F=="opacity"&&!o.support.opacity){L=o.attr(E,"opacity");return L==""?"1":L}if(F.match(/float/i)){F=w}if(!G&&E&&E[F]){L=E[F]}else{if(q.getComputedStyle){if(F.match(/float/i)){F="float"}F=F.replace(/([A-Z])/g,"-$1").toLowerCase();var M=q.getComputedStyle(I,null);if(M){L=M.getPropertyValue(F)}if(F=="opacity"&&L==""){L="1"}}else{if(I.currentStyle){var J=F.replace(/\-(\w)/g,function(N,O){return O.toUpperCase()});L=I.currentStyle[F]||I.currentStyle[J];if(!/^\d+(px)?$/i.test(L)&&/^\d/.test(L)){var H=E.left,K=I.runtimeStyle.left;I.runtimeStyle.left=I.currentStyle.left;E.left=L||0;L=E.pixelLeft+"px";E.left=H;I.runtimeStyle.left=K}}}}return L},clean:function(F,K,I){K=K||document;if(typeof K.createElement==="undefined"){K=K.ownerDocument||K[0]&&K[0].ownerDocument||document}if(!I&&F.length===1&&typeof F[0]==="string"){var H=/^<(\w+)\s*\/?>$/.exec(F[0]);if(H){return[K.createElement(H[1])]}}var G=[],E=[],L=K.createElement("div");o.each(F,function(P,S){if(typeof S==="number"){S+=""}if(!S){return}if(typeof S==="string"){S=S.replace(/(<(\w+)[^>]*?)\/>/g,function(U,V,T){return T.match(/^(abbr|br|col|img|input|link|meta|param|hr|area|embed)$/i)?U:V+"></"+T+">"});var O=S.replace(/^\s+/,"").substring(0,10).toLowerCase();var Q=!O.indexOf("<opt")&&[1,"<select multiple='multiple'>","</select>"]||!O.indexOf("<leg")&&[1,"<fieldset>","</fieldset>"]||O.match(/^<(thead|tbody|tfoot|colg|cap)/)&&[1,"<table>","</table>"]||!O.indexOf("<tr")&&[2,"<table><tbody>","</tbody></table>"]||(!O.indexOf("<td")||!O.indexOf("<th"))&&[3,"<table><tbody><tr>","</tr></tbody></table>"]||!O.indexOf("<col")&&[2,"<table><tbody></tbody><colgroup>","</colgroup></table>"]||!o.support.htmlSerialize&&[1,"div<div>","</div>"]||[0,"",""];L.innerHTML=Q[1]+S+Q[2];while(Q[0]--){L=L.lastChild}if(!o.support.tbody){var R=/<tbody/i.test(S),N=!O.indexOf("<table")&&!R?L.firstChild&&L.firstChild.childNodes:Q[1]=="<table>"&&!R?L.childNodes:[];for(var M=N.length-1;M>=0;--M){if(o.nodeName(N[M],"tbody")&&!N[M].childNodes.length){N[M].parentNode.removeChild(N[M])}}}if(!o.support.leadingWhitespace&&/^\s/.test(S)){L.insertBefore(K.createTextNode(S.match(/^\s*/)[0]),L.firstChild)}S=o.makeArray(L.childNodes)}if(S.nodeType){G.push(S)}else{G=o.merge(G,S)}});if(I){for(var J=0;G[J];J++){if(o.nodeName(G[J],"script")&&(!G[J].type||G[J].type.toLowerCase()==="text/javascript")){E.push(G[J].parentNode?G[J].parentNode.removeChild(G[J]):G[J])}else{if(G[J].nodeType===1){G.splice.apply(G,[J+1,0].concat(o.makeArray(G[J].getElementsByTagName("script"))))}I.appendChild(G[J])}}return E}return G},attr:function(J,G,K){if(!J||J.nodeType==3||J.nodeType==8){return g}var H=!o.isXMLDoc(J),L=K!==g;G=H&&o.props[G]||G;if(J.tagName){var F=/href|src|style/.test(G);if(G=="selected"&&J.parentNode){J.parentNode.selectedIndex}if(G in J&&H&&!F){if(L){if(G=="type"&&o.nodeName(J,"input")&&J.parentNode){throw"type property can't be changed"}J[G]=K}if(o.nodeName(J,"form")&&J.getAttributeNode(G)){return J.getAttributeNode(G).nodeValue}if(G=="tabIndex"){var I=J.getAttributeNode("tabIndex");return I&&I.specified?I.value:J.nodeName.match(/(button|input|object|select|textarea)/i)?0:J.nodeName.match(/^(a|area)$/i)&&J.href?0:g}return J[G]}if(!o.support.style&&H&&G=="style"){return o.attr(J.style,"cssText",K)}if(L){J.setAttribute(G,""+K)}var E=!o.support.hrefNormalized&&H&&F?J.getAttribute(G,2):J.getAttribute(G);return E===null?g:E}if(!o.support.opacity&&G=="opacity"){if(L){J.zoom=1;J.filter=(J.filter||"").replace(/alpha\([^)]*\)/,"")+(parseInt(K)+""=="NaN"?"":"alpha(opacity="+K*100+")")}return J.filter&&J.filter.indexOf("opacity=")>=0?(parseFloat(J.filter.match(/opacity=([^)]*)/)[1])/100)+"":""}G=G.replace(/-([a-z])/ig,function(M,N){return N.toUpperCase()});if(L){J[G]=K}return J[G]},trim:function(E){return(E||"").replace(/^\s+|\s+$/g,"")},makeArray:function(G){var E=[];if(G!=null){var F=G.length;if(F==null||typeof G==="string"||o.isFunction(G)||G.setInterval){E[0]=G}else{while(F){E[--F]=G[F]}}}return E},inArray:function(G,H){for(var E=0,F=H.length;E<F;E++){if(H[E]===G){return E}}return -1},merge:function(H,E){var F=0,G,I=H.length;if(!o.support.getAll){while((G=E[F++])!=null){if(G.nodeType!=8){H[I++]=G}}}else{while((G=E[F++])!=null){H[I++]=G}}return H},unique:function(K){var F=[],E={};try{for(var G=0,H=K.length;G<H;G++){var J=o.data(K[G]);if(!E[J]){E[J]=true;F.push(K[G])}}}catch(I){F=K}return F},grep:function(F,J,E){var G=[];for(var H=0,I=F.length;H<I;H++){if(!E!=!J(F[H],H)){G.push(F[H])}}return G},map:function(E,J){var F=[];for(var G=0,H=E.length;G<H;G++){var I=J(E[G],G);if(I!=null){F[F.length]=I}}return F.concat.apply([],F)}});var C=navigator.userAgent.toLowerCase();o.browser={version:(C.match(/.+(?:rv|it|ra|ie)[\/: ]([\d.]+)/)||[0,"0"])[1],safari:/webkit/.test(C),opera:/opera/.test(C),msie:/msie/.test(C)&&!/opera/.test(C),mozilla:/mozilla/.test(C)&&!/(compatible|webkit)/.test(C)};o.each({parent:function(E){return E.parentNode},parents:function(E){return o.dir(E,"parentNode")},next:function(E){return o.nth(E,2,"nextSibling")},prev:function(E){return o.nth(E,2,"previousSibling")},nextAll:function(E){return o.dir(E,"nextSibling")},prevAll:function(E){return o.dir(E,"previousSibling")},siblings:function(E){return o.sibling(E.parentNode.firstChild,E)},children:function(E){return o.sibling(E.firstChild)},contents:function(E){return o.nodeName(E,"iframe")?E.contentDocument||E.contentWindow.document:o.makeArray(E.childNodes)}},function(E,F){o.fn[E]=function(G){var H=o.map(this,F);if(G&&typeof G=="string"){H=o.multiFilter(G,H)}return this.pushStack(o.unique(H),E,G)}});o.each({appendTo:"append",prependTo:"prepend",insertBefore:"before",insertAfter:"after",replaceAll:"replaceWith"},function(E,F){o.fn[E]=function(G){var J=[],L=o(G);for(var K=0,H=L.length;K<H;K++){var I=(K>0?this.clone(true):this).get();o.fn[F].apply(o(L[K]),I);J=J.concat(I)}return this.pushStack(J,E,G)}});o.each({removeAttr:function(E){o.attr(this,E,"");if(this.nodeType==1){this.removeAttribute(E)}},addClass:function(E){o.className.add(this,E)},removeClass:function(E){o.className.remove(this,E)},toggleClass:function(F,E){if(typeof E!=="boolean"){E=!o.className.has(this,F)}o.className[E?"add":"remove"](this,F)},remove:function(E){if(!E||o.filter(E,[this]).length){o("*",this).add([this]).each(function(){o.event.remove(this);o.removeData(this)});if(this.parentNode){this.parentNode.removeChild(this)}}},empty:function(){o(this).children().remove();while(this.firstChild){this.removeChild(this.firstChild)}}},function(E,F){o.fn[E]=function(){return this.each(F,arguments)}});function j(E,F){return E[0]&&parseInt(o.curCSS(E[0],F,true),10)||0}var h="jQuery"+e(),v=0,A={};o.extend({cache:{},data:function(F,E,G){F=F==l?A:F;var H=F[h];if(!H){H=F[h]=++v}if(E&&!o.cache[H]){o.cache[H]={}}if(G!==g){o.cache[H][E]=G}return E?o.cache[H][E]:H},removeData:function(F,E){F=F==l?A:F;var H=F[h];if(E){if(o.cache[H]){delete o.cache[H][E];E="";for(E in o.cache[H]){break}if(!E){o.removeData(F)}}}else{try{delete F[h]}catch(G){if(F.removeAttribute){F.removeAttribute(h)}}delete o.cache[H]}},queue:function(F,E,H){if(F){E=(E||"fx")+"queue";var G=o.data(F,E);if(!G||o.isArray(H)){G=o.data(F,E,o.makeArray(H))}else{if(H){G.push(H)}}}return G},dequeue:function(H,G){var E=o.queue(H,G),F=E.shift();if(!G||G==="fx"){F=E[0]}if(F!==g){F.call(H)}}});o.fn.extend({data:function(E,G){var H=E.split(".");H[1]=H[1]?"."+H[1]:"";if(G===g){var F=this.triggerHandler("getData"+H[1]+"!",[H[0]]);if(F===g&&this.length){F=o.data(this[0],E)}return F===g&&H[1]?this.data(H[0]):F}else{return this.trigger("setData"+H[1]+"!",[H[0],G]).each(function(){o.data(this,E,G)})}},removeData:function(E){return this.each(function(){o.removeData(this,E)})},queue:function(E,F){if(typeof E!=="string"){F=E;E="fx"}if(F===g){return o.queue(this[0],E)}return this.each(function(){var G=o.queue(this,E,F);if(E=="fx"&&G.length==1){G[0].call(this)}})},dequeue:function(E){return this.each(function(){o.dequeue(this,E)})}});
+/*
+ * Sizzle CSS Selector Engine - v0.9.3
+ *  Copyright 2009, The Dojo Foundation
+ *  Released under the MIT, BSD, and GPL Licenses.
+ *  More information: http://sizzlejs.com/
+ */
+(function(){var R=/((?:\((?:\([^()]+\)|[^()]+)+\)|\[(?:\[[^[\]]*\]|['"][^'"]*['"]|[^[\]'"]+)+\]|\\.|[^ >+~,(\[\\]+)+|[>+~])(\s*,\s*)?/g,L=0,H=Object.prototype.toString;var F=function(Y,U,ab,ac){ab=ab||[];U=U||document;if(U.nodeType!==1&&U.nodeType!==9){return[]}if(!Y||typeof Y!=="string"){return ab}var Z=[],W,af,ai,T,ad,V,X=true;R.lastIndex=0;while((W=R.exec(Y))!==null){Z.push(W[1]);if(W[2]){V=RegExp.rightContext;break}}if(Z.length>1&&M.exec(Y)){if(Z.length===2&&I.relative[Z[0]]){af=J(Z[0]+Z[1],U)}else{af=I.relative[Z[0]]?[U]:F(Z.shift(),U);while(Z.length){Y=Z.shift();if(I.relative[Y]){Y+=Z.shift()}af=J(Y,af)}}}else{var ae=ac?{expr:Z.pop(),set:E(ac)}:F.find(Z.pop(),Z.length===1&&U.parentNode?U.parentNode:U,Q(U));af=F.filter(ae.expr,ae.set);if(Z.length>0){ai=E(af)}else{X=false}while(Z.length){var ah=Z.pop(),ag=ah;if(!I.relative[ah]){ah=""}else{ag=Z.pop()}if(ag==null){ag=U}I.relative[ah](ai,ag,Q(U))}}if(!ai){ai=af}if(!ai){throw"Syntax error, unrecognized expression: "+(ah||Y)}if(H.call(ai)==="[object Array]"){if(!X){ab.push.apply(ab,ai)}else{if(U.nodeType===1){for(var aa=0;ai[aa]!=null;aa++){if(ai[aa]&&(ai[aa]===true||ai[aa].nodeType===1&&K(U,ai[aa]))){ab.push(af[aa])}}}else{for(var aa=0;ai[aa]!=null;aa++){if(ai[aa]&&ai[aa].nodeType===1){ab.push(af[aa])}}}}}else{E(ai,ab)}if(V){F(V,U,ab,ac);if(G){hasDuplicate=false;ab.sort(G);if(hasDuplicate){for(var aa=1;aa<ab.length;aa++){if(ab[aa]===ab[aa-1]){ab.splice(aa--,1)}}}}}return ab};F.matches=function(T,U){return F(T,null,null,U)};F.find=function(aa,T,ab){var Z,X;if(!aa){return[]}for(var W=0,V=I.order.length;W<V;W++){var Y=I.order[W],X;if((X=I.match[Y].exec(aa))){var U=RegExp.leftContext;if(U.substr(U.length-1)!=="\\"){X[1]=(X[1]||"").replace(/\\/g,"");Z=I.find[Y](X,T,ab);if(Z!=null){aa=aa.replace(I.match[Y],"");break}}}}if(!Z){Z=T.getElementsByTagName("*")}return{set:Z,expr:aa}};F.filter=function(ad,ac,ag,W){var V=ad,ai=[],aa=ac,Y,T,Z=ac&&ac[0]&&Q(ac[0]);while(ad&&ac.length){for(var ab in I.filter){if((Y=I.match[ab].exec(ad))!=null){var U=I.filter[ab],ah,af;T=false;if(aa==ai){ai=[]}if(I.preFilter[ab]){Y=I.preFilter[ab](Y,aa,ag,ai,W,Z);if(!Y){T=ah=true}else{if(Y===true){continue}}}if(Y){for(var X=0;(af=aa[X])!=null;X++){if(af){ah=U(af,Y,X,aa);var ae=W^!!ah;if(ag&&ah!=null){if(ae){T=true}else{aa[X]=false}}else{if(ae){ai.push(af);T=true}}}}}if(ah!==g){if(!ag){aa=ai}ad=ad.replace(I.match[ab],"");if(!T){return[]}break}}}if(ad==V){if(T==null){throw"Syntax error, unrecognized expression: "+ad}else{break}}V=ad}return aa};var I=F.selectors={order:["ID","NAME","TAG"],match:{ID:/#((?:[\w\u00c0-\uFFFF_-]|\\.)+)/,CLASS:/\.((?:[\w\u00c0-\uFFFF_-]|\\.)+)/,NAME:/\[name=['"]*((?:[\w\u00c0-\uFFFF_-]|\\.)+)['"]*\]/,ATTR:/\[\s*((?:[\w\u00c0-\uFFFF_-]|\\.)+)\s*(?:(\S?=)\s*(['"]*)(.*?)\3|)\s*\]/,TAG:/^((?:[\w\u00c0-\uFFFF\*_-]|\\.)+)/,CHILD:/:(only|nth|last|first)-child(?:\((even|odd|[\dn+-]*)\))?/,POS:/:(nth|eq|gt|lt|first|last|even|odd)(?:\((\d*)\))?(?=[^-]|$)/,PSEUDO:/:((?:[\w\u00c0-\uFFFF_-]|\\.)+)(?:\((['"]*)((?:\([^\)]+\)|[^\2\(\)]*)+)\2\))?/},attrMap:{"class":"className","for":"htmlFor"},attrHandle:{href:function(T){return T.getAttribute("href")}},relative:{"+":function(aa,T,Z){var X=typeof T==="string",ab=X&&!/\W/.test(T),Y=X&&!ab;if(ab&&!Z){T=T.toUpperCase()}for(var W=0,V=aa.length,U;W<V;W++){if((U=aa[W])){while((U=U.previousSibling)&&U.nodeType!==1){}aa[W]=Y||U&&U.nodeName===T?U||false:U===T}}if(Y){F.filter(T,aa,true)}},">":function(Z,U,aa){var X=typeof U==="string";if(X&&!/\W/.test(U)){U=aa?U:U.toUpperCase();for(var V=0,T=Z.length;V<T;V++){var Y=Z[V];if(Y){var W=Y.parentNode;Z[V]=W.nodeName===U?W:false}}}else{for(var V=0,T=Z.length;V<T;V++){var Y=Z[V];if(Y){Z[V]=X?Y.parentNode:Y.parentNode===U}}if(X){F.filter(U,Z,true)}}},"":function(W,U,Y){var V=L++,T=S;if(!U.match(/\W/)){var X=U=Y?U:U.toUpperCase();T=P}T("parentNode",U,V,W,X,Y)},"~":function(W,U,Y){var V=L++,T=S;if(typeof U==="string"&&!U.match(/\W/)){var X=U=Y?U:U.toUpperCase();T=P}T("previousSibling",U,V,W,X,Y)}},find:{ID:function(U,V,W){if(typeof V.getElementById!=="undefined"&&!W){var T=V.getElementById(U[1]);return T?[T]:[]}},NAME:function(V,Y,Z){if(typeof Y.getElementsByName!=="undefined"){var U=[],X=Y.getElementsByName(V[1]);for(var W=0,T=X.length;W<T;W++){if(X[W].getAttribute("name")===V[1]){U.push(X[W])}}return U.length===0?null:U}},TAG:function(T,U){return U.getElementsByTagName(T[1])}},preFilter:{CLASS:function(W,U,V,T,Z,aa){W=" "+W[1].replace(/\\/g,"")+" ";if(aa){return W}for(var X=0,Y;(Y=U[X])!=null;X++){if(Y){if(Z^(Y.className&&(" "+Y.className+" ").indexOf(W)>=0)){if(!V){T.push(Y)}}else{if(V){U[X]=false}}}}return false},ID:function(T){return T[1].replace(/\\/g,"")},TAG:function(U,T){for(var V=0;T[V]===false;V++){}return T[V]&&Q(T[V])?U[1]:U[1].toUpperCase()},CHILD:function(T){if(T[1]=="nth"){var U=/(-?)(\d*)n((?:\+|-)?\d*)/.exec(T[2]=="even"&&"2n"||T[2]=="odd"&&"2n+1"||!/\D/.test(T[2])&&"0n+"+T[2]||T[2]);T[2]=(U[1]+(U[2]||1))-0;T[3]=U[3]-0}T[0]=L++;return T},ATTR:function(X,U,V,T,Y,Z){var W=X[1].replace(/\\/g,"");if(!Z&&I.attrMap[W]){X[1]=I.attrMap[W]}if(X[2]==="~="){X[4]=" "+X[4]+" "}return X},PSEUDO:function(X,U,V,T,Y){if(X[1]==="not"){if(X[3].match(R).length>1||/^\w/.test(X[3])){X[3]=F(X[3],null,null,U)}else{var W=F.filter(X[3],U,V,true^Y);if(!V){T.push.apply(T,W)}return false}}else{if(I.match.POS.test(X[0])||I.match.CHILD.test(X[0])){return true}}return X},POS:function(T){T.unshift(true);return T}},filters:{enabled:function(T){return T.disabled===false&&T.type!=="hidden"},disabled:function(T){return T.disabled===true},checked:function(T){return T.checked===true},selected:function(T){T.parentNode.selectedIndex;return T.selected===true},parent:function(T){return !!T.firstChild},empty:function(T){return !T.firstChild},has:function(V,U,T){return !!F(T[3],V).length},header:function(T){return/h\d/i.test(T.nodeName)},text:function(T){return"text"===T.type},radio:function(T){return"radio"===T.type},checkbox:function(T){return"checkbox"===T.type},file:function(T){return"file"===T.type},password:function(T){return"password"===T.type},submit:function(T){return"submit"===T.type},image:function(T){return"image"===T.type},reset:function(T){return"reset"===T.type},button:function(T){return"button"===T.type||T.nodeName.toUpperCase()==="BUTTON"},input:function(T){return/input|select|textarea|button/i.test(T.nodeName)}},setFilters:{first:function(U,T){return T===0},last:function(V,U,T,W){return U===W.length-1},even:function(U,T){return T%2===0},odd:function(U,T){return T%2===1},lt:function(V,U,T){return U<T[3]-0},gt:function(V,U,T){return U>T[3]-0},nth:function(V,U,T){return T[3]-0==U},eq:function(V,U,T){return T[3]-0==U}},filter:{PSEUDO:function(Z,V,W,aa){var U=V[1],X=I.filters[U];if(X){return X(Z,W,V,aa)}else{if(U==="contains"){return(Z.textContent||Z.innerText||"").indexOf(V[3])>=0}else{if(U==="not"){var Y=V[3];for(var W=0,T=Y.length;W<T;W++){if(Y[W]===Z){return false}}return true}}}},CHILD:function(T,W){var Z=W[1],U=T;switch(Z){case"only":case"first":while(U=U.previousSibling){if(U.nodeType===1){return false}}if(Z=="first"){return true}U=T;case"last":while(U=U.nextSibling){if(U.nodeType===1){return false}}return true;case"nth":var V=W[2],ac=W[3];if(V==1&&ac==0){return true}var Y=W[0],ab=T.parentNode;if(ab&&(ab.sizcache!==Y||!T.nodeIndex)){var X=0;for(U=ab.firstChild;U;U=U.nextSibling){if(U.nodeType===1){U.nodeIndex=++X}}ab.sizcache=Y}var aa=T.nodeIndex-ac;if(V==0){return aa==0}else{return(aa%V==0&&aa/V>=0)}}},ID:function(U,T){return U.nodeType===1&&U.getAttribute("id")===T},TAG:function(U,T){return(T==="*"&&U.nodeType===1)||U.nodeName===T},CLASS:function(U,T){return(" "+(U.className||U.getAttribute("class"))+" ").indexOf(T)>-1},ATTR:function(Y,W){var V=W[1],T=I.attrHandle[V]?I.attrHandle[V](Y):Y[V]!=null?Y[V]:Y.getAttribute(V),Z=T+"",X=W[2],U=W[4];return T==null?X==="!=":X==="="?Z===U:X==="*="?Z.indexOf(U)>=0:X==="~="?(" "+Z+" ").indexOf(U)>=0:!U?Z&&T!==false:X==="!="?Z!=U:X==="^="?Z.indexOf(U)===0:X==="$="?Z.substr(Z.length-U.length)===U:X==="|="?Z===U||Z.substr(0,U.length+1)===U+"-":false},POS:function(X,U,V,Y){var T=U[2],W=I.setFilters[T];if(W){return W(X,V,U,Y)}}}};var M=I.match.POS;for(var O in I.match){I.match[O]=RegExp(I.match[O].source+/(?![^\[]*\])(?![^\(]*\))/.source)}var E=function(U,T){U=Array.prototype.slice.call(U);if(T){T.push.apply(T,U);return T}return U};try{Array.prototype.slice.call(document.documentElement.childNodes)}catch(N){E=function(X,W){var U=W||[];if(H.call(X)==="[object Array]"){Array.prototype.push.apply(U,X)}else{if(typeof X.length==="number"){for(var V=0,T=X.length;V<T;V++){U.push(X[V])}}else{for(var V=0;X[V];V++){U.push(X[V])}}}return U}}var G;if(document.documentElement.compareDocumentPosition){G=function(U,T){var V=U.compareDocumentPosition(T)&4?-1:U===T?0:1;if(V===0){hasDuplicate=true}return V}}else{if("sourceIndex" in document.documentElement){G=function(U,T){var V=U.sourceIndex-T.sourceIndex;if(V===0){hasDuplicate=true}return V}}else{if(document.createRange){G=function(W,U){var V=W.ownerDocument.createRange(),T=U.ownerDocument.createRange();V.selectNode(W);V.collapse(true);T.selectNode(U);T.collapse(true);var X=V.compareBoundaryPoints(Range.START_TO_END,T);if(X===0){hasDuplicate=true}return X}}}}(function(){var U=document.createElement("form"),V="script"+(new Date).getTime();U.innerHTML="<input name='"+V+"'/>";var T=document.documentElement;T.insertBefore(U,T.firstChild);if(!!document.getElementById(V)){I.find.ID=function(X,Y,Z){if(typeof Y.getElementById!=="undefined"&&!Z){var W=Y.getElementById(X[1]);return W?W.id===X[1]||typeof W.getAttributeNode!=="undefined"&&W.getAttributeNode("id").nodeValue===X[1]?[W]:g:[]}};I.filter.ID=function(Y,W){var X=typeof Y.getAttributeNode!=="undefined"&&Y.getAttributeNode("id");return Y.nodeType===1&&X&&X.nodeValue===W}}T.removeChild(U)})();(function(){var T=document.createElement("div");T.appendChild(document.createComment(""));if(T.getElementsByTagName("*").length>0){I.find.TAG=function(U,Y){var X=Y.getElementsByTagName(U[1]);if(U[1]==="*"){var W=[];for(var V=0;X[V];V++){if(X[V].nodeType===1){W.push(X[V])}}X=W}return X}}T.innerHTML="<a href='#'></a>";if(T.firstChild&&typeof T.firstChild.getAttribute!=="undefined"&&T.firstChild.getAttribute("href")!=="#"){I.attrHandle.href=function(U){return U.getAttribute("href",2)}}})();if(document.querySelectorAll){(function(){var T=F,U=document.createElement("div");U.innerHTML="<p class='TEST'></p>";if(U.querySelectorAll&&U.querySelectorAll(".TEST").length===0){return}F=function(Y,X,V,W){X=X||document;if(!W&&X.nodeType===9&&!Q(X)){try{return E(X.querySelectorAll(Y),V)}catch(Z){}}return T(Y,X,V,W)};F.find=T.find;F.filter=T.filter;F.selectors=T.selectors;F.matches=T.matches})()}if(document.getElementsByClassName&&document.documentElement.getElementsByClassName){(function(){var T=document.createElement("div");T.innerHTML="<div class='test e'></div><div class='test'></div>";if(T.getElementsByClassName("e").length===0){return}T.lastChild.className="e";if(T.getElementsByClassName("e").length===1){return}I.order.splice(1,0,"CLASS");I.find.CLASS=function(U,V,W){if(typeof V.getElementsByClassName!=="undefined"&&!W){return V.getElementsByClassName(U[1])}}})()}function P(U,Z,Y,ad,aa,ac){var ab=U=="previousSibling"&&!ac;for(var W=0,V=ad.length;W<V;W++){var T=ad[W];if(T){if(ab&&T.nodeType===1){T.sizcache=Y;T.sizset=W}T=T[U];var X=false;while(T){if(T.sizcache===Y){X=ad[T.sizset];break}if(T.nodeType===1&&!ac){T.sizcache=Y;T.sizset=W}if(T.nodeName===Z){X=T;break}T=T[U]}ad[W]=X}}}function S(U,Z,Y,ad,aa,ac){var ab=U=="previousSibling"&&!ac;for(var W=0,V=ad.length;W<V;W++){var T=ad[W];if(T){if(ab&&T.nodeType===1){T.sizcache=Y;T.sizset=W}T=T[U];var X=false;while(T){if(T.sizcache===Y){X=ad[T.sizset];break}if(T.nodeType===1){if(!ac){T.sizcache=Y;T.sizset=W}if(typeof Z!=="string"){if(T===Z){X=true;break}}else{if(F.filter(Z,[T]).length>0){X=T;break}}}T=T[U]}ad[W]=X}}}var K=document.compareDocumentPosition?function(U,T){return U.compareDocumentPosition(T)&16}:function(U,T){return U!==T&&(U.contains?U.contains(T):true)};var Q=function(T){return T.nodeType===9&&T.documentElement.nodeName!=="HTML"||!!T.ownerDocument&&Q(T.ownerDocument)};var J=function(T,aa){var W=[],X="",Y,V=aa.nodeType?[aa]:aa;while((Y=I.match.PSEUDO.exec(T))){X+=Y[0];T=T.replace(I.match.PSEUDO,"")}T=I.relative[T]?T+"*":T;for(var Z=0,U=V.length;Z<U;Z++){F(T,V[Z],W)}return F.filter(X,W)};o.find=F;o.filter=F.filter;o.expr=F.selectors;o.expr[":"]=o.expr.filters;F.selectors.filters.hidden=function(T){return T.offsetWidth===0||T.offsetHeight===0};F.selectors.filters.visible=function(T){return T.offsetWidth>0||T.offsetHeight>0};F.selectors.filters.animated=function(T){return o.grep(o.timers,function(U){return T===U.elem}).length};o.multiFilter=function(V,T,U){if(U){V=":not("+V+")"}return F.matches(V,T)};o.dir=function(V,U){var T=[],W=V[U];while(W&&W!=document){if(W.nodeType==1){T.push(W)}W=W[U]}return T};o.nth=function(X,T,V,W){T=T||1;var U=0;for(;X;X=X[V]){if(X.nodeType==1&&++U==T){break}}return X};o.sibling=function(V,U){var T=[];for(;V;V=V.nextSibling){if(V.nodeType==1&&V!=U){T.push(V)}}return T};return;l.Sizzle=F})();o.event={add:function(I,F,H,K){if(I.nodeType==3||I.nodeType==8){return}if(I.setInterval&&I!=l){I=l}if(!H.guid){H.guid=this.guid++}if(K!==g){var G=H;H=this.proxy(G);H.data=K}var E=o.data(I,"events")||o.data(I,"events",{}),J=o.data(I,"handle")||o.data(I,"handle",function(){return typeof o!=="undefined"&&!o.event.triggered?o.event.handle.apply(arguments.callee.elem,arguments):g});J.elem=I;o.each(F.split(/\s+/),function(M,N){var O=N.split(".");N=O.shift();H.type=O.slice().sort().join(".");var L=E[N];if(o.event.specialAll[N]){o.event.specialAll[N].setup.call(I,K,O)}if(!L){L=E[N]={};if(!o.event.special[N]||o.event.special[N].setup.call(I,K,O)===false){if(I.addEventListener){I.addEventListener(N,J,false)}else{if(I.attachEvent){I.attachEvent("on"+N,J)}}}}L[H.guid]=H;o.event.global[N]=true});I=null},guid:1,global:{},remove:function(K,H,J){if(K.nodeType==3||K.nodeType==8){return}var G=o.data(K,"events"),F,E;if(G){if(H===g||(typeof H==="string"&&H.charAt(0)==".")){for(var I in G){this.remove(K,I+(H||""))}}else{if(H.type){J=H.handler;H=H.type}o.each(H.split(/\s+/),function(M,O){var Q=O.split(".");O=Q.shift();var N=RegExp("(^|\\.)"+Q.slice().sort().join(".*\\.")+"(\\.|$)");if(G[O]){if(J){delete G[O][J.guid]}else{for(var P in G[O]){if(N.test(G[O][P].type)){delete G[O][P]}}}if(o.event.specialAll[O]){o.event.specialAll[O].teardown.call(K,Q)}for(F in G[O]){break}if(!F){if(!o.event.special[O]||o.event.special[O].teardown.call(K,Q)===false){if(K.removeEventListener){K.removeEventListener(O,o.data(K,"handle"),false)}else{if(K.detachEvent){K.detachEvent("on"+O,o.data(K,"handle"))}}}F=null;delete G[O]}}})}for(F in G){break}if(!F){var L=o.data(K,"handle");if(L){L.elem=null}o.removeData(K,"events");o.removeData(K,"handle")}}},trigger:function(I,K,H,E){var G=I.type||I;if(!E){I=typeof I==="object"?I[h]?I:o.extend(o.Event(G),I):o.Event(G);if(G.indexOf("!")>=0){I.type=G=G.slice(0,-1);I.exclusive=true}if(!H){I.stopPropagation();if(this.global[G]){o.each(o.cache,function(){if(this.events&&this.events[G]){o.event.trigger(I,K,this.handle.elem)}})}}if(!H||H.nodeType==3||H.nodeType==8){return g}I.result=g;I.target=H;K=o.makeArray(K);K.unshift(I)}I.currentTarget=H;var J=o.data(H,"handle");if(J){J.apply(H,K)}if((!H[G]||(o.nodeName(H,"a")&&G=="click"))&&H["on"+G]&&H["on"+G].apply(H,K)===false){I.result=false}if(!E&&H[G]&&!I.isDefaultPrevented()&&!(o.nodeName(H,"a")&&G=="click")){this.triggered=true;try{H[G]()}catch(L){}}this.triggered=false;if(!I.isPropagationStopped()){var F=H.parentNode||H.ownerDocument;if(F){o.event.trigger(I,K,F,true)}}},handle:function(K){var J,E;K=arguments[0]=o.event.fix(K||l.event);K.currentTarget=this;var L=K.type.split(".");K.type=L.shift();J=!L.length&&!K.exclusive;var I=RegExp("(^|\\.)"+L.slice().sort().join(".*\\.")+"(\\.|$)");E=(o.data(this,"events")||{})[K.type];for(var G in E){var H=E[G];if(J||I.test(H.type)){K.handler=H;K.data=H.data;var F=H.apply(this,arguments);if(F!==g){K.result=F;if(F===false){K.preventDefault();K.stopPropagation()}}if(K.isImmediatePropagationStopped()){break}}}},props:"altKey attrChange attrName bubbles button cancelable charCode clientX clientY ctrlKey currentTarget data detail eventPhase fromElement handler keyCode metaKey newValue originalTarget pageX pageY prevValue relatedNode relatedTarget screenX screenY shiftKey srcElement target toElement view wheelDelta which".split(" "),fix:function(H){if(H[h]){return H}var F=H;H=o.Event(F);for(var G=this.props.length,J;G;){J=this.props[--G];H[J]=F[J]}if(!H.target){H.target=H.srcElement||document}if(H.target.nodeType==3){H.target=H.target.parentNode}if(!H.relatedTarget&&H.fromElement){H.relatedTarget=H.fromElement==H.target?H.toElement:H.fromElement}if(H.pageX==null&&H.clientX!=null){var I=document.documentElement,E=document.body;H.pageX=H.clientX+(I&&I.scrollLeft||E&&E.scrollLeft||0)-(I.clientLeft||0);H.pageY=H.clientY+(I&&I.scrollTop||E&&E.scrollTop||0)-(I.clientTop||0)}if(!H.which&&((H.charCode||H.charCode===0)?H.charCode:H.keyCode)){H.which=H.charCode||H.keyCode}if(!H.metaKey&&H.ctrlKey){H.metaKey=H.ctrlKey}if(!H.which&&H.button){H.which=(H.button&1?1:(H.button&2?3:(H.button&4?2:0)))}return H},proxy:function(F,E){E=E||function(){return F.apply(this,arguments)};E.guid=F.guid=F.guid||E.guid||this.guid++;return E},special:{ready:{setup:B,teardown:function(){}}},specialAll:{live:{setup:function(E,F){o.event.add(this,F[0],c)},teardown:function(G){if(G.length){var E=0,F=RegExp("(^|\\.)"+G[0]+"(\\.|$)");o.each((o.data(this,"events").live||{}),function(){if(F.test(this.type)){E++}});if(E<1){o.event.remove(this,G[0],c)}}}}}};o.Event=function(E){if(!this.preventDefault){return new o.Event(E)}if(E&&E.type){this.originalEvent=E;this.type=E.type}else{this.type=E}this.timeStamp=e();this[h]=true};function k(){return false}function u(){return true}o.Event.prototype={preventDefault:function(){this.isDefaultPrevented=u;var E=this.originalEvent;if(!E){return}if(E.preventDefault){E.preventDefault()}E.returnValue=false},stopPropagation:function(){this.isPropagationStopped=u;var E=this.originalEvent;if(!E){return}if(E.stopPropagation){E.stopPropagation()}E.cancelBubble=true},stopImmediatePropagation:function(){this.isImmediatePropagationStopped=u;this.stopPropagation()},isDefaultPrevented:k,isPropagationStopped:k,isImmediatePropagationStopped:k};var a=function(F){var E=F.relatedTarget;while(E&&E!=this){try{E=E.parentNode}catch(G){E=this}}if(E!=this){F.type=F.data;o.event.handle.apply(this,arguments)}};o.each({mouseover:"mouseenter",mouseout:"mouseleave"},function(F,E){o.event.special[E]={setup:function(){o.event.add(this,F,a,E)},teardown:function(){o.event.remove(this,F,a)}}});o.fn.extend({bind:function(F,G,E){return F=="unload"?this.one(F,G,E):this.each(function(){o.event.add(this,F,E||G,E&&G)})},one:function(G,H,F){var E=o.event.proxy(F||H,function(I){o(this).unbind(I,E);return(F||H).apply(this,arguments)});return this.each(function(){o.event.add(this,G,E,F&&H)})},unbind:function(F,E){return this.each(function(){o.event.remove(this,F,E)})},trigger:function(E,F){return this.each(function(){o.event.trigger(E,F,this)})},triggerHandler:function(E,G){if(this[0]){var F=o.Event(E);F.preventDefault();F.stopPropagation();o.event.trigger(F,G,this[0]);return F.result}},toggle:function(G){var E=arguments,F=1;while(F<E.length){o.event.proxy(G,E[F++])}return this.click(o.event.proxy(G,function(H){this.lastToggle=(this.lastToggle||0)%F;H.preventDefault();return E[this.lastToggle++].apply(this,arguments)||false}))},hover:function(E,F){return this.mouseenter(E).mouseleave(F)},ready:function(E){B();if(o.isReady){E.call(document,o)}else{o.readyList.push(E)}return this},live:function(G,F){var E=o.event.proxy(F);E.guid+=this.selector+G;o(document).bind(i(G,this.selector),this.selector,E);return this},die:function(F,E){o(document).unbind(i(F,this.selector),E?{guid:E.guid+this.selector+F}:null);return this}});function c(H){var E=RegExp("(^|\\.)"+H.type+"(\\.|$)"),G=true,F=[];o.each(o.data(this,"events").live||[],function(I,J){if(E.test(J.type)){var K=o(H.target).closest(J.data)[0];if(K){F.push({elem:K,fn:J})}}});F.sort(function(J,I){return o.data(J.elem,"closest")-o.data(I.elem,"closest")});o.each(F,function(){if(this.fn.call(this.elem,H,this.fn.data)===false){return(G=false)}});return G}function i(F,E){return["live",F,E.replace(/\./g,"`").replace(/ /g,"|")].join(".")}o.extend({isReady:false,readyList:[],ready:function(){if(!o.isReady){o.isReady=true;if(o.readyList){o.each(o.readyList,function(){this.call(document,o)});o.readyList=null}o(document).triggerHandler("ready")}}});var x=false;function B(){if(x){return}x=true;if(document.addEventListener){document.addEventListener("DOMContentLoaded",function(){document.removeEventListener("DOMContentLoaded",arguments.callee,false);o.ready()},false)}else{if(document.attachEvent){document.attachEvent("onreadystatechange",function(){if(document.readyState==="complete"){document.detachEvent("onreadystatechange",arguments.callee);o.ready()}});if(document.documentElement.doScroll&&l==l.top){(function(){if(o.isReady){return}try{document.documentElement.doScroll("left")}catch(E){setTimeout(arguments.callee,0);return}o.ready()})()}}}o.event.add(l,"load",o.ready)}o.each(("blur,focus,load,resize,scroll,unload,click,dblclick,mousedown,mouseup,mousemove,mouseover,mouseout,mouseenter,mouseleave,change,select,submit,keydown,keypress,keyup,error").split(","),function(F,E){o.fn[E]=function(G){return G?this.bind(E,G):this.trigger(E)}});o(l).bind("unload",function(){for(var E in o.cache){if(E!=1&&o.cache[E].handle){o.event.remove(o.cache[E].handle.elem)}}});(function(){o.support={};var F=document.documentElement,G=document.createElement("script"),K=document.createElement("div"),J="script"+(new Date).getTime();K.style.display="none";K.innerHTML='   <link/><table></table><a href="/a" style="color:red;float:left;opacity:.5;">a</a><select><option>text</option></select><object><param/></object>';var H=K.getElementsByTagName("*"),E=K.getElementsByTagName("a")[0];if(!H||!H.length||!E){return}o.support={leadingWhitespace:K.firstChild.nodeType==3,tbody:!K.getElementsByTagName("tbody").length,objectAll:!!K.getElementsByTagName("object")[0].getElementsByTagName("*").length,htmlSerialize:!!K.getElementsByTagName("link").length,style:/red/.test(E.getAttribute("style")),hrefNormalized:E.getAttribute("href")==="/a",opacity:E.style.opacity==="0.5",cssFloat:!!E.style.cssFloat,scriptEval:false,noCloneEvent:true,boxModel:null};G.type="text/javascript";try{G.appendChild(document.createTextNode("window."+J+"=1;"))}catch(I){}F.insertBefore(G,F.firstChild);if(l[J]){o.support.scriptEval=true;delete l[J]}F.removeChild(G);if(K.attachEvent&&K.fireEvent){K.attachEvent("onclick",function(){o.support.noCloneEvent=false;K.detachEvent("onclick",arguments.callee)});K.cloneNode(true).fireEvent("onclick")}o(function(){var L=document.createElement("div");L.style.width=L.style.paddingLeft="1px";document.body.appendChild(L);o.boxModel=o.support.boxModel=L.offsetWidth===2;document.body.removeChild(L).style.display="none"})})();var w=o.support.cssFloat?"cssFloat":"styleFloat";o.props={"for":"htmlFor","class":"className","float":w,cssFloat:w,styleFloat:w,readonly:"readOnly",maxlength:"maxLength",cellspacing:"cellSpacing",rowspan:"rowSpan",tabindex:"tabIndex"};o.fn.extend({_load:o.fn.load,load:function(G,J,K){if(typeof G!=="string"){return this._load(G)}var I=G.indexOf(" ");if(I>=0){var E=G.slice(I,G.length);G=G.slice(0,I)}var H="GET";if(J){if(o.isFunction(J)){K=J;J=null}else{if(typeof J==="object"){J=o.param(J);H="POST"}}}var F=this;o.ajax({url:G,type:H,dataType:"html",data:J,complete:function(M,L){if(L=="success"||L=="notmodified"){F.html(E?o("<div/>").append(M.responseText.replace(/<script(.|\s)*?\/script>/g,"")).find(E):M.responseText)}if(K){F.each(K,[M.responseText,L,M])}}});return this},serialize:function(){return o.param(this.serializeArray())},serializeArray:function(){return this.map(function(){return this.elements?o.makeArray(this.elements):this}).filter(function(){return this.name&&!this.disabled&&(this.checked||/select|textarea/i.test(this.nodeName)||/text|hidden|password|search/i.test(this.type))}).map(function(E,F){var G=o(this).val();return G==null?null:o.isArray(G)?o.map(G,function(I,H){return{name:F.name,value:I}}):{name:F.name,value:G}}).get()}});o.each("ajaxStart,ajaxStop,ajaxComplete,ajaxError,ajaxSuccess,ajaxSend".split(","),function(E,F){o.fn[F]=function(G){return this.bind(F,G)}});var r=e();o.extend({get:function(E,G,H,F){if(o.isFunction(G)){H=G;G=null}return o.ajax({type:"GET",url:E,data:G,success:H,dataType:F})},getScript:function(E,F){return o.get(E,null,F,"script")},getJSON:function(E,F,G){return o.get(E,F,G,"json")},post:function(E,G,H,F){if(o.isFunction(G)){H=G;G={}}return o.ajax({type:"POST",url:E,data:G,success:H,dataType:F})},ajaxSetup:function(E){o.extend(o.ajaxSettings,E)},ajaxSettings:{url:location.href,global:true,type:"GET",contentType:"application/x-www-form-urlencoded",processData:true,async:true,xhr:function(){return l.ActiveXObject?new ActiveXObject("Microsoft.XMLHTTP"):new XMLHttpRequest()},accepts:{xml:"application/xml, text/xml",html:"text/html",script:"text/javascript, application/javascript",json:"application/json, text/javascript",text:"text/plain",_default:"*/*"}},lastModified:{},ajax:function(M){M=o.extend(true,M,o.extend(true,{},o.ajaxSettings,M));var W,F=/=\?(&|$)/g,R,V,G=M.type.toUpperCase();if(M.data&&M.processData&&typeof M.data!=="string"){M.data=o.param(M.data)}if(M.dataType=="jsonp"){if(G=="GET"){if(!M.url.match(F)){M.url+=(M.url.match(/\?/)?"&":"?")+(M.jsonp||"callback")+"=?"}}else{if(!M.data||!M.data.match(F)){M.data=(M.data?M.data+"&":"")+(M.jsonp||"callback")+"=?"}}M.dataType="json"}if(M.dataType=="json"&&(M.data&&M.data.match(F)||M.url.match(F))){W="jsonp"+r++;if(M.data){M.data=(M.data+"").replace(F,"="+W+"$1")}M.url=M.url.replace(F,"="+W+"$1");M.dataType="script";l[W]=function(X){V=X;I();L();l[W]=g;try{delete l[W]}catch(Y){}if(H){H.removeChild(T)}}}if(M.dataType=="script"&&M.cache==null){M.cache=false}if(M.cache===false&&G=="GET"){var E=e();var U=M.url.replace(/(\?|&)_=.*?(&|$)/,"$1_="+E+"$2");M.url=U+((U==M.url)?(M.url.match(/\?/)?"&":"?")+"_="+E:"")}if(M.data&&G=="GET"){M.url+=(M.url.match(/\?/)?"&":"?")+M.data;M.data=null}if(M.global&&!o.active++){o.event.trigger("ajaxStart")}var Q=/^(\w+:)?\/\/([^\/?#]+)/.exec(M.url);if(M.dataType=="script"&&G=="GET"&&Q&&(Q[1]&&Q[1]!=location.protocol||Q[2]!=location.host)){var H=document.getElementsByTagName("head")[0];var T=document.createElement("script");T.src=M.url;if(M.scriptCharset){T.charset=M.scriptCharset}if(!W){var O=false;T.onload=T.onreadystatechange=function(){if(!O&&(!this.readyState||this.readyState=="loaded"||this.readyState=="complete")){O=true;I();L();T.onload=T.onreadystatechange=null;H.removeChild(T)}}}H.appendChild(T);return g}var K=false;var J=M.xhr();if(M.username){J.open(G,M.url,M.async,M.username,M.password)}else{J.open(G,M.url,M.async)}try{if(M.data){J.setRequestHeader("Content-Type",M.contentType)}if(M.ifModified){J.setRequestHeader("If-Modified-Since",o.lastModified[M.url]||"Thu, 01 Jan 1970 00:00:00 GMT")}J.setRequestHeader("X-Requested-With","XMLHttpRequest");J.setRequestHeader("Accept",M.dataType&&M.accepts[M.dataType]?M.accepts[M.dataType]+", */*":M.accepts._default)}catch(S){}if(M.beforeSend&&M.beforeSend(J,M)===false){if(M.global&&!--o.active){o.event.trigger("ajaxStop")}J.abort();return false}if(M.global){o.event.trigger("ajaxSend",[J,M])}var N=function(X){if(J.readyState==0){if(P){clearInterval(P);P=null;if(M.global&&!--o.active){o.event.trigger("ajaxStop")}}}else{if(!K&&J&&(J.readyState==4||X=="timeout")){K=true;if(P){clearInterval(P);P=null}R=X=="timeout"?"timeout":!o.httpSuccess(J)?"error":M.ifModified&&o.httpNotModified(J,M.url)?"notmodified":"success";if(R=="success"){try{V=o.httpData(J,M.dataType,M)}catch(Z){R="parsererror"}}if(R=="success"){var Y;try{Y=J.getResponseHeader("Last-Modified")}catch(Z){}if(M.ifModified&&Y){o.lastModified[M.url]=Y}if(!W){I()}}else{o.handleError(M,J,R)}L();if(X){J.abort()}if(M.async){J=null}}}};if(M.async){var P=setInterval(N,13);if(M.timeout>0){setTimeout(function(){if(J&&!K){N("timeout")}},M.timeout)}}try{J.send(M.data)}catch(S){o.handleError(M,J,null,S)}if(!M.async){N()}function I(){if(M.success){M.success(V,R)}if(M.global){o.event.trigger("ajaxSuccess",[J,M])}}function L(){if(M.complete){M.complete(J,R)}if(M.global){o.event.trigger("ajaxComplete",[J,M])}if(M.global&&!--o.active){o.event.trigger("ajaxStop")}}return J},handleError:function(F,H,E,G){if(F.error){F.error(H,E,G)}if(F.global){o.event.trigger("ajaxError",[H,F,G])}},active:0,httpSuccess:function(F){try{return !F.status&&location.protocol=="file:"||(F.status>=200&&F.status<300)||F.status==304||F.status==1223}catch(E){}return false},httpNotModified:function(G,E){try{var H=G.getResponseHeader("Last-Modified");return G.status==304||H==o.lastModified[E]}catch(F){}return false},httpData:function(J,H,G){var F=J.getResponseHeader("content-type"),E=H=="xml"||!H&&F&&F.indexOf("xml")>=0,I=E?J.responseXML:J.responseText;if(E&&I.documentElement.tagName=="parsererror"){throw"parsererror"}if(G&&G.dataFilter){I=G.dataFilter(I,H)}if(typeof I==="string"){if(H=="script"){o.globalEval(I)}if(H=="json"){I=l["eval"]("("+I+")")}}return I},param:function(E){var G=[];function H(I,J){G[G.length]=encodeURIComponent(I)+"="+encodeURIComponent(J)}if(o.isArray(E)||E.jquery){o.each(E,function(){H(this.name,this.value)})}else{for(var F in E){if(o.isArray(E[F])){o.each(E[F],function(){H(F,this)})}else{H(F,o.isFunction(E[F])?E[F]():E[F])}}}return G.join("&").replace(/%20/g,"+")}});var m={},n,d=[["height","marginTop","marginBottom","paddingTop","paddingBottom"],["width","marginLeft","marginRight","paddingLeft","paddingRight"],["opacity"]];function t(F,E){var G={};o.each(d.concat.apply([],d.slice(0,E)),function(){G[this]=F});return G}o.fn.extend({show:function(J,L){if(J){return this.animate(t("show",3),J,L)}else{for(var H=0,F=this.length;H<F;H++){var E=o.data(this[H],"olddisplay");this[H].style.display=E||"";if(o.css(this[H],"display")==="none"){var G=this[H].tagName,K;if(m[G]){K=m[G]}else{var I=o("<"+G+" />").appendTo("body");K=I.css("display");if(K==="none"){K="block"}I.remove();m[G]=K}o.data(this[H],"olddisplay",K)}}for(var H=0,F=this.length;H<F;H++){this[H].style.display=o.data(this[H],"olddisplay")||""}return this}},hide:function(H,I){if(H){return this.animate(t("hide",3),H,I)}else{for(var G=0,F=this.length;G<F;G++){var E=o.data(this[G],"olddisplay");if(!E&&E!=="none"){o.data(this[G],"olddisplay",o.css(this[G],"display"))}}for(var G=0,F=this.length;G<F;G++){this[G].style.display="none"}return this}},_toggle:o.fn.toggle,toggle:function(G,F){var E=typeof G==="boolean";return o.isFunction(G)&&o.isFunction(F)?this._toggle.apply(this,arguments):G==null||E?this.each(function(){var H=E?G:o(this).is(":hidden");o(this)[H?"show":"hide"]()}):this.animate(t("toggle",3),G,F)},fadeTo:function(E,G,F){return this.animate({opacity:G},E,F)},animate:function(I,F,H,G){var E=o.speed(F,H,G);return this[E.queue===false?"each":"queue"](function(){var K=o.extend({},E),M,L=this.nodeType==1&&o(this).is(":hidden"),J=this;for(M in I){if(I[M]=="hide"&&L||I[M]=="show"&&!L){return K.complete.call(this)}if((M=="height"||M=="width")&&this.style){K.display=o.css(this,"display");K.overflow=this.style.overflow}}if(K.overflow!=null){this.style.overflow="hidden"}K.curAnim=o.extend({},I);o.each(I,function(O,S){var R=new o.fx(J,K,O);if(/toggle|show|hide/.test(S)){R[S=="toggle"?L?"show":"hide":S](I)}else{var Q=S.toString().match(/^([+-]=)?([\d+-.]+)(.*)$/),T=R.cur(true)||0;if(Q){var N=parseFloat(Q[2]),P=Q[3]||"px";if(P!="px"){J.style[O]=(N||1)+P;T=((N||1)/R.cur(true))*T;J.style[O]=T+P}if(Q[1]){N=((Q[1]=="-="?-1:1)*N)+T}R.custom(T,N,P)}else{R.custom(T,S,"")}}});return true})},stop:function(F,E){var G=o.timers;if(F){this.queue([])}this.each(function(){for(var H=G.length-1;H>=0;H--){if(G[H].elem==this){if(E){G[H](true)}G.splice(H,1)}}});if(!E){this.dequeue()}return this}});o.each({slideDown:t("show",1),slideUp:t("hide",1),slideToggle:t("toggle",1),fadeIn:{opacity:"show"},fadeOut:{opacity:"hide"}},function(E,F){o.fn[E]=function(G,H){return this.animate(F,G,H)}});o.extend({speed:function(G,H,F){var E=typeof G==="object"?G:{complete:F||!F&&H||o.isFunction(G)&&G,duration:G,easing:F&&H||H&&!o.isFunction(H)&&H};E.duration=o.fx.off?0:typeof E.duration==="number"?E.duration:o.fx.speeds[E.duration]||o.fx.speeds._default;E.old=E.complete;E.complete=function(){if(E.queue!==false){o(this).dequeue()}if(o.isFunction(E.old)){E.old.call(this)}};return E},easing:{linear:function(G,H,E,F){return E+F*G},swing:function(G,H,E,F){return((-Math.cos(G*Math.PI)/2)+0.5)*F+E}},timers:[],fx:function(F,E,G){this.options=E;this.elem=F;this.prop=G;if(!E.orig){E.orig={}}}});o.fx.prototype={update:function(){if(this.options.step){this.options.step.call(this.elem,this.now,this)}(o.fx.step[this.prop]||o.fx.step._default)(this);if((this.prop=="height"||this.prop=="width")&&this.elem.style){this.elem.style.display="block"}},cur:function(F){if(this.elem[this.prop]!=null&&(!this.elem.style||this.elem.style[this.prop]==null)){return this.elem[this.prop]}var E=parseFloat(o.css(this.elem,this.prop,F));return E&&E>-10000?E:parseFloat(o.curCSS(this.elem,this.prop))||0},custom:function(I,H,G){this.startTime=e();this.start=I;this.end=H;this.unit=G||this.unit||"px";this.now=this.start;this.pos=this.state=0;var E=this;function F(J){return E.step(J)}F.elem=this.elem;if(F()&&o.timers.push(F)&&!n){n=setInterval(function(){var K=o.timers;for(var J=0;J<K.length;J++){if(!K[J]()){K.splice(J--,1)}}if(!K.length){clearInterval(n);n=g}},13)}},show:function(){this.options.orig[this.prop]=o.attr(this.elem.style,this.prop);this.options.show=true;this.custom(this.prop=="width"||this.prop=="height"?1:0,this.cur());o(this.elem).show()},hide:function(){this.options.orig[this.prop]=o.attr(this.elem.style,this.prop);this.options.hide=true;this.custom(this.cur(),0)},step:function(H){var G=e();if(H||G>=this.options.duration+this.startTime){this.now=this.end;this.pos=this.state=1;this.update();this.options.curAnim[this.prop]=true;var E=true;for(var F in this.options.curAnim){if(this.options.curAnim[F]!==true){E=false}}if(E){if(this.options.display!=null){this.elem.style.overflow=this.options.overflow;this.elem.style.display=this.options.display;if(o.css(this.elem,"display")=="none"){this.elem.style.display="block"}}if(this.options.hide){o(this.elem).hide()}if(this.options.hide||this.options.show){for(var I in this.options.curAnim){o.attr(this.elem.style,I,this.options.orig[I])}}this.options.complete.call(this.elem)}return false}else{var J=G-this.startTime;this.state=J/this.options.duration;this.pos=o.easing[this.options.easing||(o.easing.swing?"swing":"linear")](this.state,J,0,1,this.options.duration);this.now=this.start+((this.end-this.start)*this.pos);this.update()}return true}};o.extend(o.fx,{speeds:{slow:600,fast:200,_default:400},step:{opacity:function(E){o.attr(E.elem.style,"opacity",E.now)},_default:function(E){if(E.elem.style&&E.elem.style[E.prop]!=null){E.elem.style[E.prop]=E.now+E.unit}else{E.elem[E.prop]=E.now}}}});if(document.documentElement.getBoundingClientRect){o.fn.offset=function(){if(!this[0]){return{top:0,left:0}}if(this[0]===this[0].ownerDocument.body){return o.offset.bodyOffset(this[0])}var G=this[0].getBoundingClientRect(),J=this[0].ownerDocument,F=J.body,E=J.documentElement,L=E.clientTop||F.clientTop||0,K=E.clientLeft||F.clientLeft||0,I=G.top+(self.pageYOffset||o.boxModel&&E.scrollTop||F.scrollTop)-L,H=G.left+(self.pageXOffset||o.boxModel&&E.scrollLeft||F.scrollLeft)-K;return{top:I,left:H}}}else{o.fn.offset=function(){if(!this[0]){return{top:0,left:0}}if(this[0]===this[0].ownerDocument.body){return o.offset.bodyOffset(this[0])}o.offset.initialized||o.offset.initialize();var J=this[0],G=J.offsetParent,F=J,O=J.ownerDocument,M,H=O.documentElement,K=O.body,L=O.defaultView,E=L.getComputedStyle(J,null),N=J.offsetTop,I=J.offsetLeft;while((J=J.parentNode)&&J!==K&&J!==H){M=L.getComputedStyle(J,null);N-=J.scrollTop,I-=J.scrollLeft;if(J===G){N+=J.offsetTop,I+=J.offsetLeft;if(o.offset.doesNotAddBorder&&!(o.offset.doesAddBorderForTableAndCells&&/^t(able|d|h)$/i.test(J.tagName))){N+=parseInt(M.borderTopWidth,10)||0,I+=parseInt(M.borderLeftWidth,10)||0}F=G,G=J.offsetParent}if(o.offset.subtractsBorderForOverflowNotVisible&&M.overflow!=="visible"){N+=parseInt(M.borderTopWidth,10)||0,I+=parseInt(M.borderLeftWidth,10)||0}E=M}if(E.position==="relative"||E.position==="static"){N+=K.offsetTop,I+=K.offsetLeft}if(E.position==="fixed"){N+=Math.max(H.scrollTop,K.scrollTop),I+=Math.max(H.scrollLeft,K.scrollLeft)}return{top:N,left:I}}}o.offset={initialize:function(){if(this.initialized){return}var L=document.body,F=document.createElement("div"),H,G,N,I,M,E,J=L.style.marginTop,K='<div style="position:absolute;top:0;left:0;margin:0;border:5px solid #000;padding:0;width:1px;height:1px;"><div></div></div><table style="position:absolute;top:0;left:0;margin:0;border:5px solid #000;padding:0;width:1px;height:1px;" cellpadding="0" cellspacing="0"><tr><td></td></tr></table>';M={position:"absolute",top:0,left:0,margin:0,border:0,width:"1px",height:"1px",visibility:"hidden"};for(E in M){F.style[E]=M[E]}F.innerHTML=K;L.insertBefore(F,L.firstChild);H=F.firstChild,G=H.firstChild,I=H.nextSibling.firstChild.firstChild;this.doesNotAddBorder=(G.offsetTop!==5);this.doesAddBorderForTableAndCells=(I.offsetTop===5);H.style.overflow="hidden",H.style.position="relative";this.subtractsBorderForOverflowNotVisible=(G.offsetTop===-5);L.style.marginTop="1px";this.doesNotIncludeMarginInBodyOffset=(L.offsetTop===0);L.style.marginTop=J;L.removeChild(F);this.initialized=true},bodyOffset:function(E){o.offset.initialized||o.offset.initialize();var G=E.offsetTop,F=E.offsetLeft;if(o.offset.doesNotIncludeMarginInBodyOffset){G+=parseInt(o.curCSS(E,"marginTop",true),10)||0,F+=parseInt(o.curCSS(E,"marginLeft",true),10)||0}return{top:G,left:F}}};o.fn.extend({position:function(){var I=0,H=0,F;if(this[0]){var G=this.offsetParent(),J=this.offset(),E=/^body|html$/i.test(G[0].tagName)?{top:0,left:0}:G.offset();J.top-=j(this,"marginTop");J.left-=j(this,"marginLeft");E.top+=j(G,"borderTopWidth");E.left+=j(G,"borderLeftWidth");F={top:J.top-E.top,left:J.left-E.left}}return F},offsetParent:function(){var E=this[0].offsetParent||document.body;while(E&&(!/^body|html$/i.test(E.tagName)&&o.css(E,"position")=="static")){E=E.offsetParent}return o(E)}});o.each(["Left","Top"],function(F,E){var G="scroll"+E;o.fn[G]=function(H){if(!this[0]){return null}return H!==g?this.each(function(){this==l||this==document?l.scrollTo(!F?H:o(l).scrollLeft(),F?H:o(l).scrollTop()):this[G]=H}):this[0]==l||this[0]==document?self[F?"pageYOffset":"pageXOffset"]||o.boxModel&&document.documentElement[G]||document.body[G]:this[0][G]}});o.each(["Height","Width"],function(I,G){var E=I?"Left":"Top",H=I?"Right":"Bottom",F=G.toLowerCase();o.fn["inner"+G]=function(){return this[0]?o.css(this[0],F,false,"padding"):null};o.fn["outer"+G]=function(K){return this[0]?o.css(this[0],F,false,K?"margin":"border"):null};var J=G.toLowerCase();o.fn[J]=function(K){return this[0]==l?document.compatMode=="CSS1Compat"&&document.documentElement["client"+G]||document.body["client"+G]:this[0]==document?Math.max(document.documentElement["client"+G],document.body["scroll"+G],document.documentElement["scroll"+G],document.body["offset"+G],document.documentElement["offset"+G]):K===g?(this.length?o.css(this[0],J):null):this.css(J,typeof K==="string"?K:K+"px")}})})();Ô_application/javascriptObplist00ÔstX$versionX$objectsY$archiverT$top † ¯$#)*0123QRSTUVWXYZ[\]^_`abcdefghimnU$nullİ	
+ !"___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€"€€	€€#€€ €Ó$% '(WNS.base[NS.relative€ €€_7http://math.mit.edu/scripts/lightbox/jquery.colorbox.jsÒ+,-.Z$classnameX$classesUNSURL¢-/XNSObject#AÁan‰ÆÒ ÈÓ456CPWNS.keysZNS.objects¬789:;<=>?@AB€	€
+€€€€€€€€€€¬DEFGHIJKLMNO€€€€€€€€€€€€ €!\Content-Type]Accept-RangesZKeep-Alive_Content-EncodingVServerTDate^Content-LengthZConnectionX__hhaa__TEtagTVary]Last-Modified_application/javascriptUbytes_timeout=5, max=99TgzipVApache_Wed, 26 Jun 2019 05:31:46 GMTT9222ZKeep-Alive_l
+
+YnBsaXN0MDDbAQIDBAUGBwgJCgsMDhASFBYYGhweIFpDb25uZWN0aW9uVlNlcnZlclxDb250ZW50LVR5cGVdTGFzdC1Nb2RpZmllZFRWYXJ5XUFjY2VwdC1SYW5nZXNURGF0ZV8QEENvbnRlbnQtRW5jb2RpbmdeQ29udGVudC1MZW5ndGhaS2VlcC1BbGl2ZVRFdGFnoQ1aS2VlcC1BbGl2ZaEPVkFwYWNoZaERXxAWYXBwbGljYXRpb24vamF2YXNjcmlwdKETXxAdVGh1LCAxMyBBcHIgMjAxNyAxOTowMzo1MSBHTVShFV8QD0FjY2VwdC1FbmNvZGluZ6EXVWJ5dGVzoRlfEB1XZWQsIDI2IEp1biAyMDE5IDA1OjMxOjQ2IEdNVKEbVGd6aXChHVQ5MjIyoR9fEBF0aW1lb3V0PTUsIG1heD05OaEhXxAZIjkxNjEtNTRkMTBmYzU3NWM0YS1nemlwIgAIAB8AKgAxAD4ATABRAF8AZAB3AIYAkQCWAJgAowClAKwArgDHAMkA6QDrAP0A/wEFAQcBJwEpAS4BMAE1ATcBSwFNAAAAAAAAAgEAAAAAAAAAIgAAAAAAAAAAAAAAAAAAAWk=_"9161-54d10fc575c4a-gzip"_Accept-Encoding_Thu, 13 Apr 2017 19:03:51 GMTÒ+,jk_NSMutableDictionary£jl/\NSDictionary_application/javascriptÒ+,op_NSHTTPURLResponse£qr/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑuv_WebResourceResponse€    # - 2 7 ^ d  ¡ Ã Æ è ë69<^€ƒ…‡‰‹‘“”–˜šœ£«·¹»½÷ü"+-/6>IVXZ\^`bdfhjln{}ƒ…‡‰‹‘“•¢°»ÎÕÚéôı.4HMTty„ô"BG]an‡Œ ¤¸ÆØÛñ             w              ó_7http://math.mit.edu/scripts/lightbox/jquery.colorbox.jsO‘a/*!
+    Colorbox 1.6.4
+    license: MIT
+    http://www.jacklmoore.com/colorbox
+*/
+(function ($, document, window) {
+    var
+    // Default settings object.
+    // See http://jacklmoore.com/colorbox for details.
+    defaults = {
+        // data sources
+        html: false,
+        photo: false,
+        iframe: false,
+        inline: false,
+
+        // behavior and appearance
+        transition: "elastic",
+        speed: 300,
+        fadeOut: 300,
+        width: false,
+        initialWidth: "600",
+        innerWidth: false,
+        maxWidth: false,
+        height: false,
+        initialHeight: "450",
+        innerHeight: false,
+        maxHeight: false,
+        scalePhotos: true,
+        scrolling: true,
+        opacity: 0.9,
+        preloading: true,
+        className: false,
+        overlayClose: true,
+        escKey: true,
+        arrowKey: true,
+        top: false,
+        bottom: false,
+        left: false,
+        right: false,
+        fixed: false,
+        data: undefined,
+        closeButton: true,
+        fastIframe: true,
+        open: false,
+        reposition: true,
+        loop: true,
+        slideshow: false,
+        slideshowAuto: true,
+        slideshowSpeed: 2500,
+        slideshowStart: "start slideshow",
+        slideshowStop: "stop slideshow",
+        photoRegex: /\.(gif|png|jp(e|g|eg)|bmp|ico|webp|jxr|svg)((#|\?).*)?$/i,
+
+        // alternate image paths for high-res displays
+        retinaImage: false,
+        retinaUrl: false,
+        retinaSuffix: '@2x.$1',
+
+        // internationalization
+        current: "image {current} of {total}",
+        previous: "previous",
+        next: "next",
+        close: "close",
+        xhrError: "This content failed to load.",
+        imgError: "This image failed to load.",
+
+        // accessbility
+        returnFocus: true,
+        trapFocus: true,
+
+        // callbacks
+        onOpen: false,
+        onLoad: false,
+        onComplete: false,
+        onCleanup: false,
+        onClosed: false,
+
+        rel: function() {
+            return this.rel;
+        },
+        href: function() {
+            // using this.href would give the absolute url, when the href may have been inteded as a selector (e.g. '#container')
+            return $(this).attr('href');
+        },
+        title: function() {
+            return this.title;
+        },
+        createImg: function() {
+            var img = new Image();
+            var attrs = $(this).data('cbox-img-attrs');
+
+            if (typeof attrs === 'object') {
+                $.each(attrs, function(key, val){
+                    img[key] = val;
+                });
+            }
+
+            return img;
+        },
+        createIframe: function() {
+            var iframe = document.createElement('iframe');
+            var attrs = $(this).data('cbox-iframe-attrs');
+
+            if (typeof attrs === 'object') {
+                $.each(attrs, function(key, val){
+                    iframe[key] = val;
+                });
+            }
+
+            if ('frameBorder' in iframe) {
+                iframe.frameBorder = 0;
+            }
+            if ('allowTransparency' in iframe) {
+                iframe.allowTransparency = "true";
+            }
+            iframe.name = (new Date()).getTime(); // give the iframe a unique name to prevent caching
+            iframe.allowFullscreen = true;
+
+            return iframe;
+        }
+    },
+
+    // Abstracting the HTML and event identifiers for easy rebranding
+    colorbox = 'colorbox',
+    prefix = 'cbox',
+    boxElement = prefix + 'Element',
+
+    // Events
+    event_open = prefix + '_open',
+    event_load = prefix + '_load',
+    event_complete = prefix + '_complete',
+    event_cleanup = prefix + '_cleanup',
+    event_closed = prefix + '_closed',
+    event_purge = prefix + '_purge',
+
+    // Cached jQuery Object Variables
+    $overlay,
+    $box,
+    $wrap,
+    $content,
+    $topBorder,
+    $leftBorder,
+    $rightBorder,
+    $bottomBorder,
+    $related,
+    $window,
+    $loaded,
+    $loadingBay,
+    $loadingOverlay,
+    $title,
+    $current,
+    $slideshow,
+    $next,
+    $prev,
+    $close,
+    $groupControls,
+    $events = $('<a/>'), // $({}) would be prefered, but there is an issue with jQuery 1.4.2
+
+    // Variables for cached values or use across multiple functions
+    settings,
+    interfaceHeight,
+    interfaceWidth,
+    loadedHeight,
+    loadedWidth,
+    index,
+    photo,
+    open,
+    active,
+    closing,
+    loadingTimer,
+    publicMethod,
+    div = "div",
+    requests = 0,
+    previousCSS = {},
+    init;
+
+    // ****************
+    // HELPER FUNCTIONS
+    // ****************
+
+    // Convenience function for creating new jQuery objects
+    function $tag(tag, id, css) {
+        var element = document.createElement(tag);
+
+        if (id) {
+            element.id = prefix + id;
+        }
+
+        if (css) {
+            element.style.cssText = css;
+        }
+
+        return $(element);
+    }
+
+    // Get the window height using innerHeight when available to avoid an issue with iOS
+    // http://bugs.jquery.com/ticket/6724
+    function winheight() {
+        return window.innerHeight ? window.innerHeight : $(window).height();
+    }
+
+    function Settings(element, options) {
+        if (options !== Object(options)) {
+            options = {};
+        }
+
+        this.cache = {};
+        this.el = element;
+
+        this.value = function(key) {
+            var dataAttr;
+
+            if (this.cache[key] === undefined) {
+                dataAttr = $(this.el).attr('data-cbox-'+key);
+
+                if (dataAttr !== undefined) {
+                    this.cache[key] = dataAttr;
+                } else if (options[key] !== undefined) {
+                    this.cache[key] = options[key];
+                } else if (defaults[key] !== undefined) {
+                    this.cache[key] = defaults[key];
+                }
+            }
+
+            return this.cache[key];
+        };
+
+        this.get = function(key) {
+            var value = this.value(key);
+            return $.isFunction(value) ? value.call(this.el, this) : value;
+        };
+    }
+
+    // Determine the next and previous members in a group.
+    function getIndex(increment) {
+        var
+        max = $related.length,
+        newIndex = (index + increment) % max;
+
+        return (newIndex < 0) ? max + newIndex : newIndex;
+    }
+
+    // Convert '%' and 'px' values to integers
+    function setSize(size, dimension) {
+        return Math.round((/%/.test(size) ? ((dimension === 'x' ? $window.width() : winheight()) / 100) : 1) * parseInt(size, 10));
+    }
+
+    // Checks an href to see if it is a photo.
+    // There is a force photo option (photo: true) for hrefs that cannot be matched by the regex.
+    function isImage(settings, url) {
+        return settings.get('photo') || settings.get('photoRegex').test(url);
+    }
+
+    function retinaUrl(settings, url) {
+        return settings.get('retinaUrl') && window.devicePixelRatio > 1 ? url.replace(settings.get('photoRegex'), settings.get('retinaSuffix')) : url;
+    }
+
+    function trapFocus(e) {
+        if ('contains' in $box[0] && !$box[0].contains(e.target) && e.target !== $overlay[0]) {
+            e.stopPropagation();
+            $box.focus();
+        }
+    }
+
+    function setClass(str) {
+        if (setClass.str !== str) {
+            $box.add($overlay).removeClass(setClass.str).addClass(str);
+            setClass.str = str;
+        }
+    }
+
+    function getRelated(rel) {
+        index = 0;
+
+        if (rel && rel !== false && rel !== 'nofollow') {
+            $related = $('.' + boxElement).filter(function () {
+                var options = $.data(this, colorbox);
+                var settings = new Settings(this, options);
+                return (settings.get('rel') === rel);
+            });
+            index = $related.index(settings.el);
+
+            // Check direct calls to Colorbox.
+            if (index === -1) {
+                $related = $related.add(settings.el);
+                index = $related.length - 1;
+            }
+        } else {
+            $related = $(settings.el);
+        }
+    }
+
+    function trigger(event) {
+        // for external use
+        $(document).trigger(event);
+        // for internal use
+        $events.triggerHandler(event);
+    }
+
+    var slideshow = (function(){
+        var active,
+            className = prefix + "Slideshow_",
+            click = "click." + prefix,
+            timeOut;
+
+        function clear () {
+            clearTimeout(timeOut);
+        }
+
+        function set() {
+            if (settings.get('loop') || $related[index + 1]) {
+                clear();
+                timeOut = setTimeout(publicMethod.next, settings.get('slideshowSpeed'));
+            }
+        }
+
+        function start() {
+            $slideshow
+                .html(settings.get('slideshowStop'))
+                .unbind(click)
+                .one(click, stop);
+
+            $events
+                .bind(event_complete, set)
+                .bind(event_load, clear);
+
+            $box.removeClass(className + "off").addClass(className + "on");
+        }
+
+        function stop() {
+            clear();
+
+            $events
+                .unbind(event_complete, set)
+                .unbind(event_load, clear);
+
+            $slideshow
+                .html(settings.get('slideshowStart'))
+                .unbind(click)
+                .one(click, function () {
+                    publicMethod.next();
+                    start();
+                });
+
+            $box.removeClass(className + "on").addClass(className + "off");
+        }
+
+        function reset() {
+            active = false;
+            $slideshow.hide();
+            clear();
+            $events
+                .unbind(event_complete, set)
+                .unbind(event_load, clear);
+            $box.removeClass(className + "off " + className + "on");
+        }
+
+        return function(){
+            if (active) {
+                if (!settings.get('slideshow')) {
+                    $events.unbind(event_cleanup, reset);
+                    reset();
+                }
+            } else {
+                if (settings.get('slideshow') && $related[1]) {
+                    active = true;
+                    $events.one(event_cleanup, reset);
+                    if (settings.get('slideshowAuto')) {
+                        start();
+                    } else {
+                        stop();
+                    }
+                    $slideshow.show();
+                }
+            }
+        };
+
+    }());
+
+
+    function launch(element) {
+        var options;
+
+        if (!closing) {
+
+            options = $(element).data(colorbox);
+
+            settings = new Settings(element, options);
+
+            getRelated(settings.get('rel'));
+
+            if (!open) {
+                open = active = true; // Prevents the page-change action from queuing up if the visitor holds down the left or right keys.
+
+                setClass(settings.get('className'));
+
+                // Show colorbox so the sizes can be calculated in older versions of jQuery
+                $box.css({visibility:'hidden', display:'block', opacity:''});
+
+                $loaded = $tag(div, 'LoadedContent', 'width:0; height:0; overflow:hidden; visibility:hidden');
+                $content.css({width:'', height:''}).append($loaded);
+
+                // Cache values needed for size calculations
+                interfaceHeight = $topBorder.height() + $bottomBorder.height() + $content.outerHeight(true) - $content.height();
+                interfaceWidth = $leftBorder.width() + $rightBorder.width() + $content.outerWidth(true) - $content.width();
+                loadedHeight = $loaded.outerHeight(true);
+                loadedWidth = $loaded.outerWidth(true);
+
+                // Opens inital empty Colorbox prior to content being loaded.
+                var initialWidth = setSize(settings.get('initialWidth'), 'x');
+                var initialHeight = setSize(settings.get('initialHeight'), 'y');
+                var maxWidth = settings.get('maxWidth');
+                var maxHeight = settings.get('maxHeight');
+
+                settings.w = Math.max((maxWidth !== false ? Math.min(initialWidth, setSize(maxWidth, 'x')) : initialWidth) - loadedWidth - interfaceWidth, 0);
+                settings.h = Math.max((maxHeight !== false ? Math.min(initialHeight, setSize(maxHeight, 'y')) : initialHeight) - loadedHeight - interfaceHeight, 0);
+
+                $loaded.css({width:'', height:settings.h});
+                publicMethod.position();
+
+                trigger(event_open);
+                settings.get('onOpen');
+
+                $groupControls.add($title).hide();
+
+                $box.focus();
+
+                if (settings.get('trapFocus')) {
+                    // Confine focus to the modal
+                    // Uses event capturing that is not supported in IE8-
+                    if (document.addEventListener) {
+
+                        document.addEventListener('focus', trapFocus, true);
+
+                        $events.one(event_closed, function () {
+                            document.removeEventListener('focus', trapFocus, true);
+                        });
+                    }
+                }
+
+                // Return focus on closing
+                if (settings.get('returnFocus')) {
+                    $events.one(event_closed, function () {
+                        $(settings.el).focus();
+                    });
+                }
+            }
+
+            var opacity = parseFloat(settings.get('opacity'));
+            $overlay.css({
+                opacity: opacity === opacity ? opacity : '',
+                cursor: settings.get('overlayClose') ? 'pointer' : '',
+                visibility: 'visible'
+            }).show();
+
+            if (settings.get('closeButton')) {
+                $close.html(settings.get('close')).appendTo($content);
+            } else {
+                $close.appendTo('<div/>'); // replace with .detach() when dropping jQuery < 1.4
+            }
+
+            load();
+        }
+    }
+
+    // Colorbox's markup needs to be added to the DOM prior to being called
+    // so that the browser will go ahead and load the CSS background images.
+    function appendHTML() {
+        if (!$box) {
+            init = false;
+            $window = $(window);
+            $box = $tag(div).attr({
+                id: colorbox,
+                'class': $.support.opacity === false ? prefix + 'IE' : '', // class for optional IE8 & lower targeted CSS.
+                role: 'dialog',
+                tabindex: '-1'
+            }).hide();
+            $overlay = $tag(div, "Overlay").hide();
+            $loadingOverlay = $([$tag(div, "LoadingOverlay")[0],$tag(div, "LoadingGraphic")[0]]);
+            $wrap = $tag(div, "Wrapper");
+            $content = $tag(div, "Content").append(
+                $title = $tag(div, "Title"),
+                $current = $tag(div, "Current"),
+                $prev = $('<button type="button"/>').attr({id:prefix+'Previous'}),
+                $next = $('<button type="button"/>').attr({id:prefix+'Next'}),
+                $slideshow = $('<button type="button"/>').attr({id:prefix+'Slideshow'}),
+                $loadingOverlay
+            );
+
+            $close = $('<button type="button"/>').attr({id:prefix+'Close'});
+
+            $wrap.append( // The 3x3 Grid that makes up Colorbox
+                $tag(div).append(
+                    $tag(div, "TopLeft"),
+                    $topBorder = $tag(div, "TopCenter"),
+                    $tag(div, "TopRight")
+                ),
+                $tag(div, false, 'clear:left').append(
+                    $leftBorder = $tag(div, "MiddleLeft"),
+                    $content,
+                    $rightBorder = $tag(div, "MiddleRight")
+                ),
+                $tag(div, false, 'clear:left').append(
+                    $tag(div, "BottomLeft"),
+                    $bottomBorder = $tag(div, "BottomCenter"),
+                    $tag(div, "BottomRight")
+                )
+            ).find('div div').css({'float': 'left'});
+
+            $loadingBay = $tag(div, false, 'position:absolute; width:9999px; visibility:hidden; display:none; max-width:none;');
+
+            $groupControls = $next.add($prev).add($current).add($slideshow);
+        }
+        if (document.body && !$box.parent().length) {
+            $(document.body).append($overlay, $box.append($wrap, $loadingBay));
+        }
+    }
+
+    // Add Colorbox's event bindings
+    function addBindings() {
+        function clickHandler(e) {
+            // ignore non-left-mouse-clicks and clicks modified with ctrl / command, shift, or alt.
+            // See: http://jacklmoore.com/notes/click-events/
+            if (!(e.which > 1 || e.shiftKey || e.altKey || e.metaKey || e.ctrlKey)) {
+                e.preventDefault();
+                launch(this);
+            }
+        }
+
+        if ($box) {
+            if (!init) {
+                init = true;
+
+                // Anonymous functions here keep the public method from being cached, thereby allowing them to be redefined on the fly.
+                $next.click(function () {
+                    publicMethod.next();
+                });
+                $prev.click(function () {
+                    publicMethod.prev();
+                });
+                $close.click(function () {
+                    publicMethod.close();
+                });
+                $overlay.click(function () {
+                    if (settings.get('overlayClose')) {
+                        publicMethod.close();
+                    }
+                });
+
+                // Key Bindings
+                $(document).bind('keydown.' + prefix, function (e) {
+                    var key = e.keyCode;
+                    if (open && settings.get('escKey') && key === 27) {
+                        e.preventDefault();
+                        publicMethod.close();
+                    }
+                    if (open && settings.get('arrowKey') && $related[1] && !e.altKey) {
+                        if (key === 37) {
+                            e.preventDefault();
+                            $prev.click();
+                        } else if (key === 39) {
+                            e.preventDefault();
+                            $next.click();
+                        }
+                    }
+                });
+
+                if ($.isFunction($.fn.on)) {
+                    // For jQuery 1.7+
+                    $(document).on('click.'+prefix, '.'+boxElement, clickHandler);
+                } else {
+                    // For jQuery 1.3.x -> 1.6.x
+                    // This code is never reached in jQuery 1.9, so do not contact me about 'live' being removed.
+                    // This is not here for jQuery 1.9, it's here for legacy users.
+                    $('.'+boxElement).live('click.'+prefix, clickHandler);
+                }
+            }
+            return true;
+        }
+        return false;
+    }
+
+    // Don't do anything if Colorbox already exists.
+    if ($[colorbox]) {
+        return;
+    }
+
+    // Append the HTML when the DOM loads
+    $(appendHTML);
+
+
+    // ****************
+    // PUBLIC FUNCTIONS
+    // Usage format: $.colorbox.close();
+    // Usage from within an iframe: parent.jQuery.colorbox.close();
+    // ****************
+
+    publicMethod = $.fn[colorbox] = $[colorbox] = function (options, callback) {
+        var settings;
+        var $obj = this;
+
+        options = options || {};
+
+        if ($.isFunction($obj)) { // assume a call to $.colorbox
+            $obj = $('<a/>');
+            options.open = true;
+        }
+
+        if (!$obj[0]) { // colorbox being applied to empty collection
+            return $obj;
+        }
+
+        appendHTML();
+
+        if (addBindings()) {
+
+            if (callback) {
+                options.onComplete = callback;
+            }
+
+            $obj.each(function () {
+                var old = $.data(this, colorbox) || {};
+                $.data(this, colorbox, $.extend(old, options));
+            }).addClass(boxElement);
+
+            settings = new Settings($obj[0], options);
+
+            if (settings.get('open')) {
+                launch($obj[0]);
+            }
+        }
+
+        return $obj;
+    };
+
+    publicMethod.position = function (speed, loadedCallback) {
+        var
+        css,
+        top = 0,
+        left = 0,
+        offset = $box.offset(),
+        scrollTop,
+        scrollLeft;
+
+        $window.unbind('resize.' + prefix);
+
+        // remove the modal so that it doesn't influence the document width/height
+        $box.css({top: -9e4, left: -9e4});
+
+        scrollTop = $window.scrollTop();
+        scrollLeft = $window.scrollLeft();
+
+        if (settings.get('fixed')) {
+            offset.top -= scrollTop;
+            offset.left -= scrollLeft;
+            $box.css({position: 'fixed'});
+        } else {
+            top = scrollTop;
+            left = scrollLeft;
+            $box.css({position: 'absolute'});
+        }
+
+        // keeps the top and left positions within the browser's viewport.
+        if (settings.get('right') !== false) {
+            left += Math.max($window.width() - settings.w - loadedWidth - interfaceWidth - setSize(settings.get('right'), 'x'), 0);
+        } else if (settings.get('left') !== false) {
+            left += setSize(settings.get('left'), 'x');
+        } else {
+            left += Math.round(Math.max($window.width() - settings.w - loadedWidth - interfaceWidth, 0) / 2);
+        }
+
+        if (settings.get('bottom') !== false) {
+            top += Math.max(winheight() - settings.h - loadedHeight - interfaceHeight - setSize(settings.get('bottom'), 'y'), 0);
+        } else if (settings.get('top') !== false) {
+            top += setSize(settings.get('top'), 'y');
+        } else {
+            top += Math.round(Math.max(winheight() - settings.h - loadedHeight - interfaceHeight, 0) / 2);
+        }
+
+        $box.css({top: offset.top, left: offset.left, visibility:'visible'});
+
+        // this gives the wrapper plenty of breathing room so it's floated contents can move around smoothly,
+        // but it has to be shrank down around the size of div#colorbox when it's done.  If not,
+        // it can invoke an obscure IE bug when using iframes.
+        $wrap[0].style.width = $wrap[0].style.height = "9999px";
+
+        function modalDimensions() {
+            $topBorder[0].style.width = $bottomBorder[0].style.width = $content[0].style.width = (parseInt($box[0].style.width,10) - interfaceWidth)+'px';
+            $content[0].style.height = $leftBorder[0].style.height = $rightBorder[0].style.height = (parseInt($box[0].style.height,10) - interfaceHeight)+'px';
+        }
+
+        css = {width: settings.w + loadedWidth + interfaceWidth, height: settings.h + loadedHeight + interfaceHeight, top: top, left: left};
+
+        // setting the speed to 0 if the content hasn't changed size or position
+        if (speed) {
+            var tempSpeed = 0;
+            $.each(css, function(i){
+                if (css[i] !== previousCSS[i]) {
+                    tempSpeed = speed;
+                    return;
+                }
+            });
+            speed = tempSpeed;
+        }
+
+        previousCSS = css;
+
+        if (!speed) {
+            $box.css(css);
+        }
+
+        $box.dequeue().animate(css, {
+            duration: speed || 0,
+            complete: function () {
+                modalDimensions();
+
+                active = false;
+
+                // shrink the wrapper down to exactly the size of colorbox to avoid a bug in IE's iframe implementation.
+                $wrap[0].style.width = (settings.w + loadedWidth + interfaceWidth) + "px";
+                $wrap[0].style.height = (settings.h + loadedHeight + interfaceHeight) + "px";
+
+                if (settings.get('reposition')) {
+                    setTimeout(function () {  // small delay before binding onresize due to an IE8 bug.
+                        $window.bind('resize.' + prefix, publicMethod.position);
+                    }, 1);
+                }
+
+                if ($.isFunction(loadedCallback)) {
+                    loadedCallback();
+                }
+            },
+            step: modalDimensions
+        });
+    };
+
+    publicMethod.resize = function (options) {
+        var scrolltop;
+
+        if (open) {
+            options = options || {};
+
+            if (options.width) {
+                settings.w = setSize(options.width, 'x') - loadedWidth - interfaceWidth;
+            }
+
+            if (options.innerWidth) {
+                settings.w = setSize(options.innerWidth, 'x');
+            }
+
+            $loaded.css({width: settings.w});
+
+            if (options.height) {
+                settings.h = setSize(options.height, 'y') - loadedHeight - interfaceHeight;
+            }
+
+            if (options.innerHeight) {
+                settings.h = setSize(options.innerHeight, 'y');
+            }
+
+            if (!options.innerHeight && !options.height) {
+                scrolltop = $loaded.scrollTop();
+                $loaded.css({height: "auto"});
+                settings.h = $loaded.height();
+            }
+
+            $loaded.css({height: settings.h});
+
+            if(scrolltop) {
+                $loaded.scrollTop(scrolltop);
+            }
+
+            publicMethod.position(settings.get('transition') === "none" ? 0 : settings.get('speed'));
+        }
+    };
+
+    publicMethod.prep = function (object) {
+        if (!open) {
+            return;
+        }
+
+        var callback, speed = settings.get('transition') === "none" ? 0 : settings.get('speed');
+
+        $loaded.remove();
+
+        $loaded = $tag(div, 'LoadedContent').append(object);
+
+        function getWidth() {
+            settings.w = settings.w || $loaded.width();
+            settings.w = settings.mw && settings.mw < settings.w ? settings.mw : settings.w;
+            return settings.w;
+        }
+        function getHeight() {
+            settings.h = settings.h || $loaded.height();
+            settings.h = settings.mh && settings.mh < settings.h ? settings.mh : settings.h;
+            return settings.h;
+        }
+
+        $loaded.hide()
+        .appendTo($loadingBay.show())// content has to be appended to the DOM for accurate size calculations.
+        .css({width: getWidth(), overflow: settings.get('scrolling') ? 'auto' : 'hidden'})
+        .css({height: getHeight()})// sets the height independently from the width in case the new width influences the value of height.
+        .prependTo($content);
+
+        $loadingBay.hide();
+
+        // floating the IMG removes the bottom line-height and fixed a problem where IE miscalculates the width of the parent element as 100% of the document width.
+
+        $(photo).css({'float': 'none'});
+
+        setClass(settings.get('className'));
+
+        callback = function () {
+            var total = $related.length,
+                iframe,
+                complete;
+
+            if (!open) {
+                return;
+            }
+
+            function removeFilter() { // Needed for IE8 in versions of jQuery prior to 1.7.2
+                if ($.support.opacity === false) {
+                    $box[0].style.removeAttribute('filter');
+                }
+            }
+
+            complete = function () {
+                clearTimeout(loadingTimer);
+                $loadingOverlay.hide();
+                trigger(event_complete);
+                settings.get('onComplete');
+            };
+
+
+            $title.html(settings.get('title')).show();
+            $loaded.show();
+
+            if (total > 1) { // handle grouping
+                if (typeof settings.get('current') === "string") {
+                    $current.html(settings.get('current').replace('{current}', index + 1).replace('{total}', total)).show();
+                }
+
+                $next[(settings.get('loop') || index < total - 1) ? "show" : "hide"]().html(settings.get('next'));
+                $prev[(settings.get('loop') || index) ? "show" : "hide"]().html(settings.get('previous'));
+
+                slideshow();
+
+                // Preloads images within a rel group
+                if (settings.get('preloading')) {
+                    $.each([getIndex(-1), getIndex(1)], function(){
+                        var img,
+                            i = $related[this],
+                            settings = new Settings(i, $.data(i, colorbox)),
+                            src = settings.get('href');
+
+                        if (src && isImage(settings, src)) {
+                            src = retinaUrl(settings, src);
+                            img = document.createElement('img');
+                            img.src = src;
+                        }
+                    });
+                }
+            } else {
+                $groupControls.hide();
+            }
+
+            if (settings.get('iframe')) {
+
+                iframe = settings.get('createIframe');
+
+                if (!settings.get('scrolling')) {
+                    iframe.scrolling = "no";
+                }
+
+                $(iframe)
+                    .attr({
+                        src: settings.get('href'),
+                        'class': prefix + 'Iframe'
+                    })
+                    .one('load', complete)
+                    .appendTo($loaded);
+
+                $events.one(event_purge, function () {
+                    iframe.src = "//about:blank";
+                });
+
+                if (settings.get('fastIframe')) {
+                    $(iframe).trigger('load');
+                }
+            } else {
+                complete();
+            }
+
+            if (settings.get('transition') === 'fade') {
+                $box.fadeTo(speed, 1, removeFilter);
+            } else {
+                removeFilter();
+            }
+        };
+
+        if (settings.get('transition') === 'fade') {
+            $box.fadeTo(speed, 0, function () {
+                publicMethod.position(0, callback);
+            });
+        } else {
+            publicMethod.position(speed, callback);
+        }
+    };
+
+    function load () {
+        var href, setResize, prep = publicMethod.prep, $inline, request = ++requests;
+
+        active = true;
+
+        photo = false;
+
+        trigger(event_purge);
+        trigger(event_load);
+        settings.get('onLoad');
+
+        settings.h = settings.get('height') ?
+                setSize(settings.get('height'), 'y') - loadedHeight - interfaceHeight :
+                settings.get('innerHeight') && setSize(settings.get('innerHeight'), 'y');
+
+        settings.w = settings.get('width') ?
+                setSize(settings.get('width'), 'x') - loadedWidth - interfaceWidth :
+                settings.get('innerWidth') && setSize(settings.get('innerWidth'), 'x');
+
+        // Sets the minimum dimensions for use in image scaling
+        settings.mw = settings.w;
+        settings.mh = settings.h;
+
+        // Re-evaluate the minimum width and height based on maxWidth and maxHeight values.
+        // If the width or height exceed the maxWidth or maxHeight, use the maximum values instead.
+        if (settings.get('maxWidth')) {
+            settings.mw = setSize(settings.get('maxWidth'), 'x') - loadedWidth - interfaceWidth;
+            settings.mw = settings.w && settings.w < settings.mw ? settings.w : settings.mw;
+        }
+        if (settings.get('maxHeight')) {
+            settings.mh = setSize(settings.get('maxHeight'), 'y') - loadedHeight - interfaceHeight;
+            settings.mh = settings.h && settings.h < settings.mh ? settings.h : settings.mh;
+        }
+
+        href = settings.get('href');
+
+        loadingTimer = setTimeout(function () {
+            $loadingOverlay.show();
+        }, 100);
+
+        if (settings.get('inline')) {
+            var $target = $(href).eq(0);
+            // Inserts an empty placeholder where inline content is being pulled from.
+            // An event is bound to put inline content back when Colorbox closes or loads new content.
+            $inline = $('<div>').hide().insertBefore($target);
+
+            $events.one(event_purge, function () {
+                $inline.replaceWith($target);
+            });
+
+            prep($target);
+        } else if (settings.get('iframe')) {
+            // IFrame element won't be added to the DOM until it is ready to be displayed,
+            // to avoid problems with DOM-ready JS that might be trying to run in that iframe.
+            prep(" ");
+        } else if (settings.get('html')) {
+            prep(settings.get('html'));
+        } else if (isImage(settings, href)) {
+
+            href = retinaUrl(settings, href);
+
+            photo = settings.get('createImg');
+
+            $(photo)
+            .addClass(prefix + 'Photo')
+            .bind('error.'+prefix,function () {
+                prep($tag(div, 'Error').html(settings.get('imgError')));
+            })
+            .one('load', function () {
+                if (request !== requests) {
+                    return;
+                }
+
+                // A small pause because some browsers will occassionaly report a
+                // img.width and img.height of zero immediately after the img.onload fires
+                setTimeout(function(){
+                    var percent;
+
+                    if (settings.get('retinaImage') && window.devicePixelRatio > 1) {
+                        photo.height = photo.height / window.devicePixelRatio;
+                        photo.width = photo.width / window.devicePixelRatio;
+                    }
+
+                    if (settings.get('scalePhotos')) {
+                        setResize = function () {
+                            photo.height -= photo.height * percent;
+                            photo.width -= photo.width * percent;
+                        };
+                        if (settings.mw && photo.width > settings.mw) {
+                            percent = (photo.width - settings.mw) / photo.width;
+                            setResize();
+                        }
+                        if (settings.mh && photo.height > settings.mh) {
+                            percent = (photo.height - settings.mh) / photo.height;
+                            setResize();
+                        }
+                    }
+
+                    if (settings.h) {
+                        photo.style.marginTop = Math.max(settings.mh - photo.height, 0) / 2 + 'px';
+                    }
+
+                    if ($related[1] && (settings.get('loop') || $related[index + 1])) {
+                        photo.style.cursor = 'pointer';
+
+                        $(photo).bind('click.'+prefix, function () {
+                            publicMethod.next();
+                        });
+                    }
+
+                    photo.style.width = photo.width + 'px';
+                    photo.style.height = photo.height + 'px';
+                    prep(photo);
+                }, 1);
+            });
+
+            photo.src = href;
+
+        } else if (href) {
+            $loadingBay.load(href, settings.get('data'), function (data, status) {
+                if (request === requests) {
+                    prep(status === 'error' ? $tag(div, 'Error').html(settings.get('xhrError')) : $(this).contents());
+                }
+            });
+        }
+    }
+
+    // Navigates to the next page/image in a set.
+    publicMethod.next = function () {
+        if (!active && $related[1] && (settings.get('loop') || $related[index + 1])) {
+            index = getIndex(1);
+            launch($related[index]);
+        }
+    };
+
+    publicMethod.prev = function () {
+        if (!active && $related[1] && (settings.get('loop') || index)) {
+            index = getIndex(-1);
+            launch($related[index]);
+        }
+    };
+
+    // Note: to use this within an iframe use the following format: parent.jQuery.colorbox.close();
+    publicMethod.close = function () {
+        if (open && !closing) {
+
+            closing = true;
+            open = false;
+            trigger(event_cleanup);
+            settings.get('onCleanup');
+            $window.unbind('.' + prefix);
+            $overlay.fadeTo(settings.get('fadeOut') || 0, 0);
+
+            $box.stop().fadeTo(settings.get('fadeOut') || 0, 0, function () {
+                $box.hide();
+                $overlay.hide();
+                trigger(event_purge);
+                $loaded.remove();
+
+                setTimeout(function () {
+                    closing = false;
+                    trigger(event_closed);
+                    settings.get('onClosed');
+                }, 1);
+            });
+        }
+    };
+
+    // Removes changes Colorbox made to the document, but does not remove the plugin.
+    publicMethod.remove = function () {
+        if (!$box) { return; }
+
+        $box.stop();
+        $[colorbox].close();
+        $box.stop(false, true).remove();
+        $overlay.remove();
+        closing = false;
+        $box = null;
+        $('.' + boxElement)
+            .removeData(colorbox)
+            .removeClass(boxElement);
+
+        $(document).unbind('click.'+prefix).unbind('keydown.'+prefix);
+    };
+
+    // A method for fetching the current element Colorbox is referencing.
+    // returns a jQuery object.
+    publicMethod.element = function () {
+        return $(settings.el);
+    };
+
+    publicMethod.settings = defaults;
+
+}(jQuery, document, window));
+ÔXtext/cssO¼bplist00ÔrsX$versionX$objectsY$archiverT$top † ¯##)*0123QRSTUVWXYZ[\]^_`abcdefghimU$nullİ	
+ !"___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€"€€ €Ó$% '(WNS.base[NS.relative€ €€_1http://math.mit.edu/scripts/lightbox/colorbox.cssÒ+,-.Z$classnameX$classesUNSURL¢-/XNSObject#AÁan‰Ï% ÈÓ456CPWNS.keysZNS.objects¬789:;<=>?@AB€	€
+€€€€€€€€€€¬EFGHIJKLMNO€€€€€€€€€€€€ €!\Content-Type]Accept-RangesZKeep-Alive_Content-EncodingVServerTDate^Content-LengthZConnectionX__hhaa__TEtagTVary]Last-ModifiedXtext/cssUbytes_timeout=5, max=100TgzipVApache_Wed, 26 Jun 2019 05:31:46 GMTT1448ZKeep-Alive_X
+
+YnBsaXN0MDDbAQIDBAUGBwgJCgsMDhASFBYYGhweIFpDb25uZWN0aW9uVlNlcnZlclxDb250ZW50LVR5cGVdTGFzdC1Nb2RpZmllZFRWYXJ5XUFjY2VwdC1SYW5nZXNURGF0ZV8QEENvbnRlbnQtRW5jb2RpbmdeQ29udGVudC1MZW5ndGhaS2VlcC1BbGl2ZVRFdGFnoQ1aS2VlcC1BbGl2ZaEPVkFwYWNoZaERWHRleHQvY3NzoRNfEB1UaHUsIDEzIEFwciAyMDE3IDE5OjAzOjQ2IEdNVKEVXxAPQWNjZXB0LUVuY29kaW5noRdVYnl0ZXOhGV8QHVdlZCwgMjYgSnVuIDIwMTkgMDU6MzE6NDYgR01UoRtUZ3ppcKEdVDE0NDihH18QEnRpbWVvdXQ9NSwgbWF4PTEwMKEhXxAZIjExNDctNTRkMTBmYzA3ZjU0Zi1nemlwIgAIAB8AKgAxAD4ATABRAF8AZAB3AIYAkQCWAJgAowClAKwArgC3ALkA2QDbAO0A7wD1APcBFwEZAR4BIAElAScBPAE+AAAAAAAAAgEAAAAAAAAAIgAAAAAAAAAAAAAAAAAAAVo=_"1147-54d10fc07f54f-gzip"_Accept-Encoding_Thu, 13 Apr 2017 19:03:46 GMTÒ+,jk_NSMutableDictionary£jl/\NSDictionaryÒ+,no_NSHTTPURLResponse£pq/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑtu_WebResourceResponse€    # - 2 7 ] c ~   Â Å ç ê58;]‚„†ˆŠŒ’“•—™›¢ª¶¸º¼ğõ 	$&(/7BOQSUWY[]_acegtvxz|~€‚„†ˆŠŒ›©´ÇÎÓâíöû 27>^cnÊæø37DI]auƒ•˜®             v              °_1http://math.mit.edu/scripts/lightbox/colorbox.cssOG/*
+    Colorbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden; -webkit-transform: translate3d(0,0,0);}
+#cboxWrapper {max-width:none;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.cboxIframe{width:100%; height:100%; display:block; border:0; padding:0; margin:0;}
+#colorbox, #cboxContent, #cboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/*
+    User Style:
+    Change the following styles to modify the appearance of Colorbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:url(images/overlay.png) repeat 0 0;}
+#colorbox{outline:0;}
+    #cboxTopLeft{width:21px; height:21px; background:url(images/controls.png) no-repeat -101px 0;}
+    #cboxTopRight{width:21px; height:21px; background:url(images/controls.png) no-repeat -130px 0;}
+    #cboxBottomLeft{width:21px; height:21px; background:url(images/controls.png) no-repeat -101px -29px;}
+    #cboxBottomRight{width:21px; height:21px; background:url(images/controls.png) no-repeat -130px -29px;}
+    #cboxMiddleLeft{width:21px; background:url(images/controls.png) left top repeat-y;}
+    #cboxMiddleRight{width:21px; background:url(images/controls.png) right top repeat-y;}
+    #cboxTopCenter{height:21px; background:url(images/border.png) 0 0 repeat-x;}
+    #cboxBottomCenter{height:21px; background:url(images/border.png) 0 -29px repeat-x;}
+    #cboxContent{background:#fff; overflow:hidden;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{margin-bottom:28px;}
+        #cboxTitle{position:absolute; bottom:4px; left:0; text-align:center; width:100%; color:#949494;}
+        #cboxCurrent{position:absolute; bottom:4px; left:58px; color:#949494;}
+        #cboxLoadingOverlay{background:url(images/loading_background.png) no-repeat center center;}
+        #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #cboxPrevious, #cboxNext, #cboxSlideshow, #cboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #cboxPrevious:active, #cboxNext:active, #cboxSlideshow:active, #cboxClose:active {outline:0;}
+
+        #cboxSlideshow{position:absolute; bottom:4px; right:30px; color:#0092ef;}
+        #cboxPrevious{position:absolute; bottom:0; left:0; background:url(images/controls.png) no-repeat -75px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxPrevious:hover{background-position:-75px -25px;}
+        #cboxNext{position:absolute; bottom:0; left:27px; background:url(images/controls.png) no-repeat -50px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxNext:hover{background-position:-50px -25px;}
+        #cboxClose{position:absolute; bottom:0; right:0; background:url(images/controls.png) no-repeat -25px 0; width:25px; height:25px; text-indent:-9999px;}
+        #cboxClose:hover{background-position:-25px -25px;}
+
+/*
+  The following fixes a problem where IE7 and IE8 replace a PNG's alpha transparency with a black fill
+  when an alpha filter (opacity change) is set on the element or ancestor element.  This style is not applied to or needed in IE9.
+  See: http://jacklmoore.com/notes/ie-transparency-problems/
+*/
+.cboxIE #cboxTopLeft,
+.cboxIE #cboxTopCenter,
+.cboxIE #cboxTopRight,
+.cboxIE #cboxBottomLeft,
+.cboxIE #cboxBottomCenter,
+.cboxIE #cboxBottomRight,
+.cboxIE #cboxMiddleLeft,
+.cboxIE #cboxMiddleRight {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
+}
+Ô!"#$Yimage/pngO!bplist00ÔjkX$versionX$objectsY$archiverT$top † ¯#)*0123MNOPQRSTUVWXYZ[\]^_`aeU$nullİ	
+ !"___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó$% '(WNS.base[NS.relative€ €€_Dhttp://math.mit.edu/~gs/linearalgebra/linearalgebra5_Front_thumb.pngÒ+,-.Z$classnameX$classesUNSURL¢-/XNSObject#AÁan‰Ö• ÈÓ456ALWNS.keysZNS.objectsª789:;<=>?@€	€
+€€€€€€€€ªBDEFGHIJK€€€€€€€€€€€VServer\Content-TypeTEtag]Last-ModifiedX__hhaa__TDate]Accept-Ranges^Content-LengthZKeep-AliveZConnectionVApacheYimage/png_"97db-5303aa0c711a1"_Mon, 11 Apr 2016 19:34:07 GMT_ü
+
+YnBsaXN0MDDZAQIDBAUGBwgJCgwOEBIUFhgaVlNlcnZlclxDb250ZW50LVR5cGVaQ29ubmVjdGlvbl1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFpLZWVwLUFsaXZlVEV0YWehC1ZBcGFjaGWhDVlpbWFnZS9wbmehD1pLZWVwLUFsaXZloRFfEB1Nb24sIDExIEFwciAyMDE2IDE5OjM0OjA3IEdNVKETVWJ5dGVzoRVfEB1XZWQsIDI2IEp1biAyMDE5IDA1OjMxOjQ2IEdNVKEXVTM4ODc1oRlfEBJ0aW1lb3V0PTUsIG1heD0xMDChG18QFCI5N2RiLTUzMDNhYTBjNzExYTEiAAgAGwAiAC8AOgBIAFYAWwBqAHUAegB8AIMAhQCPAJEAnACeAL4AwADGAMgA6ADqAPAA8gEHAQkAAAAAAAACAQAAAAAAAAAcAAAAAAAAAAAAAAAAAAABIA==_Wed, 26 Jun 2019 05:31:46 GMTUbytesU38875_timeout=5, max=100ZKeep-AliveÒ+,bc_NSMutableDictionary£bd/\NSDictionaryÒ+,fg_NSHTTPURLResponse£hi/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑlm_WebResourceResponse€    # - 2 7 Y _ z œ ¾ Á ã æ147Y{~€‚„†ˆŠŒ‘“•—¦²´¶¸ÿ!*357>FQ\^`bdfhjlnp{}ƒ…‡‰‹‘˜¥ª¸ÁÆÔãîù 
+!AAagm‚’¨¬¹¾ÒÖêø
+#             n              %_Dhttp://math.mit.edu/~gs/linearalgebra/linearalgebra5_Front_thumb.pngO—Û‰PNG
+
+   IHDR   –   Ä   }GØ   	pHYs  .#  .#x¥?v  
+OiCCPPhotoshop ICC profile  xÚSgTSé=÷ŞôBKˆ€”KoR RB‹€‘&*!	Jˆ!¡ÙQÁEEÈ ˆ€ŒQ,Š
+Øä!¢ƒ£ˆŠÊûá{£kÖ¼÷æÍşµ×>ç¬ó³ÏÀ–H3Q5€©BàƒÇÄÆáä.@
+$p ³d!sı# ø~<<+"À¾ xÓ ÀM›À0‡ÿêB™\€„Àt‘8K€ @zB¦ @F€˜&S   `Ëcbã P- `'æÓ €ø™{ [”! ‘  eˆD h; ¬ÏVŠE X0 fKÄ9 Ø- 0IWfH °· ÀÎ²  0Qˆ…) { `È##x „™ FòW<ñ+®ç*  x™²<¹$9E[-qWW.(ÎI+6aaš@.Ây™24àóÌ   ‘àƒóıxÎ®ÎÎ6¶_-ê¿ÿ"bbãşåÏ«p@  át~Ñş,/³€;€mş¢%îh^ u÷‹f²@µ  éÚWópø~<<E¡¹ÙÙåääØJÄB[aÊW}şgÂ_ÀWılù~<ü÷õà¾â$2]GøàÂÌôL¥Ï’	„bÜæGü·ÿüÓ"ÄIb¹X*ãQqDšŒó2¥"‰B’)Å%Òÿdâß,û>ß5 °j>{‘-¨]cöK'XtÀâ÷  ò»oÁÔ(€hƒáÏwÿï?ıG % €fI’q  ^D$.TÊ³?Ç  D *°AôÁ,ÀÁÜÁü`6„B$ÄÂBB
+d€r`)¬‚B(†Í°*`/Ô@4ÀQh†“p.ÂU¸=púaÁ(¼	AÈa!ÚˆbŠX#™…ø!ÁH‹$ ÉˆQ"K‘5H1RŠT UHò=r9‡\Fº‘;È 2‚ü†¼G1”²Q=ÔµC¹¨7„F¢Ğdt1š ›Ğr´=Œ6¡çĞ«hÚ>CÇ0Àè3Äl0.ÆÃB±8,	“cË±"¬«Æ°V¬»‰õcÏ±wEÀ	6wB aAHXLXNØH¨ $4Ú	7	„QÂ'"“¨K´&ºùÄb21‡XH,#Ö/{ˆCÄ7$‰C2'¹I±¤TÒÒFÒnR#é,©›4H#“ÉÚdk²9”, +È…ääÃä3ää!ò[
+b@q¤øSâ(RÊjJåå4åe˜2AU£šRİ¨¡T5ZB­¡¶R¯Q‡¨4uš9ÍƒIK¥­¢•Óhh÷i¯ètºİ•N—ĞWÒËéGè—èôw†ƒÇˆg(›gw¯˜L¦Ó‹ÇT071ë˜ç™™oUX*¶*|‘Ê
+•J•&•*/T©ª¦ªŞªUóUËT©^S}®FU3Sã©	Ô–«UªPëSSg©;¨‡ªg¨oT?¤~Yı‰YÃLÃOC¤Q ±_ã¼Æ c³x,!k«†u5Ä&±ÍÙ|v*»˜ı»‹=ª©¡9C3J3W³Ró”f?ã˜qøœtN	ç(§—ó~ŠŞï)â)¦4L¹1e\kª–—–X«H«Q«Gë½6®í§¦½E»YûAÇJ'\'GgÎçSÙSİ§
+§M=:õ®.ªk¥¡»Dw¿n§î˜¾^€Lo§Şy½çú}/ıTımú§õGX³$ÛÎ<Å5qo</ÇÛñQC]Ã@C¥a•a—á„‘¹Ñ<£ÕFFŒiÆ\ã$ãmÆmÆ£&&!&KMêMîšRM¹¦)¦;L;LÇÍÌÍ¢ÍÖ™5›=1×2ç›ç›×›ß·`ZxZ,¶¨¶¸eI²äZ¦Yî¶¼n…Z9Y¥XUZ]³F­­%Ö»­»§§¹N“N«ÖgÃ°ñ¶É¶©·°åØÛ®¶m¶}agbg·Å®Ãî“½“}º}ı=‡Ù«Z~s´r:V:ŞšÎœî?}Åô–é/gXÏÏØ3ã¶Ë)ÄiS›ÓGgg¹sƒóˆ‹‰K‚Ë.—>.›ÆİÈ½äJtõq]ázÒõ›³›Âí¨Û¯î6îiî‡ÜŸÌ4Ÿ)Y3sĞÃÈCàQåÑ?Ÿ•0kß¬~OCOgµç#/c/‘W­×°·¥wª÷aï>ö>rŸã>ã<7Ş2ŞY_Ì7À·È·ËOÃo_…ßC#ÿdÿzÿÑ §€%g‰A[ûøz|!¿?:Ûeö²ÙíAŒ ¹AA‚­‚åÁ­!hÈì­!÷ç˜Î‘Îi…P~èÖĞaæa‹Ã~'…‡…W†?pˆXÑ1—5wÑÜCsßDúD–DŞ›g1O9¯-J5*>ª.j<Ú7º4º?Æ.fYÌÕXXIlK9.*®6nl¾ßüíó‡ââã{˜/È]py¡ÎÂô…§©.,:–@LˆN8”ğA*¨Œ%òw%
+yÂÂg"/Ñ6ÑˆØC\*NòH*Mz’ì‘¼5y$Å3¥,å¹„'©¼LLİ›:šv m2=:½1ƒ’‘qBª!M“¶gêgæfvË¬e…²şÅn‹·/•Ék³¬Y-
+¶B¦èTZ(×*²geWf¿Í‰Ê9–«+ÍíÌ³ÊÛ7œïŸÿíÂá’¶¥†KW-Xæ½¬j9²<qyÛ
+ã+†V¬<¸Š¶*mÕO«íW—®~½&zMk^ÁÊ‚ÁµkëU
+å…}ëÜ×í]OX/Yßµaú†>‰Š®Û—Ø(Üxå‡oÊ¿™Ü”´©«Ä¹dÏfÒféæŞ-[–ª—æ—nÙÚ´ßV´íõöEÛ/—Í(Û»ƒ¶C¹£¿<¸¼e§ÉÎÍ;?T¤TôTúT6îÒİµa×ønÑî{¼ö4ìÕÛ[¼÷ı>É¾ÛUUMÕfÕeûIû³÷?®‰ªéø–ûm]­NmqíÇÒı#¶×¹ÔÕÒ=TRÖ+ëGÇ¾şïw-6UœÆâ#pDyäé÷	ß÷:ÚvŒ{¬áÓvg/jBšòšF›Sšû[b[ºOÌ>ÑÖêŞzüGÛœ4<YyJóTÉiÚé‚Ó“gòÏŒ•}~.ùÜ`Û¢¶{çcÎßjoïºtáÒEÿ‹ç;¼;Î\ò¸tò²ÛåW¸Wš¯:_mêtê<ş“ÓOÇ»œ»š®¹\k¹îz½µ{f÷é7Îİô½yñÿÖÕ9=İ½ózo÷Å÷õßİ~r'ıÎË»Ùw'î­¼O¼_ô@íAÙCİ‡Õ?[şÜØïÜjÀw óÑÜG÷…ƒÏş‘õC™Ë††ë8>99â?rıéü§CÏdÏ&ş¢şË®/~øÕë×ÎÑ˜Ñ¡—ò—“¿m|¥ıêÀë¯ÛÆÂÆ¾Éx31^ôVûíÁwÜwï£ßOä| (ÿhù±õSĞ§û“““ÿ˜óüc3-Û  @eiTXtXML:com.adobe.xmp     <?xpacket begin="ï»¿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c111 79.158325, 2015/09/10-01:10:20        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+            xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
+            xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"
+            xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"
+            xmlns:tiff="http://ns.adobe.com/tiff/1.0/"
+            xmlns:exif="http://ns.adobe.com/exif/1.0/">
+         <xmp:CreatorTool>Adobe Photoshop CC 2015 (Macintosh)</xmp:CreatorTool>
+         <xmp:CreateDate>2016-04-11T15:21:29-04:00</xmp:CreateDate>
+         <xmp:MetadataDate>2016-04-11T15:22:53-04:00</xmp:MetadataDate>
+         <xmp:ModifyDate>2016-04-11T15:22:53-04:00</xmp:ModifyDate>
+         <dc:format>image/png</dc:format>
+         <xmpMM:InstanceID>xmp.iid:346aa773-7acb-46cc-85d1-6fd6e8ae5d56</xmpMM:InstanceID>
+         <xmpMM:DocumentID>adobe:docid:photoshop:29d320da-40a9-1179-8fe4-b90ad930cc2f</xmpMM:DocumentID>
+         <xmpMM:OriginalDocumentID>xmp.did:5af9b42e-e7b8-4bed-b23d-11312e498abb</xmpMM:OriginalDocumentID>
+         <xmpMM:History>
+            <rdf:Seq>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>created</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:5af9b42e-e7b8-4bed-b23d-11312e498abb</stEvt:instanceID>
+                  <stEvt:when>2016-04-11T15:21:29-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Photoshop CC 2015 (Macintosh)</stEvt:softwareAgent>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:4b241825-df39-47d5-98ba-351b9b1fbdeb</stEvt:instanceID>
+                  <stEvt:when>2016-04-11T15:22:53-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Photoshop CC 2015 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>converted</stEvt:action>
+                  <stEvt:parameters>from application/vnd.adobe.photoshop to image/png</stEvt:parameters>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>derived</stEvt:action>
+                  <stEvt:parameters>converted from application/vnd.adobe.photoshop to image/png</stEvt:parameters>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:346aa773-7acb-46cc-85d1-6fd6e8ae5d56</stEvt:instanceID>
+                  <stEvt:when>2016-04-11T15:22:53-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Photoshop CC 2015 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+            </rdf:Seq>
+         </xmpMM:History>
+         <xmpMM:DerivedFrom rdf:parseType="Resource">
+            <stRef:instanceID>xmp.iid:4b241825-df39-47d5-98ba-351b9b1fbdeb</stRef:instanceID>
+            <stRef:documentID>xmp.did:5af9b42e-e7b8-4bed-b23d-11312e498abb</stRef:documentID>
+            <stRef:originalDocumentID>xmp.did:5af9b42e-e7b8-4bed-b23d-11312e498abb</stRef:originalDocumentID>
+         </xmpMM:DerivedFrom>
+         <photoshop:DocumentAncestors>
+            <rdf:Bag>
+               <rdf:li>xmp.id:c877f691-c0e0-1242-ae65-79a7302774ec</rdf:li>
+            </rdf:Bag>
+         </photoshop:DocumentAncestors>
+         <photoshop:ColorMode>3</photoshop:ColorMode>
+         <photoshop:ICCProfile>sRGB IEC61966-2.1</photoshop:ICCProfile>
+         <tiff:Orientation>1</tiff:Orientation>
+         <tiff:XResolution>3000000/10000</tiff:XResolution>
+         <tiff:YResolution>3000000/10000</tiff:YResolution>
+         <tiff:ResolutionUnit>2</tiff:ResolutionUnit>
+         <exif:ColorSpace>1</exif:ColorSpace>
+         <exif:PixelXDimension>150</exif:PixelXDimension>
+         <exif:PixelYDimension>196</exif:PixelYDimension>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                            
+<?xpacket end="w"?>Ş?Îö    cHRM  z%  €ƒ  ùÿ  €é  u0  ê`  :˜  o’_ÅF  L•IDATxÚìw|å•÷¿Sn¯ºê]²%Y¶å†ÆØôJ€$F6Ùdwy7eSw7Ùô²ÙM6›dSPR ¡†NèÆ¸Ü«z—®noSß?æÊ’ØX`È=ŸléŞ™gyæ7§?çüö®>ÀG
+tê(!U…u(Ğ)&Ÿ$
+ëP SÍ±ÄÂh*¨ ¬€U °
+T V
+T V
+À*PX*PX* «@`¨@`¨ ¬€U €U °
+T V
+T V
+À*PX*PX* «@`½1ò?SD‚†´"DÌ“Äİ¦ó$Ï/Ğ›,”Ğƒ Ç†ºtˆ'ñPEr”V÷^$ÁSz}sC - ¦(¶c€íäï´ 5F S,	tß«¸“O…Œ' ƒáÃm12İE‰m˜é.ĞÖy†LL{şIøgù™Öá€l=öocOıWñÇú í`MÙ:füS¶®kÚÁ´ÑäjÇ#¦@)cgÃOùï·0*å‡wY×DÊ%ZcÏÅtLOĞ†L³ë .1cİƒ`€iİ›¿—°NÃ’ÀpğoUòi…¾$¢˜İ‹×Ç.$óÃÏšº›ù÷v–‘ı0à\rt?(ªÜ½8¤4dKAÌsÁÀg6< +0ĞÙ$Èˆ`X¢R4AîÁe‹€ác³Ÿß`Vz7ä4®ë½–oìmƒL(¥xliªİ} øA÷á–@ÍM‰sÃÌ8—ÕB¬ôdı7¨‰w eĞKÀ°SãéPŠAúÛädò)…èÄô*¶GDˆòTÕ_Ğd‘E.lzŠ¶_â½%ûhñí`º]æ«±»x$×Âê×RäÎS$.ÜùÿxxÎÿ²È½›.ñåî+øÍĞõ´–lã…é?Ä%
+´gÊËTÏºx¨ñ×ÛKøøşÏóµé·ò!÷FZö|›oÎø?jì#ÜÖ³‚…^Tîiş=ïÚç`¹½*“lîZÅåóıÊÈè*ë-\¹÷KT—Æ¸»ò§ô›%\ÚÌX9+÷ÿ3£'óİ»¹¯ê— é<9ã7¬Øı)’B%›æş7nÆ0t×øëRóÀ½À±Ş0¾LASâ¼âƒ,Î¼Ìï=—’ãÎÒÛytk5a¥†!^W7á¢šg0†øîSsy¸şÇ¬ò¬ã’û>ÈnmáææŸ3“¸­ò÷xRQ®»÷|ñQ<îº!³<ØÇÙ]Ğg†sŒfñ òp;›Zş›âÔ yøBîÜTÊıİ• ¸øéÖzú÷Ûø·ò—hsSkÛÊÏ§ÿ‚/m˜ËÅ÷^Ç5|¿üfºGTl%Ş3Ì»\E[`Ÿ’ÿƒ*ØrôdË¹md!èßŞĞÂPo³¿Ñşáãìê³±¶åø‡ g·°Ş á&äÿ|w÷\Ûs>¤Ó*³»·’ŒQÄî‘¶…—â+ö@ÖÍò§/áÙáVV5íá§[—ğrÇLş;ò!0êø·âû˜/÷óËxdÇ|yd1‚Æ˜é£'é€x†~#À@ª”Zi7Åş~.}ö
+ØsmóWæ®òÓùDÅ&rN/{Ãv®	®…x7m]ÂöÌyÜ¾šÏ‡^¢.Õ	é
+şåå3x¼{%ÙÜL¦ƒ	ƒ!¬Uó`öĞ5n=¸5 R]ÚÍõ/ËîH×}Ü)Îb-Œ €õ†È)êØÉ[„†Ëf@£O@&«
+àT	J)¦ãPfCò¸ +òĞPŠ¢VqEéy¨nÌA`„'û+ˆ¦áÒÊn˜&°ªqL°#¡3İ—G’}íxl:£™"Ğl|®y34*ĞÄ[â {Œù%d	¿¨°!VŞü¥Q¨qYcÛ¢^â	htbsŠh†`éZ é”83àŠSV‘ [˜n>T¹ŠÊ¸¦eD•öQ'hÉ¼F( ëd}XAÁn*`˜ (¸DD	— âr`H|¿{KfíãggŞFb$‚NÀ¦äâ¢]¦ºDcı{¾Å®–ğØËün×rş­cçÏ8ÀÎ+¾Â•âFĞìˆºÎ·Û3kzûßı]fè8ĞH¤üãÖ÷ñ¡¶}Œ]õEşÃyÔÓofí»nãÌàjº£2­î/u,æ±şet¼ë¬[ş)J“í¼ÿ¥Ë°9e3ØIPÑ,U@N±:ÚÄh¦wÿ”Yr×­¾OÏÛÅšU_à×e·ó£W°?Rã°aû·B¿½+ÎÉVô'½¦ ’Ì}/Ñ:ä&UÇèíŒ1èn¥¹6‹«û Û3uP^Ç9ò8"£¬Öæ0Û7ÆöaJõtk	¦wğ	ß#tG|Ü}ğ(Bi%gÛÖ±PÛÉ=C­TÛSlÌVbÏäâÀ:ª¢<n¤Ác½:‚si·q¶¸–£l“ÏÅÊònñIÖUc„p§#ìQf?À‡}PaöğëıgSë	´Ùi6ºÙÑ¹ÊœQ4ÈèºmÓ ®$@ñÌtp©ù$Ï62ÀJÚJ¶²Ê½šûêXÓ;=PYjéX†yú¸ LÀœ2¤'NX Š“w¸'=O…\	hğk •B*î8‚qB6>” Ø£à±ƒÍŒ¨K@@…d7ŒÉM€-¸ÁŸ·bˆ]³¼éÁ,x<rA8rJ ³F°‡Aöƒ¡ƒ?RÂÄ’àÌ@™¶ ÄdFÀg‡tä¢àUÀî¶nV4!ã‚Q9 €Ñ,˜I(6ÁçA²DèiÃNë¹§°ÜvÊ{£\º¹‹¬(aLÖap¦iınÖï’”ÿÜ/‡¿?oü8Q<R™|Îøç‡Ç8òšãã†õ™˜—ö†w–‹c1~Í#<üºõ½0iã×˜’ñkçuJëoaBì}üi@~]aoyk–ÔCN
+89?VN%âsğäÂ:„c°wáøa•Wü~´¯bü«ü¸æäÏ…‰áÍ£ÆÖaÌcÌÅ|õ¹MŞ+æË1şæø×˜<÷ÓŒ$Ó$m—AÑ¦lz',ÍDqÈxG.œ ‚¢€¦İ6yGAU­›vë¸lÎz;ÈÒÄÍYŞt·4²ÙcÌ^¶Î›Ìõr
+èzş;‡ÅyÆ¯¯© ¨@k²œéæñE‡®[c#€Ëag(Ïd­ßİÎ	Nu4øLÓºMË?aÉZ'Iœ¸ç£Ï“$p9­óÆ¯?>'»R~î÷>~Œ(‚İ–ç´“¸¦(B&g©&¢hŠ¹êÉKÀ’ÏŠv”øĞğ9lxNbšN&«ñÛnÃïqÒé¢(Ræõi2˜HZX2Õ„pFAÀ¤ÜãC8êÁg“hNkŠŠÍa§Øéb(“ÅLe'Àjj8e™ Çq˜¿duH"i=PèÆ±Á•{…Ç&¦ÒÖË‹nA(÷ú¬ïå(Q™ÿ' ÓÄğSô"£™±LìvÃ Ìíy…™3MÆÒ
+vI$äñ2«ëDb	¤EAĞuŠì¢xøşbŠBz4b½`>¯NA UY¤¢(@BQI©Ú‘Làô
+é ±ÿvÁ
+¾ĞÖÊ'Ÿx†Û¶ì€šjëaÅbüıY‹ùáâùü÷†-|å¡')Ÿ×FÇ5«øÚšuüç3/Bu5×¾›½ıœ}Ëïğ57³÷šUxm2“sÖôpöÍw@}½µ(šÆº÷\Æ‚’"Ú+ï~ jk­ÅŒÆ¸j~w¬<Û$}jËğ(_]³Çºú šàp“¹ÕX”+æÍä¾óW`š&Kÿp[†¡¼²YN'İï½CSñıêvT›<î¼r,@$ÆüÚ*şcá\®n¨=bøŸmİÎ§ï{[s›®¸„r§ãˆùí‹0û{?féùçğô¥çñİúÁa¾ôÂZ^è §‹[Ï[ÎªÚª#¹ç@;ÿøô„cqkN¦	É¿]u!747Ò1í7¿ŸœÎSf)Z`&^YÆ&Š¸ÆÂ0:õu{6L\¢ˆMñ¦0<„$ÌÅ!YPùşò¥üüÅu$FÃØŠØD‘"M¾^„¦&6kª·<ı,†ª"Úllèê†LÚbç±8‹¦ÕsFI W´4Qmé†ê*0Mœùëïììä/O<ÅŠ³ÏbÅìY<zå»(şŸ_0–H€×{¤Ø0şuÎ,$A Aà-|`Û¨ª°¦(B/TT×gÄ#1Îl¨eíU—°ãÀAŞ¼M”8gÖäá!Ahn¢Æíàç^ —É"Úmìè€dâğÜ»¹ı/Ğ6o.W/]ÌóW¯¢èÇ¿$W)ó¸±‰"·>û<£]İüİ»/ãÚæiØrY®úã}ĞÜ9Wq67Ğğ® ‡ÇÚ»aö,‹«vÀ2ºõÆçrÙ¼¼WÄrù¿3Ùè:†ib©T
+¯ÇÃ¯.=ŸŞúG”–é–i‘Í¦aæÅS2åï¿ş]Y¢«(³fY—Ğu¾:¿€ßoØÄ—,âóçó¹‡Ÿ„ÚD”<7úıúMüç
+[w1ú¿ÿI±ÓÁ4»ÈØè(ü MV"MMu%ËÊJxvçnjCE\¿p~ä¯èÑ8‡…§‘ÍY:æ¸¯ªÈn]v> _øÓ=üè7·ƒ?>?<»Ü.¨¯Ÿp	ê7|ç Ù-è÷ACÃák<¸õe¾şİÿ†³–Ó~S+~5v‰hÿJŞ¸ù§»îAyf5?IdèûÔ'¹°¶’qÈå åım3 øÃÆÍ|`ñB¾yÎ
+Û~“õ¼&[ê§°pŠG:P/yv- nÙFMI18c>{ä¯ôõ¿â8°É2g\}zE5B0HW"I$tWI1WÖTr¨¯~}+\²ˆOs6Ÿv5f<ÇšOeQÒùç³ìª+(v:Pr
+{wí†é3^9Ïl–/Î™	ÀuwüKg¶rûß}˜¶6sÇ¶İĞÚúÊû·^SÎ›=ƒ»üè¶ßÃÒ3)?	MUÉi*‰LÃ4ÑÙ„³._E*TŠ
+Ñ“Jî:ürµVU2ï£¡ùœ•”yÜl9tˆ»÷@MFĞs¦5²+PÌÇVm‰Ã­/ÃĞÌj§ƒ¯Ÿ1€şâ×Tÿë8gF3u5•t÷õ[/á) ÖiMé:7Üu 7½ûzÅ1iÃÄáõ²ùsŸfÛ®aëeğ‘P :» “áêFKwùÖ£O oØÂ/wîE¶Û¹vftu[ÖU>}ñh7ı/«/=-]Ìø—/‘”lPR|¤¡(PàÆÖ&"Ñ(Ã›·qGW&ğ••gYJ°¢ÿ2tZ¼n ^Ü ìlÍ-_³Šk.cèº+ÙpÙ‘ËæUr Ë¬ùÌlûğ{Ùºê>]U‡~Á.7—mßüwş|şÙhÙ,Wşää2
+”•’Îå ØôåÏ‘ù¯oğíy³øÁcOğÑÿûLŸŠÊŒšJ\NşğÂjX·‰ïlßÀgÎ˜gå·íC<í8Ö	Ğ¬Šrº¶ïbMß 7,˜Ë_öìE5MÄIJ¨C UQøÖC`jÈ6Ş»ß2Õv>ßfqCYş+éNg øì’…üyËvËzÊ/Ø^ºûûYµt	>§“NÃ„ºz°;&Ä· @<ÉåÚİı,_y6¹–†²9Zª«™İPÃ®¾^„ÖÇiò:Ë´Òğù0ÿÛ²o"ÎGÏ9›·z»az~›€o?ğr™Øm<~ğåVÈÏ}ÃÁCüüÏ÷QÖPÏg.¹ˆ‡¾ğYVİÿı±rş˜6o¡º¨ˆÅÓqŠÈv˜Öñ$Ÿi™ÀŞÑ1Î~Ïø n<k)ŸúˆÅÁë™¤ÆœfÀŠg³LYr=¯³ˆÇyœ¢ .7zú:>ò~şç¢óÁ4Ñ&™ş² J§øÎ/¡RË‚++…’Rš«+Y´èÎ¿ÿècŸ5£…ÊòR‡Ä9 üyÃ&¾ı•oğ¿¿ı5ŸY¶„[>~ÿóƒ–uy˜Û Ë|~f ËgÍäÅ¯Ï<bì/.ZÀGïü3ÚÌÖÃn	5™‚Læ°îÅ‘ğaNÓ0g6;wó©‡ ·›+–."$I–Î0qK"h_»ù6pº¡´JBPW‡s[Ú;¹ãÁG¡´œTI¿¸è\nœßÆWïº»İæu7ßF®»—®?ŞÆg.¹Ûu°µ½ÛÌÜ0½ÁâìW_	W_9ñÜŞ?«•»wí‡9m§/°ªB¥%ˆ^/¦¡ÎfÑcÊêº%Åtv÷ñxw/—ÖÕä•wå·’$I”-_†^Ó€
+¡ë‘~>İÚÀ/Ÿyõ›·"U”£ŒrÍyçpù‚yÜ8o6ÿñÇsÀÊ¢ œ±ˆÿ<ĞÉg–-áÃsgóñ¿<ñ8x¼`êÎPRQÊ9•eÄ’I>õÛ;=^ĞT>¿¼ş}|xÉ">úğ“¨‘ˆ5MQ¤¢¬5@ğ{É¹ìèáşöNŞ3­Íÿï“\Ï<›È`ojÄétZ ”%ÈkQ&õg.%YZPZŠªªÄFÂyKµØçA˜ÓFåÙ+¸fîl "##L^ªEÍÓY“RøÑ®}üä¬Å|yá|®{ş—\{ÙE¸e™÷íç7<„TY‰‰0¯m6Ÿ½à\>·l1wo~ÙrH¿A%şÔKÓ(w: øÉõïã'×OÒkÿëgd2iëÁú¼ÍbËs°æâeæº=|â©èùØ h(
+B.wØwåôùúæWù×>®êêâŸóÀºñæ[AÑazğ¸(3¸`_}×%|óñgÈ$¬FgÕ>ø¼„Ùcnqˆo³Œ¯ıõhkË{_³ühñ| ~şäSÜù»»aùÙ–‹óÑg³´¦Š¯^°’ï<õ‚ƒw»øÖßêşAVşä&Şÿàc<|éù\<sOÜğ#ƒjyî&äİÈ6:ÿãË‡¿ïJ¦høúpäİï]v&ï]væ„nï>nzôq¨¬`zÀ
+ùº$~îêìá'g-æıKóõ«ùî\Ë‚ş—?ÜÍ¦ÖÂ¢EHÀÀ(Ÿ½à\–4MgÙÌ&Ööö@]İiÄ±~î<ĞNgGUÅa·å}X„GXİÓÏ·zÕÛ·Cm5cºÆ·V¿Dï–Y]¢7çıyŒÙ‚ÉÁŞ^¨('ÀW^Úˆ}l”"›Œ€€iè<ßÙƒ®ÛÄî];-~É²<×1J¦øÌÓ/P¯å°x±»‡o=ı<vì€âbğxøĞ3/r­ÏEw¿j2ò^ü`€-ƒÃtîßÇÿ>¿.}´Î´ìÓx‚½¸÷½ô€ËÉç_\?¡H–ÏokoÈªİÉ%÷<ÄÒàs\PSÉìÒbTUcKo«÷íŸÑëá‹kÖãŒQ$Ë¢€©ë´†ÁÔØ‹óÍ^Â™LPävO¥XßÙÍ=6Aq	Ì˜Á7ÖnbZ:Á¾áQ¨®b8“ãŸ~FM¡Ìëáæõ‘Ó)6ÁUWAY¹õÜ¢1®zøIKöTtíÈ@ÿ›u4Ùl‰@G‡%VÆ­%Ó„–fpy¡«Ó²ú[[­XàÁCˆ[ß{}–õÖÓ½=Öù³fË==–Õ¢ä¬cÓ
+SÔÕA8±(LŸÁ¢‰EË"ìï…ºZğ »Ûò®77[@Aû!kNMMàr[b@apØšo¨ó×5¬ÔÈj·ìêæfkœÈf&æçq[cúÖyı–Å›ÍLÄ‹Š,‹Ííîè³ôÒñ1œ˜9lkîCƒy§­h­wMTV‚lƒAèî²æ[WoÍ³·úz¬ë˜@4j¹**'€#KĞŸ?×gùÍÈëk'	¬Ä©Öä`´pœÄ2#ÓUòŞìÃûÀÆ0#;:áè´—£õ‚£Ç?âoÃò¸Œ¿ ÇÒ)Æïeòü&;9]æğ†‰cÌï°On<=h<uhrúOşzÇ»ÇÉ×<üòÖX“S{òQkq~^‡S„‰ ú1ïç”äiMU#Ló8Ÿ½Î	çe±¸¯2¶ ÿí2ÍWIåÉ/äádEá¸‡¼bló¨óÏ÷8÷hšyµ ¿R”^	XSx•õ;Î˜†~äašGqP“_2ãUîG8ıXG¿İ¯öİñ5WæW½Ú›ôj,ûè…5¼Ú¹¯u/¯ÇŠzµk½{|-ÑôZ÷g¾ÁñßN÷½ó¨ ¬M	BQhXÃ©Å`È §@Î€âÇ¨^Ğ| ªÖçšË*¼aŠ`OXú…)ƒ}rÅÖXö0‚UŒCî²
+o8ÂÖ5”"5Ò 'ÁÈW‘2V™"C¶tQ9šlk®ãã‰
+Ø# (-IûˆµD4A€!ò–Ë´!	*ú×0#ØÇT%OE§³È{µÙéÔÛ»YV¶Ÿ$²)^ÉRw2Ê=1öäÊJú(²)lËÌ`¦ëQaS¶‰6×^æû;)³gùÕĞbtCfUå”ÙUş40Ÿ±T6ß(óìÛé7\Z²‡pÖ‰l3‘exj´‰iîlRê0seœÚÄª’lkæáà²ó®àKÌq ;ƒÅ¾¤t™İ¹:s¤¼e¢Ğğ0Ë9Êã•¿¤¡îöQª{y¦ò&Iñ‹Òùšp®}ƒ”Œv±0µ“ÇªÎ—ù3Âü,x/?uıöÌæ‹¡uÜ¼†Í|9!/ÕŞÎ§Ô	ìBîÍòıĞcÜâ»³‡¶Ñ=í+\l_y®æfÎÌn§-<Êıå·q‡÷fìâ¬Ü6şZñkÌaƒ.y”*~Šso†[=·òË²[!ìæÑÚÛÙ_ÿMù¯’Çøó^Û^iæèÍ×±"ªõ±*v¦+ĞDcŠÆFÈª°/[ÎŞtÆ[ùè¦7WÉ—·¬à/{Î#&ù¨vğÿ¦İD[°›İ/DFóæ¼IÒp²;UÂêp+qµˆ_‚g{ZùĞCŸãÁÑ™ü¡öÌğ )ÃÆPXãs/ÿOdçó§öé|kÍÕä$£9d'?«¼/n_Ä¿¬şg.9ğş±äy‚Úfn˜	(İÃÚ‘bRi‘¨Şj`¥4‡¤óÉÆ­œWr¸nG1%ĞMÂª“Å½ÜX¿‘rW"¿)ÔF©WzÃ¶ö8«œ/P¥vÑì©.¦@L³3§h€Ôì‡Á˜îÂ+¦ (Ä]êy„Ä¶ìIEB4(É`wÉ¸mÔ‰˜E!š—ÃÔáé‘r˜k}‹Ih>Š´>L]ç¦ËùrÅ&.ö¤_ñNøv
+ôË©v¦q›Y.xìıüj÷E4y’48¢ ,óàîVV=ò	†”bpf¨qÄñË*à`eÑ }%\vß—xnxçøû˜Ş\o˜u=5|eç2ì¦R9C7Î9MëxpîïùCÿ4ri/ÓÜc8ELUöåö4\’N›k”h²ŒÍ©îZğ,î4wÍxSSé©æêÒ~60‡‡GëY83)E ](àê-–¨2¢¹xd¬‘	Ó]ô»ªxh´Ğxz¬ŠCz¦åÅ Ûxx¤‘ö”lqÔ°6]-Yv;x,R6=3¸m°•…5ƒÜ}îİy»øIï†"ßœy·oñ¡—`9x22‘œì)‰×²&VrœAÕÍã‘zt.Ùsc²Ÿ?Íÿ*m‘-œóâå®"OÖbJ2ÿ;z4Ñ@*(î'C§.V(`•‹ƒ³6ØÜ08Fœ!+¡ßo‡`±uÎXâ£P )`h½€»FFÁ®Bq™$«0ÔjÒ
+”z+ ƒX2%Pl V0b&¤ÃxM·´õ	(‡á(‚ÇôL‡d‚c+½c¥ ašÒ2¤G­cÇrìª2„N©Wúo€Nuz\thùÀ®8ñ7òaîs8X«‹€nÕé4e+œ!êÖ±ã¿kˆ ™VJ‡dXÑ|CM±ş¶Û¬âª	h 	–ËÔó×”¬r‚²h}—6€8Ek<ëxY ]Cµæ&üÈ'
+¬S+4-Ï˜0¾«vÒßfş™“r|dÓzà¦i9-mbTùßMybŸdZ€èLÃ:ß1)½ÃÈƒbüúb>rüš²8ñ ƒOÁ5QDD&æ#é»ƒœê­ô¼3ñ€d~­àïä îÑ]Ó´¸‰qÔg¯u}ã¨Í§“«À×}ô¹º^@ÈéâÇ*P
+À*PX* «@* ëmA†imî(õËş¶¨¾\ ÖÛÂvA7˜µ®)“ƒúTÀ!Ÿ¶®¹ğÔNs2RÓ¶tsßwşÄ®òR^ZÔÀ‹ójY?·êK «ÂX
+Tí´ÉÄ( ëUªy<(\6Î_ß…ú¡(óYËGÙÌúJ^:£ç6°kVƒÈB4m•½|ç>5û
+OW/Õ³ê~¢åKnK¢õ¶Ûä‰]2²d¥íHÒ[.—t“?üËŸ˜1fØåA@ÒŠ•4A2ŒáaëÌ*V/¬gõ‚z:gT€Ûñ,ÄŞ%$®ºöß Çß°t¿ÃÁeu$u› ÃªZ¼´¢é/Å.áTš÷6Oc8›#S^YşÍâ˜®>ÀOmfÈîÑªñ`Ši›Q›Ã#\´ı =sˆ¶=Gâ$d‘Xm1”X…wÉioVş6Dáx†l–ée%|´¹‘—#†ŠHärt«*×5Öñk73·¢C‰$«êª™
+òĞãV›rÓÊj“rÙKíØÑÑeá(e]ÄDµIôÙü€€+«réæ}\¹y¶ æÕ°za/Î¯e´±ÌâÎcIH)ã2« 
+_iZ>ğŒU‘ÏéÀëtLgAQqùÜ”Úí„5]Q15Ë¦7 &íÚ‹ğ£+*+k«PµıÃù2Coùœ8ÂIîÿìŸ	f²Ä]ö×­ï¸²efƒNoˆuêxaQkæÖ’©É§ERS²ÄÛXŠjéEºnéKNÍ~ÉlQXPVÂs½ı‘¿›3“‹k*ùÍşvî=ĞN2 ·$‘J·‹TÚÒ§4İz«Ç‹ù»]oIošP_Ì9÷má×?„Gğ¤œCã3÷eJI¡#°¿¤”5Ø0·šõ³«ÉVÁ@Ô*ujú*&Ş¢Ğ¨dÁeÃár3£"H×X”†’õ^/Ot÷Òôs 
+C©4ı©4J*ÃÅ³ZøÖ«îÕçÖlàÚiõ€Éİ;É¤3èúDÒñ…Í×ùzËüD¢9K^jLLiR¯óI%]v8M“ŠÑŸ|b=}BbI)›çÖğøuËØTä†döÔLÿôdu®×‚ ”A®
+”
+Ğ}$huïãŸ—Ìdqy5¹TŸ,#ÊcÙ’IAàşƒìŒDQU¶ô¡HA·‹ú‡ˆ©*;¢qnÛºƒ¤ªñ©¶V.šVoY„Šrz½LEn‚û‡X¾£‡!Ñ{R z%ÈLL¢.']!zŠG{øö3‡8¿¬Ôj	óööcå38M‡$Ãfíp3Èr”FG/Í¶Q¦ÛÆh¶…™if†º‘ÚúåĞö9şuë>Ü¦JXQˆä"áˆU+Êã¨ë4Îu“ÿÙ±‡»uRç÷ñw­ÍürëîÙ}€šâ"VÕWósg²z`˜]C–è“ßb¶a‚ßÉÅë;¨Õbìs•¼¢İË˜’€ÂÆŸÏo°¶w‚SŸŞÀÊo›7ì€ÌüC¬‚Uö~Zl#Ì¶1Ë6lÈ>L•±¶Ìi0+-9e@½U†ñ†† /tê,òù8¯$Ä˜¢±5e÷ğ¨§Ói¦	šÆ¬òB/hgËXÔÊ:õÈô¦RÜ´u'k*¹´¶Š¥e%ü¹½‹D2eô­"‡á½tˆvKNÎµœJ³\ÅíçÎ`¬oĞê¹sÚq,Á°8V”O)­:R’ -L³m”™öafåAÔjfšmI˜8ßpZœLõXzÆRA=^ˆ>Aw4ÌÕ³v4ÂÚî~ÊK‹9³´˜sËJXYZLO&ËºÑ0áh<ß]ËÆh3_¯Òå$c·1”LY\ÎngóÀ0›‡G¹fZÿ4«…máOvöXş×Qıe¬ÎY69ß j’óUÓ,g¤Ã~òÏ4¡ÄËôµí,ê`Höœ1x,g± GPÉÓ‹aÇ>«ùi,ÃNPL3Ã×N“ašmŒÖ<šä0^[¤¤µ±Â”ÀÈ‹Aİšÿ¬ƒ¡@åõVcñáa××ñ/æÑ®ÿ°6iÊæxp;ÈóËJ™ğêJ²•åt¦3lÆ˜°~htYA?}éC±øDcN·•÷~ïıT„‚\Y_Ãsg±fp˜—û'Ä#–cvE™c‘˜%:ò€*(²Û88~% O„ËË"—­;D€,v/âTˆe*ÑØqN$İÊõ?…tê€¥±È¿Ÿ¿6|{bæ–ø3œ–8ÔK_¿³DAwÄ6B¶ìNŠ|g•›¼tHœè¢êqƒ ÛFÂlë@ö¸YVZL“ÏK[0€C–ˆ¤³ìñèŞCVOA‡ıÈüwA ¿Át–›¶íbau%TW²°¬˜{uO¤À&Sğñå93ùñî},+.bw<…[Ps
+!¿—L«çÎ}Ù84:±ÑãDÈã@ìpîú.FqO¨ 5—¦&ĞÈïÎm…®‹Ÿ–ÀslWK@-±ª³èoPG1ràá§aìpT‚ F™ãJó’é Ô#6vØmhÀêŞVçrœÙPGCÀËùeÅœYBpØÍ*<²}·Å‰&?|Ó´Øncó %¯^Ï?ÍnaÛh„'öbF}ûI„Š8£$Äş]ûXX$•Ë1lš”ø¼Ğ?trb0äfî_;™¥ß>EîEAÀn†;ÿî«ÀKİ‡==•aX)gg®š6Ïî7,Ñêd:¬-[H ¸Aégsä
+ |üól;÷÷‹'˜SYÎ9eTû½8f63 ª¬µº£:¨ÆwêäÅã}{PVàÊ†Z>³l/†ùîêuÌ®­fõğ(éwÇ˜¦IÀåâ®>^99ë*Ã»pCN´c†pN‰TZğòì¹3èŒF´¤O?å]5Ä¥Š6ßÖSdQ* ¹òâÓ Q†Ì ÜıàiuØ*{¼‡d³±zpØŠ×Ãğ;ºû¨,+fn¨ˆY^‹Š‚Œ(
+ÃåÛ“àrN”.òûÎä¸ùåİÌ¯,gIY1µsgqçŞƒVK—¢Àá õH2ÉÓcTãúÛ‰ß‰³}„ó×w2ŒgJ@ ©cøfÍç…u°÷€Õkç_ë:HM0%¶åªN¡i,¼R'S4Úä>ìÛ‘}¦L†s+Ë¹ ²ÜâH¦iYNgVU°'‘ä–m»¸¯§E7¸´¢ŒlkåÒÆ:<¢˜ï¤XçÙmàõ°mh„_ïÜG,§ğåsXÕ6Ãr®¦3Ö €×=ÑíşDÅ`‘‡›»hÉ„‰;L‰”’aÏÅmüÕ“ß]> >Å0U¶ç*Àp[îs
+û†ŒWìe–+Ç6°‡[	"ãIr¾Ğşa‘GºûPŠô¥3Ü·ïØm,./avÀÏG§Õ1’SéJgX?<bÅÎÃqÃ¿ì?Äº€Ÿ«§ÕqÃÌfÖsmS#?Úµl6wrŠ°$B:ÇÅ/µ£!bŠæ”¸Ô\†FW=?]6¥£ïäŒ7X¢Â^µtªå:åŠ§Ì^æ»bl3œXŸÛëA5zÃ1K‡+ƒ›Z›õıƒèò=7°±§ÀÏ‚¢ m~/‹‹Œ(*ÃcVûA¯‡áœÂ¯¶î¤Áïå–‹ÏåüŠ2’Ä×}
+*ÊN<ç©ØCÅ®ÎŞÙÃ ä›2ß•Í#²ôşÜ„-àpN_<¥£åèÓBô©¡©«Û)º@ígslşã(7ç”—cË?8$	·|ÈnŸ—¸¦ñ|o·ìÚÏCıƒ¦Ée•å|²­•‹jq‚•…*Štf²(ºAG<ÉûjX1g¦%z³¹×.Ó“‹6tPA’ŒcŠÊïëPƒÄösZ8 å¬B(SD§œc¡Ù¦TPíŞø§ X6È2×1®é ‡_™İ)IìÆ8O)l2Ñ8ñ‚Óayä~È‚`‰>A +™¢k$;g–—2+àã£uŒ(
+]©4Æ¢¼ë/ƒ(Qêqqy}-óñ|ß ;‡-CàµbNÅ9]1S¦´«¹eå-üdY´ÑuöôæX`:Ùš«>¶ˆ:U
+½’c¾­Éã°ò§†M’¸¼¶
+û±Ò‰óñÃËëj˜áóM4K:'‘$«ã¨ÍÆºanİ±—ßwõ2šS™pcS—6Öòº	sëú-<Û?ÄùµUÜ0§Ñ0-CàXÌKU­PÈCÓ~æ÷1*OQŒRñ¡÷Ò¹Ü[éx†©¤)à¹/+•ù€óÕïÔ%BRÍn•½ÃG)ğ‚€ô¥3duıØâÈ&óâğIU;±·Öa§ƒ˜¦ñlw/Ïš&ÅE,)	ñÁúrµÕH¥x¶³—]]=œ7«…˜=ƒ-Ã#¬ÉsBÇapŸ]SÉ¾hœÁäÂÍİÈ2h÷N	ÇÒ•fJøóÊÆ†OYÃ›,1ËÖ\è+mL…Õáz™çJ°Wğ„âîu8ØX™¥Ça˜”:ôÇ“'–z,0‘¹j·Ó™LÑ™ÎÑäópãÜ™¼<!¦¨\ßÔÀ ¢p¹ÛÍşhÌê%ètâ±ÛYVZÂ´ªRİsˆ³^:È®©ƒ‚€¡…—,çş¶JØ¶ÇRÚ§05èÔûÄ‡Ô2”R²S3kÉjg8G@>JST–——0§(h‰™ã(÷Ó|^½º(<–#“£©4D‰×c‰¸q¥_Qy9à¾~nİ½ŸT6Ë-g/eEY	Ÿl™F<faIˆK¦×[I…¦‰,Šğ;™¹©“ùcC„S#Mj0Ù|i«m¢ÍÜÛ‹c©y¾œJ÷>Ğ§HÏ1Ç>®:0#ù¾‚ÈOô"‚åØ<ÙílDØ:Î—˜äõ9u5›,ñé™-¼42Ê~»” `ª*ŠªQQàúÆ:~üò.¶õ²9<ÆhŒ¡DŠ€Ã¤ë\ÔPËÒò2~·ï ¿Ù³Ÿ‘r?Ÿ{j72(¹v·Ó4Néri¹Ş:nš[ı¯4hŞ+¯À¿¬TN±Ÿ¡Yì¶’Óô<*r
+sÊJXTBO§_ÃDÒ¸¤¶ŠjŸ÷•ÀñHQYQWbšl6.ŸŞ€€ÉÙå%,,	!6Adfi1‚ÇÍß¯^Ï~Šyz5éäådš{÷w :7Ÿ{ï?“ië²òåMŒ¥xª0MıÔ&õ	63LôìV¯/‚H’7ƒ¦(ƒÔ°,Ã)VàÅ^Š9Â±ü˜ªnàÅ×.H+f²d´×_ï@p99óÍŞŞ?c:;Ç"ì¡7ÁP5|.'wut±i4Œ9èóûHT•µƒÃ<ØÙÃ9µÕüëÂ¹\ùàOÉÍŸIöë¿ã™Û¾¹Øœîü²½1”šÉtÜ¬½x™”|ÛKÌ²M©°Ä  9¬×t É£Ìu«<«åátÒH¢¨ê„õuÜ9Šl‹â¤×|SèÅA7x »¨¢€İN2k9KÓ‰Cá|úX¾«|ZÀîp”İí=8*‹Yòá÷3xô¬éÔ…?DåÆ>ÛŠœ‰¶º'*•¡¦Ù<´°¶[NÑ7!ŸÊ¶ØnôoÆc‹XÙ¢§X&¸E¶ê+X?$‚¨Ğè÷rqu»Â‘×Ş¯(œUUÁ‚â"ö¿~½CÁ&“Îd0LÓĞx&Äxğ×Ãe	|^ôx’»và’eşNN³áâÅ„Ï›Mqk3Ó>j¢)„D?q-¡ÙOD?üêc×]Â×–×£v¾i›o§h‹½ `jElÍUp±ë S²VtA®Ÿ!°7‚˜¡3™bLQ0_ÏƒµÛÙ ™æ‰bÇ3%Æ?i9e€ßG$‘â3Ï®‡ƒmj/Û‚~pI+K/œÅò(çï uİAœköĞíf	A!9í¯ÊÅ´l&G-¿ZÑLº«ÿ”n–xkD¡`€áb›RÅÅ‚653$È1×3 ¹îeqY	»cñ×WÀCÈ*
+óK‹iO¦‰çroMU#¿ùb<ÍZrBV‡í¬7uÖ½üÏ…3XyéÎë>‡›;h[w aÍ^z2=Äp@rÚ™  £äV\Ê}­åğÜFp¹^[E8½•÷q¾ÒÚy3U
+¼b0+Ğ‡Ç-‘J˜;HqñõUTÉ§«Ü.†³9âcJcg¯KÄN&›l=´
+;;xAÓx¡Ôóªùœ{Åœ×9Â‚5û™¾n?Îí]ôezÃ(!ÙeL°³á‚™ìˆ1»¦Ñ&±chôøn˜·°…İJY>…fêx‡ØM›+ÃzCæ±ŞË)úõIÂL&!›ãÑC]ûÉ%ç½Y$I–.WÈn=Àã¦ÎãUÅt9å—Ìâ]Q®ÜfŞš½hk÷Òég“Põş8¿F¢,¬¨B ’ÉÑ›JMùK4uÀsÔBdõ N9ú Kô‚ÑG•0LiE=uö›ûA²_ìhfFáSË1šJÒ¯
+€ÎóXEBNWı8';4À‡Ê«	65òMs??QÎ9—µqî!ÎÜĞÎì¿<ÅÀy3¸?(@_³Â’â›T’iJ•VCìRJYhxã›+§Àkƒœé	so¬+9±!b¼nX›1\^J}~jÜ.‚j–OÏl¡Éç"©©|{Ë‚ÓóÊğkëf#™,^YÆ.KˆãRWPtáL–R§Çx)"-çÊÚjÎ«,ããuµ|üÉçè³I<tVCW-çŠ/½9’ã¢ğ ÉÆrF\°«w„Áa«{ÚÉy/NQ¨^Â–\}¦è2D{ù@U˜oõ/!Ñ±‚!D—¦â å‘"QÅa¤1Ôñtƒ£»xá†§i!üİçÉ—²OjBŒ¼º*(d³9W”2ÉĞK ˆ")MC2ª|^Î­(ãÙ!R9eJM{3šà]ñ²(ğµõ[èÍ) Kdööğ»u;ÙzöÊØÇØŸ×Òté\´Æ s4œ9›õC#(ıc€ô6IM~Åİ‹lSª8%‘#ÓÈ×qÈ )5kK¸5%i¾¸°•â4%n›‘ÄP†ÉäÆˆÄÂìMÓ¦#FK'!›æÙx˜?ø3ØÅ…,!c˜dRéW¯Ş—Sğ{İ|¢e:Ÿ]¿…Å¥ÅÄLƒX2MVUñÙmT{\Ló{yvx\S·¶6‰Û¼h*ee¬z<ùNiØ*Fxù©‹°ùçğû½,SÏŒ9ÕÌm)!6kûe#0I>¥1Ä©–¨òr®ÕÆÍ|=o°iõ	43`¦@Pò)*°…@j¡šA£ŠM©bVG4ô-£Fy’½ıÏsPIs :L,Ùl~¡`wì²B,‘ÄhgÏ<‹®¢bºÂí”•µĞ%ˆ¯
+,I8·¦Š=Ñ8ïk¬C7á‰>V–•0–É2¨iH‚€8^0w*ë–
+‚*A„€?¯ƒ‰ ¨4N¯Å»%Ê¡½8êJ Hİ~Vï¤¬,ÄâyõÌŸ]É¢–Âs*ÙmæØ1†‘¸µÍîZS¬4/+äÔ9öJ=Ë4ÀÌ‘2V@‡ìÅ O¡Š¨QÍ~µœÙ"ö$Š9¤•±Oñs ²ÓƒCË!’¸ÄÜÇ]«ï…ò&H 8’d”³šñ¡¶|õÑ_ ùm¸Q_]ç0Ap»X?4Ê_v²ª±–¨¢ÒOÒ›Nc&›¿İÆ‹ƒ#SHwL'­ €©±@t1°yØD«&–	²  ‡|PìgDÓyä¥]ğÔ6êkJY0¿ùE,i*&5·ÊY×0fZ=iq>ÅÀÊ‘ÔŠÙ¥”q†­ÇR¨ÍT¾Œ‘ NØË@šf%İz»Õ*v¦ÊÙ©³3`ÆA"cB6j
+Ì# ™¬,­e^q/Çdµ©¶]t½® ´Íîâ}MD(†JJ£Gá@3†’IDÙß~¸bX¼šSxê@‡•ç~2Vß(é®šüİIÚx¹ÔÿÊ)˜&vI´Ú%]ŠF×S[!§S_UÂ‚ùõœÛVMeµ'1LítäX‚ŠŸ.­ˆ3üYĞ[@¬"cT±O«fRÁÎXÛ³!öf=ÌÈÎA6iÕi£VUI´:®sgSB2Á%Š8DŒËE­¿ˆÎXòµ#øŞ Ïï[oudõ†ˆe”)=ç|ÕË/™ÛuP-Y)NÔÕz+|bJ¶â:âkÚ‰‡£8e¯Ü,rÈ6	*‚ÈT®¿n{7âÿì
+X\£éÓX˜À(whï¡+±Š—“•PCìÏ¸É ™4äâ`€4`ÍF–À5.Â¿}^×TvEc$5İ=}Ì›UO•'Dçhøµ¥ëàôã`*N‹Åé*!›IŸ6mCNTçÂ)SÓ8°¥BWÕ±@&K~êŒ ñé>ˆŸü¾©/éÌğÀHô:A ½ –(”Dğ'7‡H”áQ@ ƒƒbo1¨;Àu"AoCÉa(*<2)Óêıv#U£tZÁö{ööb+÷8Œ1£Š]0œ>éHÜÔ·5e 
+Î!ğ(à­Rˆo´•ˆ‘W^İ.!iÊ”xKA?‰­¦DN‰õãªX§=)9yÄ¶÷£)9¤“X[A50|NÌ¦Ušû<7§jòT‹›LW:‹×Uzr%ydÉÌ2¼mûV•ú(Ì°iı!Ä2?æ‰êxPĞ‹ ÎÉ7VEúÑ¯P’8‹-@ Pd)å',;£™(6#¶·a[¡l¹µ•»FèíèÇî:‰—+_‰Àh-§dU¡ù›– `$ã¨¢‡¦@)(ÙæH:‰ Åq:o‹¦GH	ZU™®-İàwœ˜Ò>>LNÃ(vcNBJ}ÃYNïœ«j–¤é¤Ú_Ê‰nWàÇ(·Û¦4x|êï['ÔP»=ÊÆ-‡°…N"[W ’
+F}ÊÜyãŞ9À’LF5‘"O	è'¡˜¹l„"I{{)ğšÂ,¯ŸÑ-½äÒi¤“#Y¥Ì$ô–bËZ?÷ÿÎ–l£7£àtŸ\B¶“ÊEqÙ·/à³S6¦°ïå(ñ¸ÒQ1*¼0=Iõ”$û¾ƒ8–ÄÁDÑÀéœ¸8“Œ¤£Øô·‘ŸS¨­­ÀßçÀÁ~ì“)¨¤Uôæ¼ï*{jö(¼s€%
+dãQtÉGS°´ôK2Ãé8‚Ãåt¾iÊ“ÉPYh÷0¸¹Dñ$X .»å5ŒSf¸¼s€ dH.ª|¥'¡Àƒ©ªdsc„lÒéoš&reoŠ›Û‘J''S
+Fm êıPNÙ—w°“1M&ä9	`Šd²Ü‚zú+ğÙ+ËPvÅf?I½P1Ñgƒ×ê©»éw°l9·«øäú8‹6t5APT§¦âó©TÚ]2Ó“°oC'„Ü'ç»RtŒ"fsÈÒ­Na€ä,IâP"…l"z¼'®'Év’¹.2 ÙNßûTU**°cÛÎNìAÏÉ)í)½ÖË)JXÇ¹‘x2NNpSë+:ñ€´dc GÔbH×é{ŸšÊLÙÅà–LS=)¥ÓÄ4Àh*‡4Q
+ª ¬ã™à"ºROÔt”
+¹lSPæ´Ÿ¾øb/¥#9vníB<I¥]Èj¥^Ì–µÛúç	¼ó€ejd'AW´“(Ui€š‹R,›SW7î½8
+­5å8Ú£ôõcsœ„È€¤Š1­Êİ9õõ5ŞyÀL2¦oÙÉ…v$;©ì!wú)ğ‚ ‚A›n§{S7¸N.¯^ĞML›ŒŞZœ™Ì°^Û2”éÉ(¸\Å'›ÉDqIO3¼®ã­+ÅÓcı¦ƒÈ%'Yß5­¢×øaZĞÊ»š‚t¹w°D‘®xd?~_ğÄs³$Cé8¢Gr8O¯{SV†JÈlî##K'ñø £¡7… è°2E) ëu‰3@½4JNNO'Éd†O?ŞçDJ³mS¢hƒXA?±ùYéÇKiW¦N‰”y'’–%…‹ro)(‡¬M°ÇUÖuĞëÇÔ@)’L¦ÙsvĞÍÓçõ3%Â¼¼±·mß(b_1›—.æk9†S
+FS	Ôø­L†°NŒGu‰bwñ„oùnóy ¡ƒ,SîòP(!àâv-çª-Èˆì£=™Úmò'Jªf…0›‹0ÚJ1–UCwñàÒ¡â@AÕÀ-ƒó  ÕDŸ^ÒJX'vW}9*GrQÈ:ğ9]”üøìÈ6/.G·#6?ªä#-¸0ìŒªÃ2I«‚|¤Ç7¥Ä«@Š]„™!ŒÙ%‘,tÆ!vE‡RŠ¦SQ@ÈéèÁI!œ©œ*¿½+Î”TŸ}+E†‰Möò‰Z®ŞÕ(b	’½]ö“ÂEÌ°‘2e"šA,›5kq1Á´bŒâÛp_¡COŞ
+d¡;tp±=bÌ0eYúõ³ –Ê&ñÎäX‚€š‹ñà°Ê¢wÑ›ÑÊ*˜Jô´•‹;"AÈóícôŸ~;QN‡lÆº‡óÊĞç•¡f:¢ˆûÇ_Â˜Y´²7„Ç:9³ZÑ­_¤·)zC\;¿N9ŸcB_ÂÚÚ5±Á¿5¾°6‰¿Y²š²¨p[œ-§Où‹&S ¿™æ„{áMàŞbaÕT V
+À*PX*PX* «@`¨@`¨ ¬€U €U °
+T V
+T VNkzkÓfÁÚ^¥jVA°zÚò•‹s9«“—Ëim„P«IÒø÷‚`µæU' Iâ‘å•;}ë3%7q(NôèË)ÇŞa,K×Ÿ¿iB6gİƒ(ä;eˆ½&‡İ:vò²lÍ{r{8]U1ßuò6´œ21Öørù§ã÷6Nªf­L¬-LyÅÂ·X¢ñ¶€Ÿ¯›¬ª1HÏëÁ0!¥ëH¢ˆÛãAÁ$7¾—Î0$·İƒ,
+‚ÀX*c(
+‚(âr:¬^}ã­æˆh:‚^YD±tÂø	ù½˜†a˜¦‰”;k˜dtıÈ‡ŸHQRVÌüÒ¢Ù,/¡	AŸÕËFÓ@’D0!fØ%	› `—D2ªF:‘°&X`20|IUÅÔ4|ù—/àõ`˜‰TÆ²®ãõ¸@Hê†ğTÚz1ı>êŠ¬2İùõ~3ZŞÉo¨"QZ«ÊùáYKXU]qø«ÑlÒŸŞ>?}ÿAö²ô·2{ÉB^¼ì~¼q+_z5ÔÕB2Íüúj½ô<\62×t~¼q+ßX»	şğî¹ ºŸ<q«ÂNUy{Ş^›Í*¥ürÛ¾øÌj¿ö¬lí„¢àËoÕÿÉÆ-|öÁÇ ©Éz0™,_9kßY<ÿğØŸzò~»÷ cŸşäáó%IÂ-YÙ¬7ßÁ¿Ÿ¹ˆë[[ğÙ¬9=ÛÛÏç‰má1\£c\¿p.·­\Æáæÿö÷P\jeYÛd¶^q1%N—ßÿ0Ïï=5Õì¾æ*2©3n»d;ş¢ ÿsÁ
+>Ş2íˆ¥o»õ÷ì‰@II¾Õï;	Xñ$¥Åì¸ördAà‡÷>ÀóÛ)*+eAErdİíÁg³Q=İ8–,Äg³J%` êë ‡(â³ÙxxÓfnùÃŸøòÿÀ×—-â±;YßŞÍüJTÿõ-–X•%èî¢²®ŸÍÆŸÖ®ãæ+ÿï“|aá<¶tvòå?ş™fIàê%‹¸dŞ~øğ£8ÔÁ¶l.¿çB€dš¹5•|gñ|Ş¼…ıìW´œ1ŸDNAÑşáá' æ¦ T•¸é7`³>ĞÎ»>p->›Ì{¿÷_´ÎšÉ·¯ºœû/:‡ÆŸıÚû;ß\Ğ†]€yå¥,÷ºXÓİÓ¦ƒ	%;>›;Ï]NİºMPTD­ËA6€ƒ°ÍÏÖkßÍ4›;}û6nFôú8¿e:ÊĞ ˆ6Kôêæ”q®7X¦	šÊÏÏ?Y¸äÿ'xš[ «Ÿ;5ê‘ó¢$šÉ€®¡åuŒT.ºvXşĞö<pçİ.¼3›¦áHÄ!E´Ë˜±·Şş¨©ƒÒR¨(Çã±Æ¿cíùÅ-gŸÍİuuÔ˜|n5ÏzıèÕ5\2oÿıÌóè€Å‹¡®Şº]#à°Š†%’ŒDâŒì: µµPQÆ¯7nƒxŒŸ}††ùõ@}#4ÔSâq“ŒqÏïï†3ÏâÛW]Nƒß#ÃàÒØÒD³ßÇ·’Ï}?ºäÎüñ/ ±D	]G¢Ô–•ññ•Ë¸åÙ5$x&‘(ŸY2Ÿi7_½÷¾û“ŸCãtğù¹ëN¨«šrK7BqøæKÓÁïã²Š2rñ8O¾ğÁk¯áé¿ÿ0ñlŞHŒ}iıÑØ„.3y7²pì&Şß{ÿµ|õúë¨u9øş£óÂšµ°p1#aêŠƒ|ø>ğxØ<æı¿ıÉ¼®ôß×¿O\xg4së‹kùõ“OCÛl(*¡¬º€ÆŠ
+†=üªbé)^/êäáí|üÜ•|øÜ•|ï¥|sË0hl°úH2&47Ãœyà°s0§Íëã/wİ‰·¬”­½}üûí¿Ëë>ğ…sÁ4ùÚO~AR7ùÁªK(®(#<0uµm6nŞ²•ª²R~så*nyi=©4^A§“«ê øî“OÁ’¥<ôï_ ØnçĞh˜[wíãÙCà÷O­¶ó–Yƒãÿ~?îÑQcğ¡ÆZª’1Ì¡ár0eİsÏ±§·—Y••T´µ æ[€ô3´wá];`hà°•p:¹lîljvn~a5±hÂâJº>©R™W¨'Ñet›Ëï{˜¼ë^bÑ(ß8k	_¸†‡@Q9¼#T,}ÆĞÁ0PtUXŞPËyå¥ŒEx|ı&¨k„²>RSÉ®ÎNÊC!vg­êÏŸY8zz0óºš\ûÛß ğİw_ÂPxÌóÂ„Å'y¼PTŒ+•¢>•àCµ¬Mèì²^Î)l÷÷æË&C4ÎK#aì>?,?“È¦­Ìüê÷YúÇ{-¦666©ƒ×‘7?–JÁĞ°eQf²ØòıãÇà}ï»Y7ßÉ•æñ_×\Ô…Š0“	VÜğI–ÿû·¹ñ®û¡¸¯ÃRÈ?óû?b÷5 <şé-£`Ü2›,*Lsâgüo§lnZ·…²/|»{YÕÚBƒC‚ááW>¸üùµ¡"ôd‚âUWó?Ï­æ²¹m\xÕĞÓËªÆz f762øû[yèš+ øÄÒE`“0’I f–•’=ØÁã=ıüûÊå,,+%–ËA6Çó} |éÜĞİÃ…ÿõTÿüËSA:•/â&¼ƒDa^´}îéçYwİÕ<õ÷7ğ/O<ÃÚşa®]z†5)»İâ€;ï7ó‹°¢¹™=‹8{&û†H*Ö–¦Ûf³ïKŸç=ï} ‡ÚÛ!2†’S|^V}âï ªÁëå‘=HjÖømÕÕÜ“Q¸i÷>şaÖ.Ÿ7›‡öwBiö<h¥q_Ñ"]#àrqÕÒ<W[©¥% Ä:;¡´
+°»mÒù&.\n7ÔÔò•-ÛùÜ¹+øÑç0oİf~¶l! ïıé/pºœèñW¬<›ë/äÜym<×Ş	`Y¹ ×?ö‘O~ŸÓA&§‚ËÅ_ÚÀçæÌä{W¬Â_\Ìƒ:™ÙdY‡ÇÄÚ¾³Ü¦	¡ ë»û¹ìÎ»ù¿WòãKÎ?üõĞh˜Ñ‘Q§UôLS-gåøcy÷‚y¼{Á< nÙò2_Z³€ë–-åºeKx`ı¾sÏPWGo4FSE)òc‡¯!mŞÂ`8_­OS¡¬ŒìØË?ÌšÁ7—,ä¡­; :ÜCÀÔQ@CÕ°9n[¾dâ3Ãàÿó"á(´¶M`PQ&98TÃ´¶Ã—“§Y7:Æ™õu\}Î2í6~ÿüjîùÓ}°h1ä•6pİâ…|ë¬%¬Ü½/ï#U à':æ›ë7óõ¥1”,x\Œ&Ó,¼íÜ¼rÿºüLşuù™à	vttkê+¾5[ìÁò(÷ö@"ÎŸ›J—‹h&Ã¾~r6ÂÌ6f¸äÚÒ¡ê8g´Ò æú‘ Ñl†a·–Š2ì#ÃÈ¦É`2E_g”WÀ¬ÙÔÚmxú°g3‡•ãíÉr}M²ÄèÁŒzıPYM«©á³1«BU-Å^7¥Ãƒtõö’©¬’RKOÊs˜!
+,–LôLšgöb ·ÎX¥e JÌ@ïhç`*ÓšÀé¤I¹»“½ñÔ6à´ÛhGLÍébïÁC^´Ì Ùé4­hxÂ#lÎj´ÖV“îí¡Û ¦rYZÓ	²#ÃtÚĞ<FÃ02DÛI£×MVQÙÛ?`Aim…¢¼kj,ÃÄ[[»A–­ĞÇè(äu¼^(Î×D “±\¢ÑˆuÜøÛïrA0hy™SI‹ÅçE~¿¤XÌúQò!(-§¢1kq‹CÖøccNC(ª[×ñû-‹t²B.Ö‡‡­ûğz ª
+\î	îB:¡ uMA€HÔšoQ‘u¿©4DòÊ·¦[÷
+©`‡Ç “†P¤,¡8–¡02bÕµ/-³Î—eKW‡!·^—ŠBàvOõ“M¼õEAÄq÷ÁøS· òà‘¤Ã!«M­”·²&Yk¦i}~XÑ7<G”¬0Çx¡ÃÈ‡GDËQ8~ìø\sÂ¿®ûíŸÓdš|ìø÷¦9ñ¹(ùÙøuÈër¢01§£×iü~Eé•ë$ŠykÖ8jnGÔ,:Ş½œB`½õµ&`²6ÙïÅ$KLÓÀÏáï4mbŒ£­9]ãã›F¾©¶9i.æ+ÂkéŒ“9ú™æDxràúh½M×' `„Éëtøøcœ,Kvòº¼	ÁçÓ#»áèpì/^ù·y¢cœàø§lî'<ĞÉÏáÕæñô^,äc¨ ¬€U °
+T °
+T V
+À*P
+À*PX* «@* «@`¨ ¬¨ ¬€U °
+T °
+T V
+À*PN°|…e(Ğ)&ŸôÀU SL‰ÿ? oØÜÊ    IEND®B`‚Ô!&'(O bplist00ÔjkX$versionX$objectsY$archiverT$top † ¯#)*0123MNOPQRSTUVWXYZ[\]^_`aeU$nullİ	
+ !"___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó$% '(WNS.base[NS.relative€ €€_Chttp://math.mit.edu/~gs/linearalgebra/linearalgebra5_Back_thumb.pngÒ+,-.Z$classnameX$classesUNSURL¢-/XNSObject#AÁan‰Ş/ ÈÓ456ALWNS.keysZNS.objectsª789:;<=>?@€	€
+€€€€€€€€ªBDEFGHIJK€€€€€€€€€€€VServer\Content-TypeTEtag]Last-ModifiedX__hhaa__TDate]Accept-Ranges^Content-LengthZKeep-AliveZConnectionVApacheYimage/png_"74fc-5303aa0c44ea2"_Mon, 11 Apr 2016 19:34:07 GMT_ü
+
+YnBsaXN0MDDZAQIDBAUGBwgJCgwOEBIUFhgaVlNlcnZlclxDb250ZW50LVR5cGVaQ29ubmVjdGlvbl1MYXN0LU1vZGlmaWVkXUFjY2VwdC1SYW5nZXNURGF0ZV5Db250ZW50LUxlbmd0aFpLZWVwLUFsaXZlVEV0YWehC1ZBcGFjaGWhDVlpbWFnZS9wbmehD1pLZWVwLUFsaXZloRFfEB1Nb24sIDExIEFwciAyMDE2IDE5OjM0OjA3IEdNVKETVWJ5dGVzoRVfEB1XZWQsIDI2IEp1biAyMDE5IDA1OjMxOjQ2IEdNVKEXVTI5OTQ4oRlfEBJ0aW1lb3V0PTUsIG1heD0xMDChG18QFCI3NGZjLTUzMDNhYTBjNDRlYTIiAAgAGwAiAC8AOgBIAFYAWwBqAHUAegB8AIMAhQCPAJEAnACeAL4AwADGAMgA6ADqAPAA8gEHAQkAAAAAAAACAQAAAAAAAAAcAAAAAAAAAAAAAAAAAAABIA==_Wed, 26 Jun 2019 05:31:46 GMTUbytesU29948_timeout=5, max=100ZKeep-AliveÒ+,bc_NSMutableDictionary£bd/\NSDictionaryÒ+,fg_NSHTTPURLResponse£hi/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑlm_WebResourceResponse€    # - 2 7 Y _ z œ ¾ Á ã æ147Y{~€‚„†ˆŠŒ‘“•—¦²´¶¸ş )246=EP[]_acegikmoz|~€‚„†ˆŠŒ—¤©·ÀÅÓâíøÿ	 @@`flŒ‘§«¸½ÑÕé÷	"             n              $_Chttp://math.mit.edu/~gs/linearalgebra/linearalgebra5_Back_thumb.pngOtü‰PNG
+
+   IHDR   –   Ä   }GØ   	pHYs  .#  .#x¥?v  
+OiCCPPhotoshop ICC profile  xÚSgTSé=÷ŞôBKˆ€”KoR RB‹€‘&*!	Jˆ!¡ÙQÁEEÈ ˆ€ŒQ,Š
+Øä!¢ƒ£ˆŠÊûá{£kÖ¼÷æÍşµ×>ç¬ó³ÏÀ–H3Q5€©BàƒÇÄÆáä.@
+$p ³d!sı# ø~<<+"À¾ xÓ ÀM›À0‡ÿêB™\€„Àt‘8K€ @zB¦ @F€˜&S   `Ëcbã P- `'æÓ €ø™{ [”! ‘  eˆD h; ¬ÏVŠE X0 fKÄ9 Ø- 0IWfH °· ÀÎ²  0Qˆ…) { `È##x „™ FòW<ñ+®ç*  x™²<¹$9E[-qWW.(ÎI+6aaš@.Ây™24àóÌ   ‘àƒóıxÎ®ÎÎ6¶_-ê¿ÿ"bbãşåÏ«p@  át~Ñş,/³€;€mş¢%îh^ u÷‹f²@µ  éÚWópø~<<E¡¹ÙÙåääØJÄB[aÊW}şgÂ_ÀWılù~<ü÷õà¾â$2]GøàÂÌôL¥Ï’	„bÜæGü·ÿüÓ"ÄIb¹X*ãQqDšŒó2¥"‰B’)Å%Òÿdâß,û>ß5 °j>{‘-¨]cöK'XtÀâ÷  ò»oÁÔ(€hƒáÏwÿï?ıG % €fI’q  ^D$.TÊ³?Ç  D *°AôÁ,ÀÁÜÁü`6„B$ÄÂBB
+d€r`)¬‚B(†Í°*`/Ô@4ÀQh†“p.ÂU¸=púaÁ(¼	AÈa!ÚˆbŠX#™…ø!ÁH‹$ ÉˆQ"K‘5H1RŠT UHò=r9‡\Fº‘;È 2‚ü†¼G1”²Q=ÔµC¹¨7„F¢Ğdt1š ›Ğr´=Œ6¡çĞ«hÚ>CÇ0Àè3Äl0.ÆÃB±8,	“cË±"¬«Æ°V¬»‰õcÏ±wEÀ	6wB aAHXLXNØH¨ $4Ú	7	„QÂ'"“¨K´&ºùÄb21‡XH,#Ö/{ˆCÄ7$‰C2'¹I±¤TÒÒFÒnR#é,©›4H#“ÉÚdk²9”, +È…ääÃä3ää!ò[
+b@q¤øSâ(RÊjJåå4åe˜2AU£šRİ¨¡T5ZB­¡¶R¯Q‡¨4uš9ÍƒIK¥­¢•Óhh÷i¯ètºİ•N—ĞWÒËéGè—èôw†ƒÇˆg(›gw¯˜L¦Ó‹ÇT071ë˜ç™™oUX*¶*|‘Ê
+•J•&•*/T©ª¦ªŞªUóUËT©^S}®FU3Sã©	Ô–«UªPëSSg©;¨‡ªg¨oT?¤~Yı‰YÃLÃOC¤Q ±_ã¼Æ c³x,!k«†u5Ä&±ÍÙ|v*»˜ı»‹=ª©¡9C3J3W³Ró”f?ã˜qøœtN	ç(§—ó~ŠŞï)â)¦4L¹1e\kª–—–X«H«Q«Gë½6®í§¦½E»YûAÇJ'\'GgÎçSÙSİ§
+§M=:õ®.ªk¥¡»Dw¿n§î˜¾^€Lo§Şy½çú}/ıTımú§õGX³$ÛÎ<Å5qo</ÇÛñQC]Ã@C¥a•a—á„‘¹Ñ<£ÕFFŒiÆ\ã$ãmÆmÆ£&&!&KMêMîšRM¹¦)¦;L;LÇÍÌÍ¢ÍÖ™5›=1×2ç›ç›×›ß·`ZxZ,¶¨¶¸eI²äZ¦Yî¶¼n…Z9Y¥XUZ]³F­­%Ö»­»§§¹N“N«ÖgÃ°ñ¶É¶©·°åØÛ®¶m¶}agbg·Å®Ãî“½“}º}ı=‡Ù«Z~s´r:V:ŞšÎœî?}Åô–é/gXÏÏØ3ã¶Ë)ÄiS›ÓGgg¹sƒóˆ‹‰K‚Ë.—>.›ÆİÈ½äJtõq]ázÒõ›³›Âí¨Û¯î6îiî‡ÜŸÌ4Ÿ)Y3sĞÃÈCàQåÑ?Ÿ•0kß¬~OCOgµç#/c/‘W­×°·¥wª÷aï>ö>rŸã>ã<7Ş2ŞY_Ì7À·È·ËOÃo_…ßC#ÿdÿzÿÑ §€%g‰A[ûøz|!¿?:Ûeö²ÙíAŒ ¹AA‚­‚åÁ­!hÈì­!÷ç˜Î‘Îi…P~èÖĞaæa‹Ã~'…‡…W†?pˆXÑ1—5wÑÜCsßDúD–DŞ›g1O9¯-J5*>ª.j<Ú7º4º?Æ.fYÌÕXXIlK9.*®6nl¾ßüíó‡ââã{˜/È]py¡ÎÂô…§©.,:–@LˆN8”ğA*¨Œ%òw%
+yÂÂg"/Ñ6ÑˆØC\*NòH*Mz’ì‘¼5y$Å3¥,å¹„'©¼LLİ›:šv m2=:½1ƒ’‘qBª!M“¶gêgæfvË¬e…²şÅn‹·/•Ék³¬Y-
+¶B¦èTZ(×*²geWf¿Í‰Ê9–«+ÍíÌ³ÊÛ7œïŸÿíÂá’¶¥†KW-Xæ½¬j9²<qyÛ
+ã+†V¬<¸Š¶*mÕO«íW—®~½&zMk^ÁÊ‚ÁµkëU
+å…}ëÜ×í]OX/Yßµaú†>‰Š®Û—Ø(Üxå‡oÊ¿™Ü”´©«Ä¹dÏfÒféæŞ-[–ª—æ—nÙÚ´ßV´íõöEÛ/—Í(Û»ƒ¶C¹£¿<¸¼e§ÉÎÍ;?T¤TôTúT6îÒİµa×ønÑî{¼ö4ìÕÛ[¼÷ı>É¾ÛUUMÕfÕeûIû³÷?®‰ªéø–ûm]­NmqíÇÒı#¶×¹ÔÕÒ=TRÖ+ëGÇ¾şïw-6UœÆâ#pDyäé÷	ß÷:ÚvŒ{¬áÓvg/jBšòšF›Sšû[b[ºOÌ>ÑÖêŞzüGÛœ4<YyJóTÉiÚé‚Ó“gòÏŒ•}~.ùÜ`Û¢¶{çcÎßjoïºtáÒEÿ‹ç;¼;Î\ò¸tò²ÛåW¸Wš¯:_mêtê<ş“ÓOÇ»œ»š®¹\k¹îz½µ{f÷é7Îİô½yñÿÖÕ9=İ½ózo÷Å÷õßİ~r'ıÎË»Ùw'î­¼O¼_ô@íAÙCİ‡Õ?[şÜØïÜjÀw óÑÜG÷…ƒÏş‘õC™Ë††ë8>99â?rıéü§CÏdÏ&ş¢şË®/~øÕë×ÎÑ˜Ñ¡—ò—“¿m|¥ıêÀë¯ÛÆÂÆ¾Éx31^ôVûíÁwÜwï£ßOä| (ÿhù±õSĞ§û“““ÿ˜óüc3-Û  C–iTXtXML:com.adobe.xmp     <?xpacket begin="ï»¿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c111 79.158325, 2015/09/10-01:10:20        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+            xmlns:stRef="http://ns.adobe.com/xap/1.0/sType/ResourceRef#"
+            xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/"
+            xmlns:pdf="http://ns.adobe.com/pdf/1.3/"
+            xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"
+            xmlns:tiff="http://ns.adobe.com/tiff/1.0/"
+            xmlns:exif="http://ns.adobe.com/exif/1.0/">
+         <xmp:CreateDate>2016-04-05T14:41:12-04:00</xmp:CreateDate>
+         <xmp:MetadataDate>2016-04-11T15:28:55-04:00</xmp:MetadataDate>
+         <xmp:ModifyDate>2016-04-11T15:28:55-04:00</xmp:ModifyDate>
+         <xmp:CreatorTool>Adobe Photoshop CC 2015 (Macintosh)</xmp:CreatorTool>
+         <xmpMM:InstanceID>xmp.iid:f063938e-1024-49d3-a314-4f5439008a4d</xmpMM:InstanceID>
+         <xmpMM:OriginalDocumentID>xmp.did:D17C38A99368E11187E4C1A29176355F</xmpMM:OriginalDocumentID>
+         <xmpMM:DocumentID>adobe:docid:photoshop:f7e60462-40a9-1179-8fe4-b90ad930cc2f</xmpMM:DocumentID>
+         <xmpMM:RenditionClass>proof:pdf</xmpMM:RenditionClass>
+         <xmpMM:DerivedFrom rdf:parseType="Resource">
+            <stRef:instanceID>xmp.iid:61634b5e-5962-4be8-9915-8cc11d674b54</stRef:instanceID>
+            <stRef:documentID>xmp.did:af3f6a24-a90c-41e1-9e33-f5f9d0655214</stRef:documentID>
+            <stRef:originalDocumentID>xmp.did:D17C38A99368E11187E4C1A29176355F</stRef:originalDocumentID>
+            <stRef:renditionClass>proof:pdf</stRef:renditionClass>
+         </xmpMM:DerivedFrom>
+         <xmpMM:History>
+            <rdf:Seq>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>converted</stEvt:action>
+                  <stEvt:parameters>from application/x-indesign to application/pdf</stEvt:parameters>
+                  <stEvt:softwareAgent>Adobe InDesign CC 2015 (Windows)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+                  <stEvt:when>2016-04-05T14:41:12-04:00</stEvt:when>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>converted</stEvt:action>
+                  <stEvt:parameters>from application/pdf to application/vnd.adobe.photoshop</stEvt:parameters>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:af3f6a24-a90c-41e1-9e33-f5f9d0655214</stEvt:instanceID>
+                  <stEvt:when>2016-04-11T15:23:44-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Photoshop CC 2015 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:61634b5e-5962-4be8-9915-8cc11d674b54</stEvt:instanceID>
+                  <stEvt:when>2016-04-11T15:28:55-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Photoshop CC 2015 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>converted</stEvt:action>
+                  <stEvt:parameters>from application/vnd.adobe.photoshop to image/png</stEvt:parameters>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>derived</stEvt:action>
+                  <stEvt:parameters>converted from application/vnd.adobe.photoshop to image/png</stEvt:parameters>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <stEvt:action>saved</stEvt:action>
+                  <stEvt:instanceID>xmp.iid:f063938e-1024-49d3-a314-4f5439008a4d</stEvt:instanceID>
+                  <stEvt:when>2016-04-11T15:28:55-04:00</stEvt:when>
+                  <stEvt:softwareAgent>Adobe Photoshop CC 2015 (Macintosh)</stEvt:softwareAgent>
+                  <stEvt:changed>/</stEvt:changed>
+               </rdf:li>
+            </rdf:Seq>
+         </xmpMM:History>
+         <dc:format>image/png</dc:format>
+         <pdf:Producer>Adobe PDF Library 15.0</pdf:Producer>
+         <pdf:Trapped>False</pdf:Trapped>
+         <photoshop:ColorMode>3</photoshop:ColorMode>
+         <photoshop:ICCProfile>sRGB IEC61966-2.1</photoshop:ICCProfile>
+         <tiff:Orientation>1</tiff:Orientation>
+         <tiff:XResolution>3000000/10000</tiff:XResolution>
+         <tiff:YResolution>3000000/10000</tiff:YResolution>
+         <tiff:ResolutionUnit>2</tiff:ResolutionUnit>
+         <exif:ColorSpace>1</exif:ColorSpace>
+         <exif:PixelXDimension>150</exif:PixelXDimension>
+         <exif:PixelYDimension>196</exif:PixelYDimension>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                            
+<?xpacket end="w"?>înÄc    cHRM  z%  €ƒ  ùÿ  €é  u0  ê`  :˜  o’_ÅF  &…IDATxÚìés#g~ß?}¡  ‚÷ÜCÎ=:Wòj×Ù•´¾Jâ#oœ*'ÎşÉ—«ò"UI9/“8®ò›8©ØÎ&©òÆ_8+­F«ÙÕŒf¤¹ÈŞ$ˆûFßy"g¨kW«%GÏ§jŠÃFw£Áşây~ı{~‡ÄŸşùC øüh©À„ø;>gb2ĞÁç=bÉâo øi „%Âa	„°!,–@K Âa	„°!,–@K Âa	„°!,–@K Âa	„°!,–@K Âa	„°!,–@K Âa	„°!,–@K øÌ¨?Ów†?ã:(2¸#ŸI†]{ğ÷ÂÚ3^†4ÆŞßD_.bÉŠËg ¬ËÔ.£×Áö„°Fh
+lWù7«|ëµè(ê‡£˜àã+I"úÁ*¿ıæõ[W ÜÂÚG±Nraã~Cèå³q¿Œü/ÿ=Ø®0ŞŸ@×h÷m!’‡­2®ª€$	a<¬ÿNÛ[,-.á8ÎÀ¶êµÁ£Ş²,‚ ícÛ6ív{´¿çyxŞ‡ö†ïû´Û-lÛS¯ÕğüÁ>­Vktş½û´Û\×Å÷ıÁvûIñ÷û}ºİÁäy®ëî»Ön·K§ÓÙwL§İÆ¶¬Ñgé÷û£×\×e{{×uGÇïììì;~ïgO…Ÿôp8¼}ËâÖ­÷ØÚÚ¤×ësşü9îŞ½‹¢(¨ŠBß²i4¼úÚ«Üx÷ù|I–ùÁµ·/Œ£(*¦iÒëõ¤Áêv»LÏÌL$¸~ı:Ï<ó¶íğÆ÷Ş@ÕT|ßgfv–\6Ç;ïü€B¡€¢¨,--"I™LEQ¨Õj<÷üó ¼û}"‘­V‹V«I&!‹aY} ÙhÅ)•K<ûÜs<|øbUUQ…ÙÙY=ZF’
+S"ŸË119Áµ·Ş"l„	‡N>Í÷?  ª*½^gŸ{p8,„õY˜™%›£ÙlR)—‰ÅãÌ/,Ği·‘d×q(LPU•¹cs†¦ªœ¿pH4Šçy´ZƒffsÇÓï÷|Ÿ|~3brêôiŒp˜™ÙY‚ Àuü @UUÌˆÉùiõzƒóçÏÓ·,’‰$FØ \.
+…°,‹±±ùññáÈç6ÂD¢ºı¾E,%•J‘H&H&“4›M?>˜"d™t&C³Õ"lA@»İ!›#‘LòÒK/Ñjµév;äóyTE¡İnÓlµÈÅâGBT úçM~V0C
+ÜÛàu#üò¿ùıÏ|¸eYèºşÄvÏóPß÷‘eyôó ö¾¶{Ü‘áïïòëÿá¿òx	Öaº²Ö¡±¤¡‘µ²¶ÊòÒC\×EÓ4|ß'›ÍòàÁæĞT•õõuÂa“F£c;ÈŠLH×1tÏó™˜œ`llŒ7¿÷Ó3ÓÄâqŞ»ùñXİĞA’h6|õ•W¸~ı:­f“ééivvvp]EQ‰Çc¸®Ë•«WÌ!¦ÂÁĞu’É$š¦¦6UUÉf³$	ŠÅ"¹|]×‰DL4-D¯×E’er¹Nß÷q‡‰©INœ<‰c;œ:uI’°,Çu/`†®§\®FËfqlUU©×kGkôÂ:ÈxXïù\|.ÿÄë333 d2c¨Ú§»äL&@8&ˆ¸Ï®1ŞétˆD"BO›»áS´ŸÎ÷@ˆêK.,–@K ø’
++z½ŞÛ»İ.¶ıù¬3¶Ûm|ßÿÄıv—[<Ï-ÿ¹»á£Dõƒ·ßf{{›B¡ÀÙùy.-‘N§é[‹ğú·¾õ„k ßï³üè‰D’ÍÍMâ‰8…BÍÍMÆ2ÒÃ§F€ÒÎÕjËêcš&Š¢ ¨*µj$	UQ	‡¦¦§Y^^&—ËáØÕj•S§O¬­V‹N§CµRÅó\ÌH„À÷	…t’É•JEQètº8®ƒ2rŞ*¤Ò)
+…ÂÈ§'„õSÆu]²¹Ñh”N§K(bzzš®S©T>òf8C£Ù$‘L7oÜ@’$ºİ.ı=Ï#lšT*VVVH¥RDÌÍf“üxn¯ËøxT*E¿ß§\*áûÁ¾÷îõz¬®¬
+…¨×kÔëuª•*§Ïœ!ñîŞ%ÍfiµZxG:¦ÑhÒjµÈf³hš&„õE iÇ‡ël»Æ r+‹177wàq±XŒ^x€B¡ÀÂÂ<ª¦
+…Ø7›Ë‘.6sêçÎáyÉdrßÈ)IfÄ NìV:&‹è­‚€o¾ú*²"cšæKL®ë¢ª*OGâ“8M§Ó%™L ï#IÒ($%~â¨g~‚¯ªÕjÒB˜“XìÉ¥SI’ğ}ŸN§C,;P ²,ä$Ié¨*Q	aù¾Ï®½Íææã…q.^ºÄâƒd2:İ.îİãW~í×´±®½õSÓÓH’Äâı?y‚|>Ïİ;w¸xñFx0òmnlP,q]áû>ºnP­V‘$‰pØ Ò9uú7oŞdnvV«Éââ"¿ò«¿ú¡8›-6·6év:è†cÛ(ŠJ¾0Nq{ß÷1UQ©TÊèºN§ÓajjŠ™ÙÙ§Æ¾:Âò<¹ãÇ)LLĞ†šÌÏÏ£¨*õzE–¼!ÚI²,cFL¶7·Èf³èÃp•]"‘±x3lR­l¬d2E2™ ÙlÅ  Û²Éår F˜™é™ı_‚À§Ùh ª*ı^o—5PË²h5›H’„®ëH’„at»]ÇÁ÷ı§jmòHØX“““û¶…†¡2™tš|>àqa3ÌåË—G¿çÇó¸‹ª©ûl'€D2Ib¸mbr‚ó.à8Î†t,şÑF©TŠ^|ñÀ×2{B…ëĞëõF!º¾ïcY®ëòàÁÆ>ÿÒã³eYT«ÕÁ·h1z¶¹¹I±XÜ'èİsú¾OôûıÑ>ãP¯×Ÿğ…ÕªÕ}£áŞPb×ó>•¯LŒX_ĞTøÃë?d{k‹ÌX†«Ï<3²±¶6·ØÚÚB×Î-J¥öã7oŞdrr’‡KKH’Äüükk«LLL05==Úwkk‹õµu‚ àáÒ½n—h4F£ÙÄó\âñ†a0=3Íû·ocÛ6k««”Ëe~é—y4…­¯¯³¶²J"•¤×í"FØD’%¬~Ÿâ³ss´šÚí6ÇŸàìüÙ§2<çH8HOŸ>ÅÜÜ½~H$Â¥Ë—‰¾ë8è†A<¾ÿ‰+¤…8~ìñx‚ˆirÿÁ<ßcîØ1Â†ñÄ4¥(
+Ñh”Z­ÆêÊ
+FØ`|¢@»Õ"›Ëá8‰D‚. 'Nœ ÷Ø4\(ÅbÏõ˜™!•NÓëviµZdÆÆˆD"(ŠÌäô4‘ˆ¹otÂú"/PUŸ¸»œ8qâ#Ó‰¡mE?ò ¦ibšÿT<gvvö#÷ÍærÚm½–H$H$Ì>î[{Ì¾Ú/6ÖÏ˜F£Á£‡Gé]Õj•N§Cig‡ï¾;²ƒ§V­Ñív©Õjûl´v»½o¤xÌWX~ôh”eÛ6µZ^¯G£Ñ ÓîàwïÜ!šÍ&÷îİÛ÷~ÕJ…­­-úı>–eRÕÚí6½^oßÚf¯×£R®Œ\#İNWŒX_$®ërûÖ-V–—Y[[ã¹çŸgc}-âáÒİn—f³É™3gÉ8†tÚŞ|óMNœ8,+¼û£1wl“§Nqóİ¼ø•¯‰œ¦•r…µµ54Ucyy…j¥B*Â²,z½¹\8}æãPÜŞæŞ½û¬¯¯qüøñÑÓc·ÛåöíÛ„Ã&¡F£ÑÄ0tdY¦X,255ÅÉS§X|ğ€b±HH‘J§(W*˜a“óÎäS®ÖO/rşÂºİ.áp˜/Ü™±1ÖÖÖH$OL…_ÿù¯£ë:¶eEG^ógŸnX1d¼P@’¥ÁÂv¯ÇÚÚ:‘ˆI6›¥İéÉ¤±,	8;?O\¸p…sûï\>ÏyI"‘H`YK‹‹ƒıPˆ™ÙYÆ†6–ï{ÌÌÎ¢©*¶msòÔ`!Û01b}‘6Ö®aH$´w²‰TU-õ’3>\Òy<eLU•‘¯,“®Ä‡ï©ëûozú ¿T(bjjjàïŠÅ;ğ3åóãÂÆ„°BX!¬/Î­P¯Ó}¬:ËçñTùÓ|b}®|ˆŒ÷İà„J½Æı;w/ÇÈåó¼û}E&NÀè)¬R®‰D˜™¡V«QÚÙafv–jµÊÆú:±xœ‰BaP`¤RarjŠ^¯G³Ñ`îØ1dI¦Ñüpqw»ªj¼wóùññA~Ï÷ÉŞ}÷]R©4“S“ôº]ŠÅ&§&‘$	Y–GîQf¶ça;!M#EÁó<dEFSCt»]´F¡P ÕjQ.—ql‡±±áp˜~ßD>¨
+¥fgçÈåsBXŸ†]_åÌÌ,ç³²¼B»Ó&36F¿ßÇó\*•
+•J…¹¹¹Q]©ÙÙYú½ëëÔj5&§¦PdM±³½M"'™JQ*•ØÚÜÄõ<\ÇÁs]Z½¥R‰~¯‡çyØ–Í‰'hÔkxG£^Ç²,†aJ™a"‘•J3b23=C©Tbue…f³Å©Ó§8vìo¾ñV›h,J.SSSlll É2éTŠ~Ğgii‰‹/âyî?Àu"‘wîÜAUUTU%âñ8ÅbÓŒËúõÅ#SmÆó<J¥ãããŸ Ò‹²åùYplí3ãã*Û|İNg°¹'¤§×ë=‘ºïü¢ÚÌ§ã½Û·)fÄ$J±´ôE‘	›&“““„4ååe‰¥‚ À¶mfçf	‡M¾ÿæ›|íë_§Óépıw˜™™ùÀzış âŒ®Óï[´;mêÕÚ°`›‚?<W8¦^¯“ˆjQİºu‹‰ÉI|ßmw=—X,,I<|øD2‰ª(˜¦Éòò2§OŸ¡Óíà:ã ¨*®ëây¦iâ{>ç¢¨ƒ0MÓĞC:·oßbfzUSÑEQØÚÚBUUº.ÉTò¿Xb*< MÓX]^%.ó}N§ÍÃ‡ĞuF£A¯ÛãÑÃGø¾G*•ÆGILMMÒj¶h6›$“Ifffh·Ûloocëkëœ¿xX,Æï0¨øç¸TªÚ­6ÑhÛ±Éær4ëRé‹Eúı>ÕjÓ4ËŒ±¹µÉNq‡ééi‚ *å2¥R‰‹/’Íå¸ÿíN‡d2I«ÙÅŒMOO³¹±"+Ä“	zİ.Ë–¹tù2ç˜œœ¢\©P.•H$(Š2Š.5ÂaúıÙlöH„ÙÊ©ğ“¦ÇvĞBŸ.MÊqœQ†Í‡kz$IF×õUoL%Q… …B¸ƒ¬(È²Œ5¬*IÒà5×Åu]Ã]k IH
+ÂÉ²Œ¦iX–5H-‡‘$it-»×fÛöEIÇA’¤‘u`<¼˜
+?ÍV‹G‰D˜šš¢ßïS«V	›æh:Èåó”Ë%VWV9~â8²,ÓlF²ñB×q‡Ã$‡A…›æ‡72˜Y£î9îÉ% u”U³ûØ{ã÷îÿø±{÷Ó4í#ó÷n?ŠI‡ª¢ß£åG,-.òü‹/²µµE­Z¥V«ãûƒJÈõz×^N§C½^ãí·®ÑëõH¥S£åâv‘ÌX†^|ñ©ÊzÂú±ÜÃü™³œ›_@UUZÍ&ù|ÓDYöº]UE×uÒé4gÎœayy˜;6‡mY¨š¶oêãı	÷@lO¨ñ ùI;doônæÎAÅn_<b­P „%Âëpo_»ÆÕ«W‘d™^¿ÎÄÄéL]×q‡­­-‰²$Åèt:HC»Ëó<Ü¡/i·^B­V#³½½=è"‘H`[6Åâ6ã…Ñh”^¯G£°áõµ5ÌHcè×4~¿?ZFŠF£O]q§VX +ËË¨ªÊù°,›®½uËW¯ ğÃw®“ËFi·Û£ÁV«„4Ğ™™îİ½K,G‘eÜ¿ª¨øÏ3Ï>ËÖÖÅí"ë ªóóg¹sç’$Q­Té:AL&©T*„ÃaTUe{{›Ë—/súÌ¡ª£ ,I’ø­ßùŠÛÛ¨ªÊ+_{… äî>9&“I¢‘(FØ R®`FL4M£Z­F›İº®sùÊ¢Ñ(²,óÚë¯ã8N‡\.G2™Äê÷iw:ƒø÷TŠ……úı>gÎEUTjµ!=ÄÌÌÆĞ¹ºpîÜO¼è-„õO…’$‘ß³ø*IìK@İë9Ïæ²£ÿ?¾`»{ã÷î
+……B£e]×Ñu}”DO&N$SI¡œ§a*üÛ¿ù._¹B"‘àï}ÉÉIL3B<–e¬ãº.ÕJ…LfĞâÍqœQPëº˜¦Éææ&®ãJ¥Ëfñ<¥ÅEÆ²Y¬~Ÿ¾e‹ÅH¥R´[­A€^(„Ä "mÛØ–íØx®KH×Éf³Â{…eÛ6¼ÿ¦iò•—^b¼P ×ësë½[\¾zY–Yz°ÈX.K§İ¡Ùl
+…ØØØ@öæQePx¶İabj’{×®ê?øëëëLÏÌ°¹¾A·×ãî;<ÿÂØ¶Í»?úá°‰®‡8qò$››ÃO›S§OÑn·	…BO”E‘¼Âßû§¿‡$ËÈ²ÌÂÂ ç/œCUÂ¦§¦ĞB¡ÁÒP ï
+Å†Bäóã„BNmXƒtnv–x"$É?qUUyöùç€A˜²¢ªHÀää$ªªâ8ÎÈV»pñÂ ›i"GPXŠ¢O$$	×ui4d2Tu°ú/Ë2òĞv’$iPmOV9şXÁ]*‚'
+„ì-,»×]°k“í.=şş´T8şÒÚXÿùOş„gŸ}…s¼}í¹\ß˜š¢V­ÒëõF/'&'évºt:ƒiÊ±$YBQT2™4ËËËDc14mÀpÿŞ=Ç!ŸgssƒÌØ±hŒ^¯GbX*R’$676FåB!V«…nè¾O­Vg~aş‰RJ_f½çİ÷}âñ8¥ÒŠ¢påÊâñÅímÇÁ0¶·¶h44›MÃ R©°¾±ÁæÖ&•J…Z­Ší8Œ
+lom‚õVVV0MsT»ªR®°¸¸H½^ø§¶¶X~´ŒëzTk5î|ğËñèÑC*å
+Íf“r¹4Š!?Ö¯ÿÆoŒl™ÂÄàô™Ó£©íÄÉ“Oˆqbj’Ç­Ÿ€ 	i_}ªßøÍßıÿÒš¥»¼ôòËû~o6›hšöDpàÓZ@í©ÖÇÙ2ÏÖ,ñ“Ú5İ	#şˆM…!,@Kğ%Ö®y²¹¹Éİ;wèÓŞQèJ³ÙdkskTk´ßïz:Ãêê*–5¨êy­V×u±m›õµu\×öÂù°Ö§ëº83ê=¸û¾»ïáNwŸ =ÏcuuuÔÃg¯Áî8k««£T±N§C±X+ªÕ*ÍfÏóğ|oP§´ßÇu]êõúè3ï¾op„kÂªÚ^à³¸¸H¹T¦ÛíòìóÏñşí÷™š¢İjópi	US9{vMÓxë­ï}Z>;¨} ª
+†a°º²Âù‹™œœàÍ7Ş`vn–ÎÎÏ“Ífùÿ÷œ<yr7Ø·h4#oº,ËôûÑX”^·K§ÓazzšÂÄ7nÜÀĞu<×ãç¿ñøÑˆçy¨ŠB©Tf,;F§Ó!›ÍbíV3áú;ï`š&ÍF“h,ÊäÔ3Âï’N§	‡Ã#¡¶Z-,ËbjjŠ…sçdøCõT859Éx.O«Õ¢^¯‡Y8·€Ò)Œ˜œš¤ÕjÂd¢Qá4MCQİ İn!É2ª¢0>>N*&ò­_ü…AšX*ÅÜ±cX–Åüü<Ù\n”œªj‰D‚ÅÅÅQ'ŠcÇQ¯Õ°,İ0H&“¼úê«¸®K¥\FSíXÇÁ‡¹tå
+AP.•Éçóh!V³‰nœŸd[[6‘HÓ4¹xñš¦‹Çh5›8Ãììİ^ã'†*aI\étšt:çzP‡‰FØõ	8vìØ¾ãSéÔçİ­¿>>>>ìì¥sîüùá´c#Ë
+®ëR*•ˆF"&& ¨T*ds¹'Ü­V‹¹á{?^Ó½Ûí05=5evgO:uàµ;~lßu
+?Öç*¨·nßbéş"3s³TË.^ºÄÍ›7%Û±¹úÌ3”vvX[]c¼P R)ã{!]'‘H055ÍÍ›70M“^·‡eYaƒh46ê¾uõÙg(nY__ãÊÕ«”K%nŞ¸Ia¢€3Q(pUZ,ncÛcúÆ”Ë¥ÁšátúA.#Ø¶E¯×GÓT"‘(®ëÒív8vüøhñüËÂ¡±tİàô™Ód³Y"f„T:Å•«Wq]—Ã ?>cº®£(2ªªºŸ^¼tiÔ›96Œ[ÏS)WH¥’¤’)¬¾…išÄãqbÃ
+4©¡‹ÅØÚÚÂ0Éëëëx®‹®ëär9&''eÇ±‡Âé2–ÍR.•ÑB©TŠÀ÷Ù)•ĞõAwUQ¿tI´‡Ãxş<½gºØ-µ½[Òzo4h6;Œzò\‘HdĞSğ1ö¶u›Û_¾ûÌÙ³û~/
+÷q<ù{J?–@K „%aíÅvñÚe·ëÖAxG·{p÷­v»ıÄ¶Ç;uízÛŠÅíÏT’{oVa¼ÿŒév»üÍwÿ½^‰É	nß¾ÍÕg!™Hòÿñ?8vü››¼öúklmnQ,¹ïSÓÓüöïş¡Pˆ¿üïA¯ß#¤…(•Jüş?ÿg¬­­ñ§ÿéO¸òÌU`mm‡KKüÁ·¿M«Õä»ı]æææ‚€…sÜ¿ßó¸{÷¯ëur¹ßıë¿¦^«sfş,Vß"—ÏQ*•ˆEch!÷oßf||EUét:4ëƒ2àíN›¹Ù9^ùú×Äˆõ³Â÷}Z­ı~Û¶i6št;z½.ããã˜a“ã'Ójµh·Ût»Æ'
+XVY–±m›ååeâñ8²"‰˜Äb1lÛ&—ÏS«ÕØØØ ‹òòÏ½L«İ¤V«“Ïç‰ÅcLMO±¹¹9¨äóyŞzóû¬¬¬ğâK/13;;ğ²ÛÖ eİê*ª¦²3,§}ûöû··G.MSéu{OUê‘)Ç}Øé÷û8¶ó±]îwYZ\âÄÉ?ù›Š¤O?»iüŸ†ÏETb*ˆ§B@K ÜŸô1\›½¿ø€­õaUˆD£D"\Ç¥Z­à‹q¸®‹(ªJ¯×Ãæú¾ÏìÜı~ŸõuÌˆ‰Õ·F=j<×c}}Èçó„B!:öh!ºÙhàû>¶mcÙ6fØ$Q­TˆFc´;mb±A°±¾N.ŸÇ±Ê•2ôzƒ¨Šb‘±lEv+«V©tšh4J³Ù¤Q¯“J¥…÷n¾G~<OØ"-xèÃÕ@ Ù¤ÙtÊZ_]cvn–pşÂîİ½;èÂ6ÙXßÀvlòù<ı~ŸN§C8l²³S"|"‘›[[”Š;&
+t»="Ñ(¥RiĞ&Îóh4št»]J¥‰ÉdI–©VméÆ²c”J%N:ëº¬®®bšæ¨àùp]—÷ïS«ÕÈdÆp‡õµõ`Ò)676èõú¨ê K»„tjµÊæÆ&Ífƒ3gÎÍå°-‹N»ÃöÖ‘häÈëĞ»úı>†a<vâº.’$}ª°İİÚ»±ä¦iF/Ï£R©ËåpgÔ¢d·]É§¡İnÓjµöED|år™L&óDëánø)³¹µ‰mÙèÃ˜ò"3³³´Z-TUeue•3gNÒuŠÅ"­VÓ4I¥’ô{}º½Ş !¥$!Ë
+ùñ<×¯_gjr’l.G­Z¥Óí’J¥ˆÅb”J%‚  ÛéF3Û"™L266F»İ&  ğõ:ºa`è:İn€€F½A"™ ›Í%*UTM¥^«
+Hñx|Ğ¤©Ùd||Çqyôğá Ğ[4Š$Iôº]Ò™¸®ÃØX–jµJ§İf,›Å÷|Ò™ôıvÄTø))•J,=XÂòÙC¥RE…@’ØŞÚ"0;7G»ÕBUVWVyû­kH²D¡P \.“Ífv’cÓi·ÙXÔÊ
+‚€G’¸r…;|ÀÊò
+²,sìøqbñî>ÂĞu}ş9®¿óùü8½^¥ÅE¦ggèt:D£666¸|ù2ÛÛÛ<\ZÂu=<Ï%‹ÑÆ¹_ºx‰wŞyÛ¶‰Ec4›6Ö7†áĞ2İN—¹csDc1¾ÿæ›¤Óinİ¼5*·Ôï[ÔjU¢±/¿üò‘
+<tS¡mÛ(Š‚$I£…cUQñ|o4†A§=HÁŠD#T«UÛfl8z¨Ã>€»Óån„©ïûÔªUâ‰®ë¢iªªâyŠ¢`YŠ¢ ª*ívÓ4ñ<o_[^Ã0P‡»åv«İxG$Ùw^·GØ4€A¦İ©{wZD"ƒ–.½v›F£Á‰“'±,‹P(„çyXışh„Sá«µ=b÷°êppİ½1‘è‡SÃŞ‹‘E–Ÿ(6+Ë2™aDê^j÷œ{Û¥D£ÑÑ1oƒıuLŸ¦ö'l~¸ßãµ·B{êz™¦‰iš£ÈÙİÏşYì=áÇÚgY{È†(`öc‘’2a¥›Ÿíˆ%I`êŞ+ÂÛ‹ +B,Ÿš ¾DÏ]l!¬G+frü«Õ‡Lÿ»?£­Š‘ëS'ƒ€˜ëpíêô_°àÏXXÈ2ÿû—æÁñå~¨ÑTp|¨÷@•…°öM…A ÕÉÅ0Z=|K¾bZ „%Âa	BX!,–@ „%Âa	BX!,–@ „%Âa	BX!,–@ „%Âa	BX!,–@ „%8|||Šın¡¯f<ÿğ\µ"ÃnkQïá
+Ë÷!€o9Aâÿj:»±½_ü‚#$,×… şË+_aÌĞÍEW-›ÌŸı·Á/š(}tôl,I•íõÕEo÷ú£kÅkˆ÷˜ãû>«+«¸K«Ù¤Z­2==Íé3g¸ñî<ÏÅ±Ò™4““S,--15=E½Zcum•l6;(ëû¸ÃºëŠªÒëv/èv:´Û²¹AõãÇ»Ò{Â®z:„õ8AP)—é÷û¬¬¬Ğl6ñ}ŸÓgÎ
+…èvJåÛÅmÆ²YVWW…4L3B»İf}}±L×ó0ƒn·K>Ÿ'ÉÚ—¸.’Vßâí·¯ñÍW_%‹»õ´K–eÎ]8„Äs/<¿¯:ñÂ¹…}”$‰W_{mTIxfvÏóğ‡’,Êaï­*¼Ëë©oùöBXŸI’>ÕÍŞ­K¾·<5Ê_ïmUr v9j?¦°<Ïã½›ï¡i*Ó33ì‹È²Œ‰6zı>½n—n·K2™$•Nóàş}
+…	t]ÇqQ1ÿH$²O8ïß¾iFP$	MU±m›É©©Ÿà)V¿ßçşğI¦’ü‹o›ÿùï
+…8}æÓÓÓ¬®®òpé!.ñâ_áåW~ıGÄoÿî?!?>N£VGVe,ËâÔéÓÌÏÏÎmY6î?@Q#Z$¡^«395%îÔÓ.,I’H§ÓÄq4M#‹¡iáp˜P(D8&’L&1#&ªª’J§1ƒP(„nèÈŠ<jEğƒ·ß¦T*‘J¥ØŞŞÂ0Â¤ÓivŠEêõ:õÉ‰S'¹zõª¸cO»ñ.Ëò¨ÇÌîÿwÿ=¾íñ×÷şxôèK‹KDcQ676ÈdÆ…B”Ë%Êåkkëh!MëiÖçM4%•J6ÃÔk5t]GUÕQãK]7„ÄÑ!,–@ØXŸİ†‘N×uGK0¶mïÿiYX–…çy´ÛíÑvÇq}¡g!¬Ç°úº®“N§	…B$	4MÃ4Mt],(+
+ºaFÑ4±±±Ñë†a +2­fÏt­rgĞ•TUè÷ûX–…mÛX–E¿ß$\ÇwëiÖÆÆÿè·ş1ß|õU .\¼¸ïõËW®pãİw‘…‹Ã×şíÿñçù»¿ı¿HÜ¡P#lŒ„‡"‡‡‚4Ğë–*xÊ„uüÄqN>ÅÆú:Šª"K2a3ŒÕïÓj·I§Ó¤3İ V«á{>á°A­V`jjŠ¯~í•Q[Üo|ã¸ÃŞËçü`Aà{Ş`yGô=İÂÚ]P~ôèº®sïŞ=º..^ İn³üh™±±ë266†ë¸Tªæfç›a676¹ıŞ-¾õ‹¿ğá9]Ü‹/Ÿ°tåIcûç¾úU ¹t‘Z¥F&—U¥U© jı~h4JàX¶E,L•—.QÜØø‰.ú ëAaÊG÷j–uƒÌDaô{,3PxO`^ˆèdòÓÓ?ÑEÜõ‚°†7ğWÿî{˜‡(l¥ëº£kEaë[ë[ƒT°Ã‚,Ct¸v(âß °voZÄ<|W.u¨V°@K „%Â„°BX!,à§ ¬˜ø3>gb*°)Ä%øœiıÿ MfRáğÛ™¯    IEND®B`‚Ô!*+,O†bplist00ÔNOX$versionX$objectsY$archiverT$top † ¯#)*0123?@ABCDEIU$nullİ	
+ !"___nsurlrequest_proto_prop_obj_6___nsurlrequest_proto_prop_obj_3R$2___nsurlrequest_proto_prop_obj_0R$3___nsurlrequest_proto_prop_obj_4V$class___nsurlrequest_proto_prop_obj_1R$4R$0___nsurlrequest_proto_prop_obj_5___nsurlrequest_proto_prop_obj_2R$1€€€	€€€€ €Ó$% '(WNS.base[NS.relative€ €€_-https://stuff.mit.edu/cgi/counter/ila4webpageÒ+,-.Z$classnameX$classesUNSURL¢-/XNSObject#AÁan‰ç ÈÓ456:>WNS.keysZNS.objects£789€	€
+€£;=€€€€TDate\Content-TypeX__hhaa___Wed, 26 Jun 2019 05:31:48 GMTYimage/png_ 
+
+YnBsaXN0MDDSAQIDBVREYXRlXENvbnRlbnQtVHlwZaEEXxAdV2VkLCAyNiBKdW4gMjAxOSAwNTozMTo0OCBHTVShBllpbWFnZS9wbmcIDRIfIUFDAAAAAAAAAQEAAAAAAAAABwAAAAAAAAAAAAAAAAAAAE0=Ò+,FG_NSMutableDictionary£FH/\NSDictionaryÒ+,JK_NSHTTPURLResponse£LM/_NSHTTPURLResponse]NSURLResponse_NSKeyedArchiverÑPQ_WebResourceResponse€    # - 2 7 K Q l  ° ³ Õ Ø ú#&)Kmprtvxz|~€ƒ…‡‰˜¤¦¨ªÚßêóùü!,0246:<>@BGT]}‡*/EIV[os‡•§ªÀ             R              Â_,http://stuff.mit.edu/cgi/counter/ila4webpageOµ‰PNG
+
+   IHDR   <      ëÍÌj   PLTEÿÿÿ   UÂÓ~   	pHYs  Ä  Ä•+   UIDAT™cøHbüù—ø¼OşÃ?>ÇRÎ`øòÃ¹Q:ñç“ãóÏÏ€Rù<?Şyàó|¾=ˆñÏç¹]ñÁ.±‘‰MDKa dµ‰
+)L~    IEND®B`‚            1   <   R   p      –   ¨   ²   ¸   á   â  D  D  D  D3  DE  DK  Mõ  N8 -â -ë . 6	 6C Ç¨ Ç± Çº Ïz Ï® àù á á è1 èx €W €` ‡„ ‡Ê üÊ üÓ ] Œ             -             D
